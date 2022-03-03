@@ -17,39 +17,37 @@ function mostrarBienvenida(){
 
 
 
-
-function escogerPalabra(){
-    var palabrasDict = {
-        "elefante": "animal con trompa",
-        "jirafa": "animal con cuello largo",
-        "murcielago": "ratón con alas"
-    }
-    listaPalabras=Object.keys(palabrasDict);
-    indice=Math.round(Math.random()*2);
-    palabraEscogida=listaPalabras[indice];
-    return palabraEscogida
-}
-
-
-
-function mostrarLineas(){
-    a=escogerPalabra();
-    var areaPalabra=document.querySelector(".area-palabra")
-    for (let letter of a){
+function crearTeclado(){
+    
+    var abcList ="abcdefghijklmnñopqrstuvwxyz";
+    var abc= abcList.toUpperCase();
+    var areaTeclado=document.querySelector("#area-teclado")
+   
+    for (let letter of abc){
         var letraDiv = document.createElement("div");
-        var linea = document.createElement("div");  
-        var letra= document.createElement("p"); 
-        letraDiv.classList.add("area-letra");
-        linea.classList.add("linea")
-        letra.classList.add("letra")
+        var letra= document.createElement("p");
+        letraDiv.setAttribute("id", "tecla-"+letter.toUpperCase()); 
+        letra.textContent=letter; 
+        letraDiv.classList.add("area-tecla");
+        letra.classList.add("letra-tecla")
         letraDiv.appendChild(letra)
-        letraDiv.appendChild(linea)
-        areaPalabra.appendChild(letraDiv);
+        areaTeclado.appendChild(letraDiv);
+        letraDiv.addEventListener ("click", function(){
+            this.classList.add("fadeOut")
+            compararLetra(letter)
+
+        });
+    
     }
 }
+
 
 iniciarJuego.addEventListener("click", function(){
     borrarBienvenida();
     dibujarTablero();
     mostrarLineas();
+    palabraEscogida=escogerPalabra();
+    letter=crearTeclado();
 });
+
+

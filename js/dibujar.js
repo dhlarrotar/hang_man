@@ -25,7 +25,7 @@ function dibujarTablero(){
     pincel.stroke();
 	}	
 
-
+var radio=10;
 
 function crearCabeza(x,y){
     pincel.arc(x,y,radio,0,2*Math.PI);
@@ -49,15 +49,15 @@ function crearPiernaIzquierda(x,y){
 }
   
 function crearBrazoDerecho(x,y){
-    pincel.moveTo(x,y4=y+2*radio);
-    pincel.lineTo(x-2*radio,y4+radio);
+    pincel.moveTo(x,y4=y+2.3*radio);
+    pincel.lineTo(x-2*radio,y4-radio);
 
 }
         
 
 function crearBrazoIzquierdo(x,y){
         pincel.moveTo(x,y4);
-        pincel.lineTo(x+2*radio,y4+radio);
+        pincel.lineTo(x+2*radio,y4-radio);
 }
 
 function crearSoga(x,y){
@@ -67,42 +67,3 @@ function crearSoga(x,y){
 }
 
 
-
-function crearPersona(x,y,radio, color){
-    pincel.strokeStyle = color;
-    pincel.lineJoin = "round"; 
-    pincel.lineWidth = 2;
-	pincel.beginPath();
-    crearCabeza(x,y);
-    crearCuerpo(x,y);
-    crearBrazoDerecho(x,y);
-    crearBrazoIzquierdo(x,y);
-    crearPiernaDerecha(x,y);
-    crearPiernaIzquierda(x,y);
-    pincel.stroke();
-}	
-
-function limpiarPantalla(){
-	pincel.clearRect(0,0,400,250);
-}
-
-
-var ymax=170;
-var ymovimiento= 5;
-
-
-function hasPerdido(){
-	if(ymovimiento==ymax) return;
-    limpiarPantalla();
-    dibujarTablero();
-	xi = 155;
-    yi =ymovimiento;
-    radio=10;
-	crearPersona(xi,yi,radio,"white")
-    crearSoga(xi,yi);
-	ymovimiento++;    
-}
-/*
-if(){setInterval(actualizarPantalla,8)};
-*/
-    
