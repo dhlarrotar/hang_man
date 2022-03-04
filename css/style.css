@@ -86,14 +86,13 @@ html, body {
 	height: 90%;
 	margin: 0 auto;
 	justify-content: center;
-	background-color: beige;
 }
 
 
 .area-dibujo{
 	margin-top: 3%;
 	width: 90%;
-	height: 90%;
+	height: 96%;
 	display: block;
 	background-color: #1b500e;
 	border: 15px solid #e48023;
@@ -220,7 +219,8 @@ footer{
 }
 .logo2{
 	width: auto;
-	height:27px;
+	height:37px;
+	margin: 3px;
 }
 
 .fadeOut{
