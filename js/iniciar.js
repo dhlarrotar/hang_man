@@ -45,8 +45,7 @@ function crearTeclado(){
 iniciarJuego.addEventListener("click", function(){
     borrarBienvenida();
     dibujarTablero();
-    mostrarLineas();
-    palabraEscogida=escogerPalabra();
+    palabraEscogida=mostrarLineas();
     letter=crearTeclado();
 });
 

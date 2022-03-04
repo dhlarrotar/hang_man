@@ -77,7 +77,8 @@ function hasPerdido(){
     crearSoga(xi,yi);
 	ymovimiento++;
     teclado.innerHTML="";
-    areaPalabra.innerHTML="";
+    areaPalabra.innerHTML="¡Has perdido!";
+    
 }
 /*
 if(){setInterval(actualizarPantalla,8)};

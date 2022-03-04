@@ -25,31 +25,45 @@ function mostrarLineas(){
         letraDiv.appendChild(letra)
         letraDiv.appendChild(linea)
         areaPalabra.appendChild(letraDiv);
-    }
+
+    }  
+    return palabraEscogida
 }
 
 
 var a=[]
 var i=0
+var aciertos=0
 function compararLetra(letra){
     
     if(i==5){setInterval(hasPerdido,10)};
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
-    if (letraPalabra.length==0){
-        if(!a.includes(letra)){
-            i++
-            a.push(letra)
-            dibujarPartes(i-1,155,70,10,"white")
-        }
-        else{
-            console.log("repetido")
-        }
+    if(palabraEscogida.length-1==aciertos){
+        teclado.innerHTML="";
+        areaPalabra.innerHTML="¡Ganaste! La palabra secreta es: "+palabraEscogida.toUpperCase();
     }
-    else {
-        for(let a of letraPalabra){
-            a.textContent=letra
+    else{
+        if (letraPalabra.length==0){
+            if(!a.includes(letra)){
+                i++
+                a.push(letra)
+                dibujarPartes(i-1,155,70,10,"white")
+            }
+            else{
+                console.log("repetido")
+            }
         }
-    }     
+        else {
+              
+                for(let a of letraPalabra){
+                    a.textContent=letra
+                    aciertos++
+                    
+                }
+                
+        } console.log(aciertos)
+        console.log(palabraEscogida.length)
+    }   
 }
 
 

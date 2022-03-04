@@ -78,7 +78,17 @@ html, body {
 	height: 40%;
 	display: inline-block;
 	image-rendering: optimizeQuality;
+	overflow: visible;
 }
+
+.dibujo2{
+	margin-left: 5%;
+	width: 900px;
+	height: 900px;
+	display: inline-block;
+	image-rendering: optimizeQuality;
+}
+
 
 
 .area-palabra{
@@ -89,6 +99,8 @@ html, body {
 	min-width: 250px;
 	display: inline-block;
 	vertical-align: top;
+	color: #ffffff;
+	font-size: 30px;
 }
 
 .area-letra{
@@ -121,10 +133,10 @@ html, body {
 
 
 #area-teclado{
-	margin-top: 4%;
+	margin-top: 2%;
 	margin-left: 5%;
 	display: inline-block;
-	width: 280px;
+	width: 90%;
 }
 
 
@@ -133,13 +145,12 @@ html, body {
 	display: inline-flex;
 	vertical-align: middle;
 	color: "white";
-	min-width: 10%;
-	max-width: 12%;
-	min-height: 15%;
-	margin-left: 6%;
-	margin-bottom: 10px;
+	width: 30px;
+	margin-left: 10px;
+	margin-bottom: 2%;
 	border: 1px solid #ffffff;
 	border-radius: 4px;
+	overflow: hidden;
 }
 
 .letra-tecla{
