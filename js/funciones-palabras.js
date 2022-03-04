@@ -1,3 +1,8 @@
+var a=[]
+var i=0
+var aciertos=0
+
+
 function escogerPalabra(){
     var palabrasDict = {
         "elefante": "animal con trompa",
@@ -31,48 +36,57 @@ function mostrarLineas(){
 }
 
 
-var a=[]
-var i=0
-var aciertos=0
+
 function compararLetra(letra){
     
-    if(i==5){setInterval(hasPerdido,10)};
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
-    if(palabraEscogida.length-1==aciertos){
-        teclado.innerHTML="";
-        areaPalabra.innerHTML="¡Ganaste! La palabra secreta es: "+palabraEscogida.toUpperCase();
+    if(i==5){
+        myInterval = setInterval(hasPerdido,10);
+
     }
     else{
-        if (letraPalabra.length==0){
-            if(!a.includes(letra)){
-                i++
-                a.push(letra)
-                dibujarPartes(i-1,155,70,10,"white")
-            }
-            else{
-                console.log("repetido")
-            }
+        if(palabraEscogida.length-1==aciertos && i<5){
+            teclado.innerHTML="";
+            areaPalabra.innerHTML="¡Ganaste! La palabra secreta es: "+palabraEscogida.toUpperCase();
+            
+
         }
-        else {
-              
-                for(let a of letraPalabra){
-                    a.textContent=letra
-                    aciertos++
-                    
+        else{
+            if (letraPalabra.length==0){
+                if(!a.includes(letra)){
+                    i++
+                    a.push(letra)
+                    dibujarPartes(i-1,155,70,10,"white")
                 }
+                else{
+                    console.log("repetido")
+                }
+            }
+            else {
                 
-        } console.log(aciertos)
-        console.log(palabraEscogida.length)
-    }   
+                    for(let b of letraPalabra){
+                        b.textContent=letra
+                        aciertos++
+                        
+                    }
+                    
+            } console.log("aciertos"+aciertos)
+            console.log(palabraEscogida.length)
+        }   console.log(i+"i")
+
+    }
+    
 }
-
-
 
 document.onkeydown= function(evt){
     evt = evt || window.event;
-    letraOprimida=evt.key.toUpperCase();
-    var letraTeclado = document.getElementById("tecla-"+letraOprimida)  
-    letraTeclado.classList.add("fadeOut2");
-    compararLetra(letraOprimida);
-    
+    letraOprimida=evt.key;
+    var patronAceptados = /[a-zA-Z]/gi;
+    var aceptados1=new Set(letraOprimida.match(patronAceptados));
+    var aceptados=[...aceptados1]
+    if (aceptados.length==1){
+        var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase())  
+        if (letraTeclado){letraTeclado.classList.add("fadeOut2")};
+        compararLetra(aceptados.toString().toUpperCase());
+    }
 }

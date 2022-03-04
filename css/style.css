@@ -1,6 +1,8 @@
 .titulo{
-	font-size: 45px;
+	font-size: 25px;
 	font-weight: bold;
+	color: #ffffff;
+	margin: 5%
 
 }
 
@@ -12,14 +14,21 @@ html, body {
 
 
 #area-inicio{
-	width: 90%;
-	height: 90%;
-	margin: auto auto;
+	width: 70%;
+	height: 60%;
+	
+	margin: 5% auto;
 	justify-content: center;
 	vertical-align: middle;
+	background-color: #1b500e;
+	border: 15px solid #e48023;
 }
 
-
+.img-inicio{
+	display: inline-block;
+	width: 27%;
+	height: auto;
+}
 .bienvenida{
 	display: block;
 	margin:  0 auto;
@@ -27,20 +36,33 @@ html, body {
 	height:30%;
 }
 
+#area-botones-inicio{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	align-items: center;
+	vertical-align: top;
+}
+
 
 .boton-inicio{
-	display: block;
+	display: inline-block;
 	margin:  0 auto;
+	background: none;
+	color: #ffffff;
 }
 
 
 #iniciar{
 	/* Auto layout */
 	align-items: center;
-	padding: 24px;
+	padding: 5%;
 	/* Dark blue/dark-blue-300 */
-	background: #e3e8f0;
+	background: none;
+	color: #ffffff;
 	border-radius: 26px;
+	border: 2px solid #ffffff;
+	margin: 10px;
 }
 
 
@@ -49,8 +71,10 @@ html, body {
 		align-items: center;
 		padding: 10px;
 		/* Dark blue/dark-blue-300 */
-		background: #ffffff;
+		background: none;
+		color: #ffffff;
 		border-radius: 24px;
+		border: 2px solid #ffffff;
 }
 
 
@@ -64,9 +88,9 @@ html, body {
 
 
 .area-dibujo{
+	margin-top: 3%;
 	width: 90%;
 	height: 90%;
-	margin-left: 4%;
 	display: block;
 	background-color: #1b500e;
 	border: 15px solid #e48023;
@@ -79,14 +103,6 @@ html, body {
 	display: inline-block;
 	image-rendering: optimizeQuality;
 	overflow: visible;
-}
-
-.dibujo2{
-	margin-left: 5%;
-	width: 900px;
-	height: 900px;
-	display: inline-block;
-	image-rendering: optimizeQuality;
 }
 
 
@@ -145,8 +161,10 @@ html, body {
 	display: inline-flex;
 	vertical-align: middle;
 	color: "white";
-	min-width: 30px;
+	min-width: 26px;
+	min-height: 26px;
 	width: 6%;
+	max-width: 30px;
 	margin: 6px;
 	margin-bottom: 2%;
 	border: 1px solid #ffffff;
@@ -158,7 +176,7 @@ html, body {
 	display: flex;
 	color: #ffffff;
 	font-size: 90%;
-	padding: 8px;
+	padding: 7px;
 	justify-content: center;
 	text-align: center;
 }
@@ -187,6 +205,21 @@ footer{
 	height:16px;
 }
 
+
+.botones-juego{
+	width: 98%;
+	text-align: right;
+	align-items: right;
+	height: 0;
+	margin-top: 3px;
+	margin-right: 4px;
+	overflow: visible;
+}
+.logo2{
+	width: auto;
+	height:27px;
+}
+
 .fadeOut{
 	transition: 2.7s;
 	display: none;
@@ -196,6 +229,12 @@ footer{
 
 	transition: 0.7s;
 	color: #1b500e;
+	min-width: 26px;
 	border: 0; 
 	font-size: 0px;
+	min-height: 26px;
+	width: 6%;
+	margin: 6px;
+	margin-bottom: 2%;
+	max-width: 30px;
 }

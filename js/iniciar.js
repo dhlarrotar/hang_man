@@ -1,6 +1,10 @@
 var bienvenida = document.querySelector("#area-inicio");
 var areaJuego=document.querySelector("#area-juego");
-var iniciarJuego = document.querySelector("#iniciar");		
+var iniciarJuego = document.querySelector("#iniciar");
+var reiniciar=document.querySelector("#reiniciar");
+var cerrar=document.querySelector("#cerrar");				
+var teclado=document.getElementById("area-teclado");	
+var areaPalabra=document.querySelector(".area-palabra")
 
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
@@ -42,11 +46,31 @@ function crearTeclado(){
 }
 
 
+function iniciar(){
+    teclado.innerHTML=""
+    areaPalabra.innerHTML=""
+    borrarBienvenida();
+    limpiarPantalla()
+    dibujarTablero();
+    palabraEscogida=mostrarLineas();
+    letter=crearTeclado()
+    a=[]
+    i=0
+
+   
+};
+
+
+iniciarJuego.onclick=iniciar;
+function reiniciarw(){location.reload()}
+reiniciar.onclick=reiniciarw;
+/*
+
 iniciarJuego.addEventListener("click", function(){
     borrarBienvenida();
     dibujarTablero();
     palabraEscogida=mostrarLineas();
     letter=crearTeclado();
 });
-
+*/
 

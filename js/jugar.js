@@ -1,7 +1,5 @@
 var pantalla = document.querySelector(".dibujo");
 var pincel = pantalla.getContext("2d");
-var teclado=document.getElementById("area-teclado");	
-var areaPalabra=document.querySelector(".area-palabra")
 
 
 
@@ -60,7 +58,6 @@ function dibujarPartes(i,x,y,radio, color){
 	pincel.beginPath();
     eval(dibujar[i])
     pincel.stroke();
-    console.log(dibujar[i])
 }	
 
 

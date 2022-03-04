@@ -10,20 +10,27 @@
 	</head>
 
 	<body>
-		<header class="titulo">Ahorcado</header>
-		<div id="area-inicio">	
-			<button class="boton-inicio" id="iniciar">Iniciar juego</button>
-			<button class="boton-inicio" id="agregar-palabra" >Agregar nueva palabra</button>
+		
+		<div id="area-inicio">
+			<header class="titulo">Ahorcado</header>
+			<img src="img/imginicio.png" class="img-inicio">
+			<div id="area-botones-inicio">
+				<button class="boton-inicio" id="iniciar">Iniciar juego</button>
+				<button class="boton-inicio" id="agregar-palabra" >Agregar nueva palabra</button>
+			</div>
 		</div> 
 		
 		<div class="fadeOut" id="area-juego">
-			<div class="area-dibujo">
-				<canvas class="dibujo" id="dibujo" height="250"></canvas>
+			<div class="area-dibujo">	
+				<div class="botones-juego">
+					<img src="img/reload.png" class="logo2" id="reiniciar">
+					<img src="img/hint.png" class="logo2" id="pista">
+						
+				</div>
+				<canvas class="dibujo" id="dibujo" height="250"></canvas>	
 				<div class="area-palabra"></div>
 				<div  id="area-teclado"></div>
 			</div>
-			<button class="boton" id="ayuda">Ayuda</button>
-			<button class="boton" id="salir" >salir</button>
 		</div> 
 		
 		<script src="js/dibujar.js"></script>
