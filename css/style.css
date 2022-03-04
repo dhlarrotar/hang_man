@@ -145,9 +145,9 @@ html, body {
 	display: inline-flex;
 	vertical-align: middle;
 	color: "white";
-	width: 30px;
-	margin-left: 10px;
-	margin-bottom: 2%;
+	width: 50px;
+	margin-left: 15px;
+	margin-bottom: 5%;
 	border: 1px solid #ffffff;
 	border-radius: 4px;
 	overflow: hidden;
@@ -156,8 +156,8 @@ html, body {
 .letra-tecla{
 	display: flex;
 	color: #ffffff;
-	font-size: 15px;
-	padding: 8px;
+	font-size: 25px;
+	padding: 13px;
 	justify-content: center;
 	text-align: center;
 }
