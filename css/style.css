@@ -145,9 +145,10 @@ html, body {
 	display: inline-flex;
 	vertical-align: middle;
 	color: "white";
-	width: 50px;
-	margin-left: 15px;
-	margin-bottom: 5%;
+	min-width: 30px;
+	width: 6%;
+	margin: 6px;
+	margin-bottom: 2%;
 	border: 1px solid #ffffff;
 	border-radius: 4px;
 	overflow: hidden;
@@ -156,8 +157,8 @@ html, body {
 .letra-tecla{
 	display: flex;
 	color: #ffffff;
-	font-size: 25px;
-	padding: 13px;
+	font-size: 90%;
+	padding: 8px;
 	justify-content: center;
 	text-align: center;
 }
@@ -189,4 +190,12 @@ footer{
 .fadeOut{
 	transition: 2.7s;
 	display: none;
+}
+
+.fadeOut2{
+
+	transition: 0.7s;
+	color: #1b500e;
+	border: 0; 
+	font-size: 0px;
 }

@@ -66,6 +66,7 @@ function dibujarPartes(i,x,y,radio, color){
 
 var ymax=130;
 var ymovimiento= 70;
+
 function hasPerdido(){
 	if(ymovimiento==ymax) return;
     limpiarPantalla();

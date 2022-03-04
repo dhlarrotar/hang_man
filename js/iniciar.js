@@ -33,7 +33,7 @@ function crearTeclado(){
         letraDiv.appendChild(letra)
         areaTeclado.appendChild(letraDiv);
         letraDiv.addEventListener ("click", function(){
-            this.classList.add("fadeOut")
+            this.classList.add("fadeOut2")
             compararLetra(letter)
 
         });

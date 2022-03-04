@@ -72,7 +72,7 @@ document.onkeydown= function(evt){
     evt = evt || window.event;
     letraOprimida=evt.key.toUpperCase();
     var letraTeclado = document.getElementById("tecla-"+letraOprimida)  
-    letraTeclado.classList.add("fadeOut");
+    letraTeclado.classList.add("fadeOut2");
     compararLetra(letraOprimida);
     
 }
