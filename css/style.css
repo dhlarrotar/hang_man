@@ -111,14 +111,14 @@ html, body {
 
 .area-palabra{
 	margin-left: 5%;
-	margin-top: 10%;
+	margin-top: 2%;
 	width: 50%;
 	height: 10%;
 	min-width: 250px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 22px;
 }
 
 .area-letra{
@@ -126,12 +126,13 @@ html, body {
 	width: 7%;
 	height: 30%;
 	color: "white";
-	margin: 1%;
+	margin-top: 1%;
+	margin-left: 3%;
 }
 
 .letra{
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 27px;
 	text-align: center;
 }
 
@@ -151,7 +152,6 @@ html, body {
 
 
 #area-teclado{
-	margin-top: 2%;
 	margin-left: 5%;
 	display: inline-block;
 	width: 90%;
@@ -198,11 +198,7 @@ html, body {
 }
 
 
-footer{
-	font-size: 16px;
-	margin-top: 12px;
-	display: block;
-}
+
 .logo{
 	width: 16px;
 	height:16px;
@@ -221,24 +217,14 @@ footer{
 }
 .logo2{
 	width: auto;
-	height:37px;
+	height:23px;
 	background: none;
-	margin: 4px;
+	margin-left: 4px;
 }
 
 
 
-#ayuda{
-	position: absolute;
-	left:25%;
-	top:70%;
-	width:20%;
-	height:20%;
-	background-color: #ffffff;
-	opacity: 0.92;
-	border-radius: 12px;
-	min-width: 200px;
-}
+
 
 #reiniciar{
 	background: #1b500e;
@@ -255,8 +241,10 @@ border: 0;
 
 #texto-ayuda{
 	text-align: center;
-	font-size: 30px;
+	font-size: 17px;
+	color: #ffffff;
 	font-style: italic;
+	margin: 1%;
 }
 
 
@@ -277,4 +265,11 @@ border: 0;
 	margin: 6px;
 	margin-bottom: 2%;
 	max-width: 30px;
+}
+
+footer{
+	width: 90%;
+	font-size: 16px;
+	margin-top: 12px;
+	display: block;
 }

@@ -65,7 +65,7 @@ function compararLetra(letra){
         
         if(palabraEscogida.length-1==aciertos && i<5){
             teclado.innerHTML="";
-            areaPalabra.innerHTML="¡Ganaste! La palabra secreta es: "+palabraEscogida.toUpperCase();
+            areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
             
 
         }
@@ -96,15 +96,21 @@ function compararLetra(letra){
     
 }
 
+aceptadosArr=[]
 document.onkeydown= function(evt){
     evt = evt || window.event;
     letraOprimida=evt.key;
     var patronAceptados = /[a-zA-Z]/gi;
     var aceptados1=new Set(letraOprimida.match(patronAceptados));
     var aceptados=[...aceptados1]
-    if (aceptados.length==1){
-        var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase())  
-        if (letraTeclado){letraTeclado.classList.add("fadeOut2")};
-        compararLetra(aceptados.toString().toUpperCase());
-    }
+    if(!aceptadosArr.includes(aceptados.toString())){
+        aceptadosArr.push(letraOprimida)
+        if (aceptados.length==1){
+            console.log(aceptados)
+            var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase())  
+            if (letraTeclado){letraTeclado.classList.add("fadeOut2")};
+            compararLetra(aceptados.toString().toUpperCase());
+        }
+    }    
+
 }

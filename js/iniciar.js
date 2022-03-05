@@ -58,11 +58,13 @@ function iniciar(){
     dibujarTablero();
     palabraEscogida=mostrarLineas();
     letter=crearTeclado();
+    areaAyuda.classList.add("fadeOut");
     aciertos=0;
     a=[];
     i=0;
     ymax=130;
     ymovimiento= 70;
+    aceptadosArr=[]
  
 }
 
@@ -92,10 +94,3 @@ botonAyuda.addEventListener("click", function(){
 });
 
 
-
-botonCerrar.addEventListener("touchstart", function(){
-    areaAyuda.classList.add("fadeOut");
-});
-botonCerrar.addEventListener("click", function(){
-    areaAyuda.classList.add("fadeOut");
-});

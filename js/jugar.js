@@ -75,7 +75,7 @@ function hasPerdido(){
     crearSoga(xi,yi);
 	ymovimiento++;
     teclado.innerHTML="";
-    areaPalabra.innerHTML="¡Has perdido!";
+    areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();;
     
 }
 /*
