@@ -41,14 +41,28 @@ function mostrarLineas(){
 
 
 
-function compararLetra(letra){
-    
-    var letraPalabra = document.querySelectorAll("#letra-"+letra);
-    if(i==5){
-        myInterval = setInterval(hasPerdido,10);
 
+
+
+
+function compararLetra(letra){
+   
+    var letraPalabra = document.querySelectorAll("#letra-"+letra);
+    
+    if(i==5){
+        var times=0
+        var idVar= setInterval(function(){
+            hasPerdido();
+            times++;
+            if (times==100){
+                clearInterval(idVar)
+            }        
+        },5)
+        
     }
+
     else{
+        
         if(palabraEscogida.length-1==aciertos && i<5){
             teclado.innerHTML="";
             areaPalabra.innerHTML="¡Ganaste! La palabra secreta es: "+palabraEscogida.toUpperCase();

@@ -1,13 +1,14 @@
 var bienvenida = document.querySelector("#area-inicio");
 var areaJuego=document.querySelector("#area-juego");
 var iniciarJuego = document.querySelector("#iniciar");
-var reiniciar=document.querySelector("#reiniciar");
+
 var cerrar=document.querySelector("#cerrar");				
 var teclado=document.getElementById("area-teclado");	
-var areaPalabra=document.querySelector(".area-palabra")
-var botonAyuda=document.getElementById("pista")
-var areaAyuda=document.getElementById("ayuda")
-var botonCerrar=document.getElementById("cerrar-ayuda")
+var areaPalabra=document.querySelector(".area-palabra");
+var botonAyuda=document.getElementById("pista");
+var areaAyuda=document.getElementById("ayuda");
+var botonCerrar=document.getElementById("cerrar-ayuda");
+
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
 
@@ -49,36 +50,52 @@ function crearTeclado(){
 
 
 
-iniciarJuego.addEventListener("click", function(){
-    teclado.innerHTML=""
-    areaPalabra.innerHTML=""
+function iniciar(){
+    teclado.innerHTML="";
+    areaPalabra.innerHTML="";
     borrarBienvenida();
     limpiarPantalla()
     dibujarTablero();
     palabraEscogida=mostrarLineas();
-    letter=crearTeclado()
-    aciertos=0
-    a=[]
-    i=0
+    letter=crearTeclado();
+    aciertos=0;
+    a=[];
+    i=0;
+    ymax=130;
+    ymovimiento= 70;
+ 
+}
+
+var reiniciar=document.querySelector("#reiniciar");
+iniciarJuego.onclick=iniciar
+
+
+
+
+
+
+reiniciar.addEventListener("touchstart", function(){
+    iniciar();
 });
 
 reiniciar.addEventListener("click", function(){
-    teclado.innerHTML=""
-    areaPalabra.innerHTML=""
-    limpiarPantalla()
-    dibujarTablero();
-    palabraEscogida=mostrarLineas();
-    letter=crearTeclado()
-    a=[]
-    i=0
-    aciertos=0
+    iniciar();
 });
 
+
+botonAyuda.addEventListener("touchstart", function(){
+    areaAyuda.classList.remove("fadeOut");
+});
 
 botonAyuda.addEventListener("click", function(){
     areaAyuda.classList.remove("fadeOut");
 });
 
+
+
+botonCerrar.addEventListener("touchstart", function(){
+    areaAyuda.classList.add("fadeOut");
+});
 botonCerrar.addEventListener("click", function(){
     areaAyuda.classList.add("fadeOut");
 });
