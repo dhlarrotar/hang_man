@@ -200,6 +200,7 @@ html, body {
 
 footer{
 	font-size: 16px;
+	margin-top: 12px;
 	display: block;
 }
 .logo{
@@ -216,12 +217,48 @@ footer{
 	margin-top: 3px;
 	margin-right: 4px;
 	overflow: visible;
+	background: none;
 }
 .logo2{
 	width: auto;
 	height:37px;
-	margin: 3px;
+	background: none;
+	margin: 4px;
 }
+
+
+
+#ayuda{
+	position: absolute;
+	left:25%;
+	top:70%;
+	width:20%;
+	height:20%;
+	background-color: #ffffff;
+	opacity: 0.92;
+	border-radius: 12px;
+	min-width: 200px;
+}
+
+#reiniciar{
+	background: #1b500e;
+}
+
+#pista{
+	background: #1b500e;
+}
+
+#cerrar-ayuda{
+background: none;
+border: 0;
+}
+
+#texto-ayuda{
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+}
+
 
 .fadeOut{
 	transition: 2.7s;

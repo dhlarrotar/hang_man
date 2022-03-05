@@ -1,7 +1,8 @@
+
 var a=[]
 var i=0
 var aciertos=0
-
+var ayuda=document.getElementById("texto-ayuda")
 
 function escogerPalabra(){
     var palabrasDict = {
@@ -10,8 +11,11 @@ function escogerPalabra(){
         "murcielago": "ratón con alas"
     }
     listaPalabras=Object.keys(palabrasDict);
-    indice=Math.round(Math.random()*2);
+    listaValores=Object.values(palabrasDict);
+    indice=Math.round(Math.random()*2); 
     palabraEscogida=listaPalabras[indice];
+    ayudaPalabra=listaValores[indice];
+    ayuda.textContent= ayudaPalabra;
     return palabraEscogida
 }
 
