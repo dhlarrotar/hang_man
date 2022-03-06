@@ -140,11 +140,11 @@ html, body {
 	width: 7%;
 	height: 10%;
 	margin-top: 1%;
-	margin-left: 3%;
+	margin-left: 5%;
 }
 
 .letra{
-	font-size: 27px;
+	font-size: 29px;
 	text-align: center;
 	background:	-webkit-linear-gradient(left, #0700b8 0%, #00ff88 100%);
 		-webkit-background-clip: text;
@@ -191,7 +191,7 @@ html, body {
 
 .letra-tecla{
 	display: flex;
-	font-size: 90%;
+	font-size: 26px;
 	padding: 7px;
 	justify-content: center;
 	text-align: center;
@@ -224,14 +224,16 @@ html, body {
 
 
 .botones-juego{
-	display: block;
+	position: absolute;
+	right:5%;
+	top:5%;
 	text-align: right;
 	background: none;
 }
 
 
 .logo2{
-	width: auto;
+	width: 22px;
 	height:23px;
 	background: none;
 	margin-left: 4px;
@@ -246,7 +248,7 @@ border: 0;
 
 #texto-ayuda{
 	text-align: center;
-	font-size: 17px;
+	font-size: 20px;
 
 	font-style: italic;
 	margin: 1%;
