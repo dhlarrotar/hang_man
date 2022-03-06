@@ -206,15 +206,11 @@ html, body {
 
 
 .botones-juego{
-	width: 98%;
+	display: block;
 	text-align: right;
-	align-items: right;
-	height: 0;
-	margin-top: 3px;
-	margin-right: 4px;
-	overflow: visible;
-	background: none;
 }
+
+
 .logo2{
 	width: auto;
 	height:23px;

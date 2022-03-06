@@ -8,7 +8,12 @@ var areaPalabra=document.querySelector(".area-palabra");
 var botonAyuda=document.getElementById("pista");
 var areaAyuda=document.getElementById("ayuda");
 var botonCerrar=document.getElementById("cerrar-ayuda");
+var areaNuevaPalabra=document.getElementById("nueva-palabra");
+var botonPalabra=document.getElementById("agregar-palabra");
+var inputPalabra=document.getElementById("input-palabra")
+var agregar=document.getElementById("agregar")
 
+var aceptadosArr=[]
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
 
@@ -65,32 +70,69 @@ function iniciar(){
     ymax=130;
     ymovimiento= 70;
     aceptadosArr=[]
+
+        
+    document.onkeydown= function(evt){
+        evt = evt || window.event;
+        letraOprimida=evt.key;
+        var patronAceptados = /[a-zA-Z]/gi;
+        var aceptados1=new Set(letraOprimida.match(patronAceptados));
+        var aceptados=[...aceptados1]
+        if(!aceptadosArr.includes(aceptados.toString())){
+            aceptadosArr.push(letraOprimida)
+            if (aceptados.length==1){
+                console.log(aceptados)
+                var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase())  
+                if (letraTeclado){letraTeclado.classList.add("fadeOut2")};
+                compararLetra(aceptados.toString().toUpperCase());
+            }
+        }    
+
+    }
+
+
+
+
  
 }
 
-var reiniciar=document.querySelector("#reiniciar");
+
 iniciarJuego.onclick=iniciar
+var reload=document.getElementById("reload");
 
 
 
 
 
-
-reiniciar.addEventListener("touchstart", function(){
-    iniciar();
-});
-
-reiniciar.addEventListener("click", function(){
-    iniciar();
-});
+["touchstart","click"].forEach(function(e) {
+    reload.addEventListener(e, function(){
+        iniciar();
+        
+    });
+})
 
 
-botonAyuda.addEventListener("touchstart", function(){
+botonAyuda.addEventListener("touchstart", function(event){
+    event.preventDefault();
     areaAyuda.classList.remove("fadeOut");
 });
 
-botonAyuda.addEventListener("click", function(){
+botonAyuda.addEventListener("click", function(event){
+    event.preventDefault();
     areaAyuda.classList.remove("fadeOut");
 });
 
 
+botonPalabra.addEventListener("click", function(event){
+    event.preventDefault();
+    areaNuevaPalabra.classList.remove("fadeOut");
+});
+
+agregar.addEventListener("click", function(event){
+    event.preventDefault();
+    a
+    areaNuevaPalabra.classList.add("fadeOut");
+    palabraNueva=inputPalabra.value;
+    palabrasDict[palabraNueva]="";
+    inputPalabra.value=""
+});
