@@ -4,7 +4,7 @@ var pincel = pantalla.getContext("2d");
 
 
 function crearPartes(x,y,radio, color){
-    pincel.strokeStyle = color;
+    pincel.strokeStyle = gradient;
     pincel.lineJoin = "round"; 
     pincel.lineWidth = 2;
 	pincel.beginPath();
@@ -23,7 +23,7 @@ function crearPartes(x,y,radio, color){
 
 
 function crearPersona(x,y,radio, color){
-    pincel.strokeStyle = color;
+    pincel.strokeStyle = gradient;
     pincel.lineJoin = "round"; 
     pincel.lineWidth = 2;
 	pincel.beginPath();
@@ -52,7 +52,7 @@ dibujar=["crearCabeza(x,y)",
 
 
 function dibujarPartes(i,x,y,radio, color){
-    pincel.strokeStyle = color;
+    pincel.strokeStyle = gradient;
     pincel.lineJoin = "round"; 
     pincel.lineWidth = 2;
 	pincel.beginPath();

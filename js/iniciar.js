@@ -136,3 +136,7 @@ agregar.addEventListener("click", function(event){
     palabrasDict[palabraNueva]="";
     inputPalabra.value=""
 });
+
+
+var home=document.getElementById("home");
+home.onclick=mostrarBienvenida;

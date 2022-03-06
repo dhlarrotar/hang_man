@@ -13,7 +13,7 @@
 		
 		<div id="area-inicio">
 			<header class="titulo">Ahorcado</header>
-			<img src="img/imginicio.png" class="img-inicio">
+			<img src="img/imginicio.gif" class="img-inicio">
 			<div id="area-botones-inicio">
 				<button class="boton-inicio" id="iniciar">Iniciar juego</button>
 				<button class="boton-inicio" id="agregar-palabra" >Agregar nueva palabra</button>
@@ -28,10 +28,11 @@
 		<div class="fadeOut" id="area-juego">
 			
 			<div class="area-dibujo">	
-				<div class="botones-juego">
-					<button id="reload"><img src="img/reload.png" class="logo2"></button>
-					<button id="pista"><img src="img/hint.png" class="logo2" ></button>			
-				</div>
+				<nav class="botones-juego">
+					<img src="img/home.png" class="logo2" id="home">
+					<img src="img/reload.png" class="logo2" id="reload">
+					<img src="img/hint.png" class="logo2"id="pista">			
+				</nav>
 				<canvas class="dibujo" id="dibujo" height="250"></canvas>	
 				<div class="area-palabra"></div>
 				<div class="fadeOut" id="ayuda">
@@ -47,7 +48,7 @@
 		<script src="js/jugar.js"></script>
 		</body>
 	 <footer> 
-		Creado por Daniel Larrota Rincón © 2022   
+		Daniel Larrota Rincón © 2022   
 		<a href="https://github.com/dhlarrotar/"> <img src="img/github.png" class="logo"> </a> 
 		<a href="https://www.linkedin.com/in/dhlarrotar"> <img src="img/linkedin.png" class="logo"> </a> 
 	</footer>

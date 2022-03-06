@@ -6,9 +6,15 @@ function limpiarPantalla(){
     pincel.clearRect(0,0,400,250);
 }
 
+var gradient = pincel.createLinearGradient(0, 0, pantalla.width, 0);
+gradient.addColorStop("0", "#0700b8");
+gradient.addColorStop("0.95", "#00ff88");
 
 function dibujarTablero(){
-    pincel.strokeStyle = "white";
+
+
+// Fill with gradient
+    pincel.strokeStyle = gradient;
     pincel.lineJoin = "round"; 
     pincel.lineWidth = 2;
     pincel.beginPath()

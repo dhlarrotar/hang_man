@@ -4,16 +4,22 @@ var i=0
 var aciertos=0
 var ayuda=document.getElementById("texto-ayuda")
 var palabrasDict = {
-    "elefante": "animal con trompa",
-    "jirafa": "animal con cuello largo",
-    "murcielago": "ratón con alas"
+    "elefante": "Soy un animal con trompa, orejas grandes y colmillos",
+    "jirafa": " Soy un animal con cuello largo",
+    "murcielago": "Soy un animal nocturno y me gustan las cuevas",
+    "abeja": "Me encantan las flores y produzco miel",
+    "perro":"Soy el mejor amigo del hombre",
+    "pulpo": "Tengo tentáculos",
+    "luna":"Giro alrededor de la tierra y salgo de noche",
+    "sol": "Soy la estrella mas cercana a la tierra",
+    "nieve":"Caigo en invierno"
+
 }
 
 function escogerPalabra(){
-    
     listaPalabras=Object.keys(palabrasDict);
     listaValores=Object.values(palabrasDict);
-    indice=Math.round(Math.random()*2); 
+    indice=Math.round(Math.random()*listaPalabras.length); 
     palabraEscogida=listaPalabras[indice];
     ayudaPalabra=listaValores[indice];
     ayuda.textContent= ayudaPalabra;
