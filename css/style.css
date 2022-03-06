@@ -11,15 +11,13 @@
 }
 
 html, body {
-	width:  100%;
 	height: 800px;
-	margin: 0;
 	background:	-webkit-linear-gradient(90deg, #f1ecfd38 0%, #f0fff817 100%);
   }
 
 
 #area-inicio{
-	width: 70%;
+	width: 80%;
 	height: 60%;
 	max-width: 500px;
 	margin: 5% auto;
@@ -95,7 +93,7 @@ html, body {
 
 
 #area-juego{
-	width: 90%;
+	width: 98%;
 	height: 90%;
 	margin: 0 auto;
 	justify-content: center;
@@ -124,12 +122,13 @@ html, body {
 .area-palabra{
 	margin-left: 3%;
 	margin-top: 3%;
-	width: 50%;
+	width: 60%;
 	height: 6%;
 	min-width: 250px;
+	max-width: 600px;
 	display: inline-block;
 	vertical-align: bottom;
-	background:	-webkit-linear-gradient(330deg, #0700b8 0%, #00ff88 100%);
+	background:	-webkit-linear-gradient(330deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	font-size: 22px;
@@ -137,14 +136,14 @@ html, body {
 
 .area-letra{
 	display: inline-block;
-	width: 7%;
+	width: 6%;
 	height: 10%;
-	margin-top: 1%;
-	margin-left: 5%;
+	margin-top: 3%;
+	margin-left: 12px;
 }
 
 .letra{
-	font-size: 29px;
+	font-size: 23px;
 	text-align: center;
 	background:	-webkit-linear-gradient(left, #0700b8 0%, #00ff88 100%);
 		-webkit-background-clip: text;
@@ -156,10 +155,10 @@ html, body {
 .linea{
 	vertical-align: bottom;
 	width: 100%;
-	height: 18%;
-	min-width: 12px;
+	height: 22%;
+	min-width: 5px;
 	max-width: 30px;
-	background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	background:	-webkit-linear-gradient(left, #0700b8 0%, #496cad 64%, #00ff88 100%);
 	margin-top: 3%;
 	border-radius: 4px;
 }
@@ -169,7 +168,7 @@ html, body {
 #area-teclado{
 	margin-left: 5%;
 	display: inline-block;
-	width: 90%;
+	width: 100%;
 }
 
 
@@ -178,27 +177,21 @@ html, body {
 	display: inline-flex;
 	vertical-align: middle;
 	color: "white";
-	min-width: 26px;
-	min-height: 26px;
-	width: 6%;
-	max-width: 30px;
 	margin: 6px;
 	margin-bottom: 2%;
-	border: 1px solid  linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
 	border-radius: 4px;
 	overflow: hidden;
 }
 
 .letra-tecla{
 	display: flex;
-	font-size: 26px;
+	font-size: 24px;
 	padding: 7px;
 	justify-content: center;
 	text-align: center;
-	font-weight: bold;
-	background:	-webkit-linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background:	-webkit-linear-gradient(left, #0700b8 0%, #496cad 64%, #00ff88 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 }
 
 
@@ -207,8 +200,6 @@ html, body {
 	display: inline-block;
 	padding: 13px;
 	background: #ffffff;
-	border: 1px solid linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
-	color: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
 	border-radius: 24px;
 	flex: none;
 	order: 1;
@@ -233,8 +224,8 @@ html, body {
 
 
 .logo2{
-	width: 22px;
-	height:23px;
+	width: auto;
+	height:29px;
 	background: none;
 	margin-left: 4px;
 }
@@ -249,15 +240,11 @@ border: 0;
 #texto-ayuda{
 	text-align: center;
 	font-size: 20px;
-
 	font-style: italic;
 	margin: 1%;
-	background:	-webkit-linear-gradient(left, #0700b8 0%, #00ff88 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	color: #496cad;
+
 }
-
-
 .fadeOut{
 	transition: 2.7s;
 	display: none;

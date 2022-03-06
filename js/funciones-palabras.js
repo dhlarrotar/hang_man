@@ -19,7 +19,7 @@ var palabrasDict = {
 function escogerPalabra(){
     listaPalabras=Object.keys(palabrasDict);
     listaValores=Object.values(palabrasDict);
-    indice=Math.round(Math.random()*listaPalabras.length); 
+    indice=Math.round(Math.random()*(listaPalabras.length-1)); 
     palabraEscogida=listaPalabras[indice];
     ayudaPalabra=listaValores[indice];
     ayuda.textContent= ayudaPalabra;
