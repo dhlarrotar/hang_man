@@ -30,6 +30,9 @@ function mostrarBienvenida(){
 
 function reiniciarParametros(){
     areaAyuda.classList.add("fadeOut");
+    pantalla.classList.remove("fadeOut")
+    fireworks.classList.add("fadeOut");
+    perdiste.classList.add("fadeOut");
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
     
@@ -41,6 +44,8 @@ function reiniciarParametros(){
     /* Posición inicial de animación*/
     ymax=130;
     ymovimiento= 70;
+
+
     
 }
 

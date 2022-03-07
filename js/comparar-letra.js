@@ -2,6 +2,9 @@ var letrasFallidas=[];   /* Arreglo con letras ingresadas que no pertenecen a la
 var aciertos=0;          /* Contador de aciertos para verificar si el jugador ganó*/
 var i=0;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
 
+var fireworks = document.getElementById("fireworks");
+var perdiste = document.getElementById("perdiste");
+
 
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
@@ -10,6 +13,7 @@ function compararLetra(letra){
     if(i==5){
         var times=0
         /*i=5 indica que el jugador a perdido e inicia las animaciones respectivas*/
+        perdiste.classList.remove("fadeOut");
         var idVar= setInterval(function(){
             hasPerdido();
             times++;
@@ -19,7 +23,11 @@ function compararLetra(letra){
         if(palabraEscogida.length-1==aciertos && i<5){
             /* El jugador gana si no ha perdido (i<5) y si el número de aciertos coincide con el largo de la palabra*/
             teclado.innerHTML="";
+            
             areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
+            pantalla.classList.add("fadeOut")
+            fireworks.classList.remove("fadeOut");
+
             ayuda.textContent= "";
 
         }

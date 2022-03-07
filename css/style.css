@@ -122,7 +122,7 @@ html {
 
 .area-palabra{
 	margin-left: 3%;
-	margin-top: 3%;
+	margin-top: 2%;
 	margin-bottom: 5%;
 	width: 90%;
 	height: 10%;
@@ -219,10 +219,22 @@ html {
 
 
 .logo2{
-	width: auto;
-	height:34px;
-	background: none;
-	margin-left: 4px;
+	margin: 4px auto;
+	margin-bottom: 4px;
+	display: block;
+	width: 30px;
+	text-align: center;
+}
+
+
+.boton-nav{
+	border: 0;
+	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
+	font-size: 13px;
+
 }
 
 
@@ -256,6 +268,21 @@ border: 0;
 	padding: 7px;
 	
 	color:#0700b8;
+}
+
+
+
+#fireworks{
+	width: 110%;
+	margin-top: 28px;
+}
+
+#perdiste{
+	vertical-align: bottom;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 14%;
+	min-width: 120px;
 }
 
 footer{
