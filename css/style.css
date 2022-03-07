@@ -121,7 +121,7 @@ html {
 
 
 .area-palabra{
-	margin-left: 3%;
+	margin-left: 2%;
 	margin-top: 2%;
 	margin-bottom: 5%;
 	width: 90%;
@@ -222,13 +222,14 @@ html {
 	margin: 4px auto;
 	margin-bottom: 4px;
 	display: block;
-	width: 30px;
+	width: 22px;
 	text-align: center;
 }
 
 
 .boton-nav{
 	border: 0;
+	width: 86px;
 	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -273,13 +274,16 @@ border: 0;
 
 
 #fireworks{
-	width: 110%;
-	margin-top: 28px;
+	position: relative;
+	left:1px;
+	top:15px;
+	width: 50%;
+	min-width: 220px;
 }
 
 #perdiste{
 	vertical-align: bottom;
-	margin-top: 15px;
+	margin: auto 10px ;
 	margin-bottom: 15px;
 	width: 14%;
 	min-width: 120px;

@@ -19,14 +19,22 @@ function crearTeclado(){
         /*Crear evento al hacer click en cada letra virtual*/ 
         
         ["touchstart","click"].forEach(function(e) {
-            
+        var a=[]  
             letra.addEventListener(e, function(event){
                 event.preventDefault();
                 this.classList.remove("letra-tecla");
                 this.classList.add("fadeOut2");
                 this.textContent="-";
-                console.log(letter);
-                compararLetra(letter); 
+                if (!a.includes(letter)){
+                    a.push(letter);
+                    compararLetra(letter);
+                }
+                else{
+                    console.log("repetido")
+                }
+               
+
+                 
             });
         });
     };
