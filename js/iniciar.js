@@ -8,8 +8,16 @@ var ayuda=document.getElementById("texto-ayuda")
 var areaNuevaPalabra=document.getElementById("nueva-palabra");
 var inputPalabra=document.getElementById("input-palabra")
 
+var entradaSound = document.getElementById("entrada-sound");
+var victoriaSound = document.getElementById("victoria-sound");
+var correctaSound = document.getElementById("correcta-sound");
+var erradaSound = document.getElementById("errada-sound");
+var fireworksSound = document.getElementById("fireworks-sound");
+var perdidoSound = document.getElementById("perdido-sound");
+var musicaSound = document.getElementById("musica-sound");
 
 
+musicaSound.play();
 
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
@@ -61,6 +69,8 @@ function iniciar(){
     letter=crearTeclado();
     aceptarTeclas(); 
     reiniciarParametros();
+    entradaSound.play();
+    
 }
 
 
@@ -81,11 +91,13 @@ home.onclick=mostrarBienvenida;
 
 ["touchstart","click"].forEach(function(e) {
     reload.addEventListener(e, function(){
-        iniciar();  
+        iniciar()
+        entradaSound.play();;  
     });
 
     botonAyuda.addEventListener(e, function(){
         areaAyuda.classList.remove("fadeOut");
+        correctaSound.play();
     });
 
     botonPalabra.addEventListener(e, function(){

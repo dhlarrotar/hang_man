@@ -15,14 +15,20 @@ function verificarTeclaOprimida(evt){
         aceptadosArr.push(letraOprimida);
         if (aceptados.length==1){
             var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase());
-
+            correcto=compararLetra(aceptados.toString().toUpperCase());
             if (letraTeclado){
                 letraTeclado.classList.remove("letra-tecla");
-                letraTeclado.classList.add("fadeOut2");
                 letraTeclado.textContent="-";
-            };
+                if (correcto){
+                    letraTeclado.classList.add("fadeOut2");
+                    correctaSound.play();
+                }
+                else{
+                    letraTeclado.classList.add("fadeOutBad")
+                    erradaSound.play();;
+                }
+            };   
 
-            compararLetra(aceptados.toString().toUpperCase());
         }
     }    
 }

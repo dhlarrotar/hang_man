@@ -23,11 +23,17 @@ function crearTeclado(){
             letra.addEventListener(e, function(event){
                 event.preventDefault();
                 this.classList.remove("letra-tecla");
-                this.classList.add("fadeOut2");
+               
                 this.textContent="-";
                 if (!a.includes(letter)){
                     a.push(letter);
-                    compararLetra(letter);
+                    correcto=compararLetra(letter);
+                    if (correcto){
+                        this.classList.add("fadeOut2");
+                    }
+                    else{
+                        this.classList.add("fadeOutBad");
+                    }
                 }
                 else{
                     console.log("repetido")

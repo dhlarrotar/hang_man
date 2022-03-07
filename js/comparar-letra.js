@@ -9,11 +9,12 @@ var perdiste = document.getElementById("perdiste");
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
-    
+    var correcto;
     if(i==5){
         var times=0
         /*i=5 indica que el jugador a perdido e inicia las animaciones respectivas*/
         perdiste.classList.remove("fadeOut");
+        perdidoSound.play();
         var idVar= setInterval(function(){
             hasPerdido();
             times++;
@@ -27,6 +28,9 @@ function compararLetra(letra){
             areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
             pantalla.classList.add("fadeOut")
             fireworks.classList.remove("fadeOut");
+            aplausos.classList.remove("fadeOut");
+            victoriaSound.play();
+            fireworksSound.play();
 
             ayuda.textContent= "";
 
@@ -38,7 +42,9 @@ function compararLetra(letra){
                     /* Aumentar contador de errores y dibujar parte respectiva*/
                     i++
                     letrasFallidas.push(letra)
-                    dibujarPartes(i-1,155,70,10,"white")
+                    dibujarPartes(i-1,155,70,10,"white");
+                    correcto=false;
+                    erradaSound.play();
                 }
                 else{
                     console.log("letra repetida")
@@ -48,12 +54,14 @@ function compararLetra(letra){
                 /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
                     for(let letter of letraPalabra){
                         letter.textContent=letra
+                        correcto=true
+                        correctaSound.play();
                         aciertos++        
                     }
                     
             }    
         }  
-
+        return correcto
     }
     
 }

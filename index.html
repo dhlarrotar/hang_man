@@ -26,7 +26,8 @@
 		</div> 
 		
 		<div class="fadeOut" id="area-juego">
-			
+			<img src="img/fireworks.gif" class="fadeOut" id="fireworks">
+			<img src="img/trofeo.png" class="fadeOut" id="aplausos">
 			<div class="area-dibujo">	
 				<nav class="botones-juego">
 					<button class="boton-nav" id="home"><img src="img/home.png" class="logo2" ><p>Menú</p></button>
@@ -38,7 +39,7 @@
 							
 				</nav>
 				<canvas class="dibujo" id="dibujo" height="250"></canvas>	
-				<img src="img/fireworks.gif" class="fadeOut" id="fireworks">
+				
 				<div class="area-palabra"></div>
 				<img src="img/perdiste.png" class="fadeOut" id="perdiste">
 				<div class="fadeOut" id="ayuda">
@@ -50,6 +51,15 @@
 			</div>
 		</div> 
 		
+
+		<audio src="audio/entrada.wav" id="entrada-sound"></audio>
+		<audio src="audio/victoria.wav" id="victoria-sound"></audio>
+		<audio src="audio/letra-correcta.wav" id="correcta-sound"></audio>
+		<audio src="audio/letra-errada.wav" id="errada-sound"></audio>
+		<audio src="audio/fireworks.mp3" id="fireworks-sound"></audio>
+		<audio src="audio/perdido.wav" id="perdido-sound"></audio>
+		<audio src="audio/musica-juego.wav" id="musica-sound"></audio>
+
 		<script src="js/dibujar-tablero.js"></script>
 		<script src="js/comparar-letra.js"></script>
 		<script src="js/dibujar-partes.js"></script>
