@@ -148,9 +148,7 @@ html {
 .letra{
 	font-size: 23px;
 	text-align: center;
-	background:	-webkit-linear-gradient(left, #0700b8 0%, #00ff88 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	color:#0700b8;
 }
 
 
@@ -188,14 +186,11 @@ html {
 }
 
 .letra-tecla{
-	display: flex;
 	font-size: 24px;
 	padding: 7px;
 	justify-content: center;
 	text-align: center;
-	background:	-webkit-linear-gradient(left, #0700b8 0%, #496cad 64%, #00ff88 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	color: #0700b8;
 }
 
 
@@ -257,10 +252,10 @@ border: 0;
 .fadeOut2{
 
 	transition: 0.7s;
-	min-width: 26px;
+	min-width: 24px;
 	border: 0; 
-	font-size: 0px;
-	min-height: 26px;
+	font-size: 24px !important;
+	min-height: 24px;
 	width: 6%;
 	margin: 6px;
 	margin-bottom: 2%;

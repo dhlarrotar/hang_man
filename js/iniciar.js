@@ -83,7 +83,11 @@ function iniciar(){
             if (aceptados.length==1){
                 console.log(aceptados)
                 var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase())  
-                if (letraTeclado){letraTeclado.classList.add("fadeOut2")};
+                if (letraTeclado){
+                    letraTeclado.classList.remove("letra-tecla");
+                    letraTeclado.classList.add("fadeOut2");
+                    letraTeclado.textContent="-";
+                };
                 compararLetra(aceptados.toString().toUpperCase());
             }
         }    
