@@ -2,18 +2,15 @@ var bienvenida = document.querySelector("#area-inicio");
 var areaJuego=document.querySelector("#area-juego");
 var iniciarJuego = document.querySelector("#iniciar");
 
-var cerrar=document.querySelector("#cerrar");				
-var teclado=document.getElementById("area-teclado");	
-var areaPalabra=document.querySelector(".area-palabra");
-var botonAyuda=document.getElementById("pista");
 var areaAyuda=document.getElementById("ayuda");
-var botonCerrar=document.getElementById("cerrar-ayuda");
-var areaNuevaPalabra=document.getElementById("nueva-palabra");
-var botonPalabra=document.getElementById("agregar-palabra");
-var inputPalabra=document.getElementById("input-palabra")
-var agregar=document.getElementById("agregar")
+var ayuda=document.getElementById("texto-ayuda")
 
-var aceptadosArr=[]
+var areaNuevaPalabra=document.getElementById("nueva-palabra");
+var inputPalabra=document.getElementById("input-palabra")
+
+
+
+
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
 
@@ -29,28 +26,20 @@ function mostrarBienvenida(){
 
 
 
-function crearTeclado(){
-    
-    var abcList ="abcdefghijklmnñopqrstuvwxyz";
-    var abc= abcList.toUpperCase();
-    var areaTeclado=document.querySelector("#area-teclado")
-   
-    for (let letter of abc){
-        var letraDiv = document.createElement("div");
-        var letra= document.createElement("p");
-        letraDiv.setAttribute("id", "tecla-"+letter.toUpperCase()); 
-        letra.textContent=letter; 
-        letraDiv.classList.add("area-tecla");
-        letra.classList.add("letra-tecla")
-        letraDiv.appendChild(letra)
-        areaTeclado.appendChild(letraDiv);
-        letraDiv.addEventListener ("click", function(){
-            this.classList.add("fadeOut2")
-            compararLetra(letter)
+/* Función para reiniciar los parámetros de verificación del juego y posiciones de animación*/
 
-        });
+function reiniciarParametros(){
+    areaAyuda.classList.add("fadeOut");
     
-    }
+    aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
+    letrasFallidas=[];   /* Arreglo con letras ingresadas que no pertenecen a la palabra secreta*/
+    aciertos=0;          /* Contador de aciertos para verificar si el jugador ganó*/
+    i=0;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
+
+    /* Posición inicial de animación*/
+    ymax=130;
+    ymovimiento= 70;
+    
 }
 
 
@@ -63,74 +52,44 @@ function iniciar(){
     dibujarTablero();
     palabraEscogida=mostrarLineas();
     letter=crearTeclado();
-    areaAyuda.classList.add("fadeOut");
-    aciertos=0;
-    a=[];
-    i=0;
-    ymax=130;
-    ymovimiento= 70;
-    aceptadosArr=[]
-
-        
-    document.onkeydown= function(evt){
-        evt = evt || window.event;
-        letraOprimida=evt.key;
-        var patronAceptados = /[a-zA-Z]/gi;
-        var aceptados1=new Set(letraOprimida.match(patronAceptados));
-        var aceptados=[...aceptados1]
-        if(!aceptadosArr.includes(aceptados.toString())){
-            aceptadosArr.push(letraOprimida)
-            if (aceptados.length==1){
-                console.log(aceptados)
-                var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase())  
-                if (letraTeclado){
-                    letraTeclado.classList.remove("letra-tecla");
-                    letraTeclado.classList.add("fadeOut2");
-                    letraTeclado.textContent="-";
-                };
-                compararLetra(aceptados.toString().toUpperCase());
-            }
-        }    
-
-    }
-
-
-
-
- 
+    aceptarTeclas(); 
+    reiniciarParametros();
 }
 
 
-iniciarJuego.onclick=iniciar
+/* Agregar evento "Click" a botones del juego*/
+
 var reload=document.getElementById("reload");
+var home=document.getElementById("home");
+var botonAyuda=document.getElementById("pista")
 
+var botonPalabra=document.getElementById("agregar-palabra");
+var agregar=document.getElementById("agregar")
 
+iniciarJuego.onclick=iniciar;
+
+home.onclick=mostrarBienvenida;
 
 
 
 ["touchstart","click"].forEach(function(e) {
     reload.addEventListener(e, function(){
-        iniciar();
-        
+        iniciar();  
     });
+
+    botonAyuda.addEventListener(e, function(){
+        areaAyuda.classList.remove("fadeOut");
+    });
+
+
 })
-
-
-botonAyuda.addEventListener("touchstart", function(event){
-    event.preventDefault();
-    areaAyuda.classList.remove("fadeOut");
-});
-
-botonAyuda.addEventListener("click", function(event){
-    event.preventDefault();
-    areaAyuda.classList.remove("fadeOut");
-});
 
 
 botonPalabra.addEventListener("click", function(event){
     event.preventDefault();
     areaNuevaPalabra.classList.remove("fadeOut");
 });
+
 
 agregar.addEventListener("click", function(event){
     event.preventDefault();
@@ -142,5 +101,3 @@ agregar.addEventListener("click", function(event){
 });
 
 
-var home=document.getElementById("home");
-home.onclick=mostrarBienvenida;

@@ -1,8 +1,12 @@
-# Hangman- Juego del ahorcado!
+# Hangman- ¡Juego del ahorcado!
 
 ## Descripción 📉
-Adivina la palabra secreta antes de quedar colgado.
+¡Adivina la palabra secreta antes de quedar colgado! Durante el juego puedes pedir una pista, volver a intentar e incluso agregar tu propia palabra al juego!
 
+
+<img src="img/captura1.png" height="400px" display="inline-block">
+<img src="img/captura2.png" height="400px" display="inline-block">
+<br><br>
 
 ## Construido con 🛠️
 
@@ -11,6 +15,7 @@ Adivina la palabra secreta antes de quedar colgado.
 
 ## Probar ahora 🚀
 
+<a href="https://dhlarrotar.github.io/hang_man/"> <img src="https://img.shields.io/website-up-down-green-red/http/monip.org.svg"> </a> 
 
 
 

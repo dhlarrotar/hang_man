@@ -1,26 +1,26 @@
 var pantalla = document.querySelector(".dibujo");
 var pincel = pantalla.getContext("2d");
 
+/*Arreglo con el orden de las partes a dibujar*/
+dibujar=["crearCabeza(x,y)",
+"crearCuerpo(x,y)",
+"crearBrazoDerecho(x,y)",
+"crearBrazoIzquierdo(x,y)",
+"crearPiernaDerecha(x,y)",
+"crearPiernaIzquierda(x,y)"]
 
-
-function crearPartes(x,y,radio, color){
+/*Función para dibujar las partes de acuerdo con el orden del arreglo y el contador de errores "i" */
+function dibujarPartes(i,x,y,radio, color){
     pincel.strokeStyle = gradient;
     pincel.lineJoin = "round"; 
     pincel.lineWidth = 2;
 	pincel.beginPath();
-    crearCuerpo(x,y);
-    crearBrazoDerecho(x,y);
-    crearBrazoIzquierdo(x,y);
-    crearPiernaDerecha(x,y);
-    crearPiernaIzquierda(x,y);
-    crearCabeza(x,y);
+    eval(dibujar[i])
     pincel.stroke();
 }	
 
 
-
-
-
+/*Función para dibujar persona completa*/
 
 function crearPersona(x,y,radio, color){
     pincel.strokeStyle = gradient;
@@ -37,32 +37,14 @@ function crearPersona(x,y,radio, color){
     pincel.stroke();
 }	
 
-function limpiarPantalla(){
-	pincel.clearRect(0,0,400,250);
-}
 
 
 
-dibujar=["crearCabeza(x,y)",
-"crearCuerpo(x,y)",
-"crearBrazoDerecho(x,y)",
-"crearBrazoIzquierdo(x,y)",
-"crearPiernaDerecha(x,y)",
-"crearPiernaIzquierda(x,y)"]
-
-
-function dibujarPartes(i,x,y,radio, color){
-    pincel.strokeStyle = gradient;
-    pincel.lineJoin = "round"; 
-    pincel.lineWidth = 2;
-	pincel.beginPath();
-    eval(dibujar[i])
-    pincel.stroke();
-}	
-
-
+/*Animación al perder el juego*/
+/* Posiciones iniciales*/
 var ymax=130;
 var ymovimiento= 70;
+
 
 function hasPerdido(){
 	if(ymovimiento==ymax) return;
@@ -79,7 +61,4 @@ function hasPerdido(){
     ayuda.textContent= "";
     
 }
-/*
-if(){setInterval(actualizarPantalla,8)};
-*/
 

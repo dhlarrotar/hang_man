@@ -1,8 +1,3 @@
-
-var a=[]
-var i=0
-var aciertos=0
-var ayuda=document.getElementById("texto-ayuda")
 var palabrasDict = {
     "elefante": "Soy un animal con trompa, orejas grandes y colmillos",
     "jirafa": " Soy un animal con cuello largo",
@@ -45,61 +40,3 @@ function mostrarLineas(){
     }  
     return palabraEscogida
 }
-
-
-
-
-
-
-
-function compararLetra(letra){
-   
-    var letraPalabra = document.querySelectorAll("#letra-"+letra);
-    
-    if(i==5){
-        var times=0
-        var idVar= setInterval(function(){
-            hasPerdido();
-            times++;
-            if (times==100){
-                clearInterval(idVar)
-            }        
-        },5)
-        
-    }
-
-    else{
-        
-        if(palabraEscogida.length-1==aciertos && i<5){
-            teclado.innerHTML="";
-            areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
-            ayuda.textContent= "";
-
-        }
-        else{
-            if (letraPalabra.length==0){
-                if(!a.includes(letra)){
-                    i++
-                    a.push(letra)
-                    dibujarPartes(i-1,155,70,10,"white")
-                }
-                else{
-                    console.log("repetido")
-                }
-            }
-            else {
-                
-                    for(let b of letraPalabra){
-                        b.textContent=letra
-                        aciertos++
-                        
-                    }
-                    
-            } console.log("aciertos"+aciertos)
-            console.log(palabraEscogida.length)
-        }   console.log(i+"i")
-
-    }
-    
-}
-
