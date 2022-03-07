@@ -32,7 +32,9 @@ function reiniciarParametros(){
     areaAyuda.classList.add("fadeOut");
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
-    letrasFallidas=[];   /* Arreglo con letras ingresadas que no pertenecen a la palabra secreta*/
+    
+    letrasFallidas=[];   /* Arreglo con letras ingresadas válidas que no pertenecen a la palabra secreta*/
+
     aciertos=0;          /* Contador de aciertos para verificar si el jugador ganó*/
     i=0;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
 
@@ -81,23 +83,18 @@ home.onclick=mostrarBienvenida;
         areaAyuda.classList.remove("fadeOut");
     });
 
-
+    botonPalabra.addEventListener(e, function(){
+        areaNuevaPalabra.classList.remove("fadeOut");
+    });
+    
+    agregar.addEventListener(e, function(){
+        areaNuevaPalabra.classList.add("fadeOut");
+        palabraNueva=inputPalabra.value;
+        palabrasDict[palabraNueva]="";
+        inputPalabra.value=""
+    });
 })
 
 
-botonPalabra.addEventListener("click", function(event){
-    event.preventDefault();
-    areaNuevaPalabra.classList.remove("fadeOut");
-});
-
-
-agregar.addEventListener("click", function(event){
-    event.preventDefault();
-    a
-    areaNuevaPalabra.classList.add("fadeOut");
-    palabraNueva=inputPalabra.value;
-    palabrasDict[palabraNueva]="";
-    inputPalabra.value=""
-});
 
 
