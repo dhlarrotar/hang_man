@@ -2,7 +2,7 @@
 	font-size: 38px;
 	font-weight: bold;
 	text-align: left;
-	background:	-webkit-linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);;
@@ -10,9 +10,9 @@
 
 }
 
-html, body {
+html {
 	height: 800px;
-	background:	-webkit-linear-gradient(90deg, #f1ecfd38 0%, #f0fff817 100%);
+	background:	-webkit-linear-gradient(90deg, #6963b628 0%, #2bb67517 100%);
   }
 
 
@@ -31,8 +31,9 @@ html, body {
 	width: 170px;
 	height: auto;
 	margin: auto 12%;
-	opacity: 0.7;
 }
+
+
 .bienvenida{
 	display: block;
 	margin:  0 auto;
@@ -67,7 +68,7 @@ html, body {
 		border: 3px solid #0700b8;
 		margin-top: 10px;
 		border: 0;
-		background:	-webkit-linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+		background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
@@ -85,7 +86,7 @@ html, body {
 		margin-top: 10px;
 		margin-bottom: 10%;
 		border: 0;
-		background:	-webkit-linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+		background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
@@ -122,12 +123,14 @@ html, body {
 .area-palabra{
 	margin-left: 3%;
 	margin-top: 3%;
-	width: 60%;
+	margin-bottom: 5%;
+	width: 90%;
 	height: 6%;
 	min-width: 250px;
 	max-width: 600px;
+	min-height: 25px;
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
 	background:	-webkit-linear-gradient(330deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -136,7 +139,7 @@ html, body {
 
 .area-letra{
 	display: inline-block;
-	width: 6%;
+	width: 4%;
 	height: 10%;
 	margin-top: 3%;
 	margin-left: 12px;
@@ -268,7 +271,7 @@ footer{
 	font-size: 16px;
 	margin-top: 12px;
 	display: block;
-	background:	-webkit-linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+	background:	-webkit-linear-gradient(330deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
