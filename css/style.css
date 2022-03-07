@@ -283,7 +283,7 @@ border: 0;
 
 #perdiste{
 	vertical-align: bottom;
-	margin: auto 10px ;
+	margin: auto auto;
 	margin-bottom: 15px;
 	width: 14%;
 	min-width: 120px;
