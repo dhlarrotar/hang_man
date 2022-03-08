@@ -42,12 +42,14 @@ function crearPersona(x,y,radio, color){
 
 /*Animación al perder el juego*/
 /* Posiciones iniciales*/
-var ymax=130;
+
 var ymovimiento= 70;
+var ymax=130;
 
 
 function hasPerdido(){
 	if(ymovimiento==ymax) return;
+    if(i!=6) return;
     limpiarPantalla();
     dibujarTablero();
 	xi = 155;
@@ -56,9 +58,5 @@ function hasPerdido(){
 	crearPersona(xi,yi,radio,"white")
     crearSoga(xi,yi);
 	ymovimiento++;
-    teclado.innerHTML="";
-    areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();
-    ayuda.textContent= "";
-    
 }
 

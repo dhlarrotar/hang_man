@@ -37,12 +37,8 @@ function verificarTeclaOprimida(evt){
 
 function aceptarTeclas(){
     document.onkeydown= function(evt){
-        if(evt.handled === false) return
-        evt.stopPropagation();
-        evt.preventDefault();
-        evt.handled = true;
         evt = evt || window.event;
-        letra=verificarTeclaOprimida(evt);
+        verificarTeclaOprimida(evt);
         check();
     }
 }

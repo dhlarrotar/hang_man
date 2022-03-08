@@ -36,15 +36,18 @@ function mostrarBienvenida(){
 /* Función para reiniciar los parámetros de verificación del juego y posiciones de animación*/
 
 function reiniciarParametros(){
+    teclado.innerHTML="";
+    areaPalabra.innerHTML="";
+    limpiarPantalla();
     areaAyuda.classList.add("fadeOut");
     pantalla.classList.remove("fadeOut")
     fireworks.classList.add("fadeOut");
     perdiste.classList.add("fadeOut");
     aplausos.classList.add("fadeOut");
-    palabra="";
+  
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
-    
+
     letrasFallidas=[];   /* Arreglo con letras ingresadas válidas que no pertenecen a la palabra secreta*/
 
     palabraFormada=[]; /*arreglo con las letras verificadas que si pertenecen a la palabra*/
@@ -68,15 +71,14 @@ function reiniciarParametros(){
 
 function iniciar(){
     
-    teclado.innerHTML="";
-    areaPalabra.innerHTML="";
+   
+    reiniciarParametros();
     borrarBienvenida();
-    limpiarPantalla()
     dibujarTablero();
     palabraEscogida=mostrarLineas();
     letter=crearTeclado();
     aceptarTeclas(); 
-    reiniciarParametros();
+    
     console.log(palabraEscogida.toUpperCase())
     palabra=[...palabraEscogida.toUpperCase()].sort();
     entradaSound.play();
@@ -106,11 +108,7 @@ home.onclick=mostrarBienvenida;
         entradaSound.play();  
     });
 
-    botonAyuda.addEventListener(e, function(){
-        areaAyuda.classList.remove("fadeOut");
-        correctaSound.play();
-    });
-
+    
     botonPalabra.addEventListener(e, function(){
         areaNuevaPalabra.classList.remove("fadeOut");
     });
@@ -122,15 +120,17 @@ home.onclick=mostrarBienvenida;
         inputPalabra.value=""
     });
 
-    areaAyuda.addEventListener(e,function(event){
-        if(event.handled === false) return
-        event.stopPropagation();
-        event.preventDefault();
-        event.handled = true;
-        areaAyuda.classList.add("fadeOut");
-    })
+ 
 })
 
 
+function mostrarAyuda(){
+    areaAyuda.classList.remove("fadeOut");
+}
 
+function borrarAyuda(){
+    areaAyuda.classList.add("fadeOut");
+}
 
+botonAyuda.onclick=mostrarAyuda;
+areaAyuda.onclick=borrarAyuda

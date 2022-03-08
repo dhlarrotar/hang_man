@@ -139,14 +139,16 @@ html {
 
 .letra-div{
 	display: inline-block;
-	width: 25px;
+	width: 20px;
 	height: auto;
 	margin-left: 10px;
+	text-align: center;
+	align-items: center;
 	
 }
 .area-letra{
 	display: inline-block;
-	width: 25px;
+	width: 20x;
 	height: 22px;
 	margin-top: 3%;
 	
@@ -164,7 +166,7 @@ html {
 .linea{
 	
 	height: 3.5px;
-	width: 25px;
+	width: 22px;
 
 	background:	-webkit-linear-gradient(left, #0700b8 0%, #496cad 64%, #00ff88 100%);
 	margin-top: 3%;
@@ -187,13 +189,12 @@ html {
 	border:1px solid #0700b8;
 	border-radius: 15 px;
 	margin:4px;
-	padding:2px;
-	width:33px;
-	height: 37px;
+	width:25px;
+	height: 27px;
 }
 
 .letra-tecla{
-	font-size: 20px;
+	font-size: 16px;
 	padding: 7px;
 	justify-content: center;
 	text-align: center;
@@ -298,7 +299,7 @@ border: 0;
 	background-color: #00f83e;
 	display: inline-block;
 	transition: 0.9s;
-	width: 35px;	
+	width: 27px;	
 	border: 0; 
 	color:#00f83e;
 	border-radius: 2px;
@@ -309,7 +310,7 @@ border: 0;
 .fadeOutBad{
 	display: inline-block;
 	transition: 0.9s;
-	width: 35px;
+	width: 27px;
 	border: 0; 
 	background-color: #ff0000;
 	border-radius: 2px;

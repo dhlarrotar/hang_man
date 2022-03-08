@@ -15,7 +15,6 @@ letrasPalabraFormadaFilter;
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
-    
     var correcto;
             if (letraPalabra.length==0){
                 /* Si no se encuentra ninguna letra en la palabra escogida que coincida con la letra ingresada, se cuenta como error*/
@@ -39,7 +38,7 @@ function compararLetra(letra){
                         letter.textContent=letra;
                         correcto=true
                         letter.classList.add("fadeOut2");
-                        setTimeout(function(){letter.classList.remove("fadeOut2")},180);
+                        setTimeout(function(){letter.classList.remove("fadeOut2")},200);
                         correctaSound.play();
                         aciertos++
                         palabraFormada.push(letter.textContent) ;
@@ -47,13 +46,6 @@ function compararLetra(letra){
 
                     }
                 }
-
-        
-        console.log("letrasFallidas"+ letrasFallidas);
-        console.log("aciertos "+aciertos);
-        console.log("i "+ i)
-        console.log("prueba "+palabraFormada);
-        console.log("x "+palabra)
         return correcto
         
     }
@@ -69,35 +61,34 @@ function check(){
     pf=palabraFormada.sort().toString().replaceAll(",","")
     letrasPalabraFilter=p.replace(/(.)(?=.*\1)/g, ""); // "abc"
     letrasPalabraFormadaFilter=pf.replace(/(.)(?=.*\1)/g, ""); // "abc"
-   if(i==6){
-       var times=0
-       /*i=5 indica que el jugador a perdido e inicia las animaciones respectivas*/
-
-       perdiste.classList.remove("fadeOut");
-       perdidoSound.play();
-       var idVar= setInterval(function(){
-           hasPerdido();
-
-           times++;
-           if (times==100){clearInterval(idVar)}},40);      
-   }
-   else{  
-       if(letrasPalabraFilter==letrasPalabraFormadaFilter && i<6){
-           console.log("victoria")
-           /* El jugador gana si no ha perdido (i<5) y si el número de aciertos coincide con el largo de la palabra*/
-           teclado.innerHTML="";
-           areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
-           pantalla.classList.add("fadeOut")
-           aplausos.classList.remove("fadeOut");
-           victoriaSound.play();
-
-           ayuda.textContent= "";
+    if(i==0 && palabraFormada.length==0)return
+    if(letrasPalabraFilter==letrasPalabraFormadaFilter && i<6){
+        console.log("victoria")
+        /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
+        teclado.innerHTML="";
+        areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
+        pantalla.classList.add("fadeOut")
+        aplausos.classList.remove("fadeOut");
+        victoriaSound.play();
+        ayuda.textContent= "";
            
-       }
-
-
-    
     }
+
+    if(i==6){
+        /*i=6 indica que el jugador a perdido e inicia las animaciones respectivas*/
+        perdiste.classList.remove("fadeOut");
+        perdidoSound.play();
+        teclado.innerHTML="";
+        areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();
+        ayuda.textContent= "";
+        
+        var idVar= setInterval(hasPerdido,35);
+    } 
+    
+    
     console.log(letrasPalabraFilter)
     console.log(letrasPalabraFormadaFilter)
+    console.log(i)
 }
+
+

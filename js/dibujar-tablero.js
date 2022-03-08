@@ -16,6 +16,7 @@ gradient.addColorStop("0.95", "#00ff88");
 /* Función para dibujo inicial del tablero*/
 
 function dibujarTablero(){
+    limpiarPantalla();
     pincel.strokeStyle = gradient;
     pincel.lineJoin = "round"; 
     pincel.lineWidth = 2;
