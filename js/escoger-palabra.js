@@ -26,16 +26,20 @@ function mostrarLineas(){
     palabraEscogida=escogerPalabra();
     var areaPalabra=document.querySelector(".area-palabra")
     for (let letter of palabraEscogida){
+        var letraDivDiv = document.createElement("div");
         var letraDiv = document.createElement("div");
         var linea = document.createElement("div");  
         var letra= document.createElement("p");
         letra.setAttribute("id", "letra-"+letter.toUpperCase()); 
         letraDiv.classList.add("area-letra");
+        letraDivDiv.classList.add("letra-div");
+        letraDivDiv.setAttribute("id", "letraDivDiv-"+letter.toUpperCase()); 
         linea.classList.add("linea")
         letra.classList.add("letra")
         letraDiv.appendChild(letra)
-        letraDiv.appendChild(linea)
-        areaPalabra.appendChild(letraDiv);
+        letraDivDiv.appendChild(letraDiv)
+        letraDivDiv.appendChild(linea)
+        areaPalabra.appendChild(letraDivDiv);
 
     }  
     return palabraEscogida

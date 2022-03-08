@@ -41,12 +41,17 @@ function reiniciarParametros(){
     fireworks.classList.add("fadeOut");
     perdiste.classList.add("fadeOut");
     aplausos.classList.add("fadeOut");
+    palabra="";
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
     
     letrasFallidas=[];   /* Arreglo con letras ingresadas válidas que no pertenecen a la palabra secreta*/
 
     palabraFormada=[]; /*arreglo con las letras verificadas que si pertenecen a la palabra*/
+    palabra=[]
+
+    letrasPalabraFilter="";
+    letrasPalabraFormadaFilter=" ";
 
     aciertos=0;          /* Contador de aciertos para verificar si el jugador ganó*/
     i=0;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
@@ -62,6 +67,7 @@ function reiniciarParametros(){
 
 
 function iniciar(){
+    
     teclado.innerHTML="";
     areaPalabra.innerHTML="";
     borrarBienvenida();
@@ -72,7 +78,7 @@ function iniciar(){
     aceptarTeclas(); 
     reiniciarParametros();
     console.log(palabraEscogida.toUpperCase())
-    x=[...palabraEscogida.toUpperCase()].sort();
+    palabra=[...palabraEscogida.toUpperCase()].sort();
     entradaSound.play();
    
     
@@ -115,6 +121,14 @@ home.onclick=mostrarBienvenida;
         palabrasDict[palabraNueva]="";
         inputPalabra.value=""
     });
+
+    areaAyuda.addEventListener(e,function(event){
+        if(event.handled === false) return
+        event.stopPropagation();
+        event.preventDefault();
+        event.handled = true;
+        areaAyuda.classList.add("fadeOut");
+    })
 })
 
 

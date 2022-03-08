@@ -18,13 +18,11 @@ function verificarTeclaOprimida(evt){
             correcto=compararLetra(aceptados.toString().toUpperCase());
             if (letraTeclado){
                 letraTeclado.classList.remove("letra-tecla");
-                if (correcto){
-                    correctaSound.play();
+                if (correcto){          
                     letraTeclado.classList.add("fadeOut2");
                     
                 }
                 else{
-                    erradaSound.play();
                     letraTeclado.classList.add("fadeOutBad")
                     
                 }
@@ -39,6 +37,10 @@ function verificarTeclaOprimida(evt){
 
 function aceptarTeclas(){
     document.onkeydown= function(evt){
+        if(evt.handled === false) return
+        evt.stopPropagation();
+        evt.preventDefault();
+        evt.handled = true;
         evt = evt || window.event;
         letra=verificarTeclaOprimida(evt);
         check();

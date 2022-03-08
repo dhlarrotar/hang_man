@@ -1,4 +1,4 @@
-
+var a=[]
 function crearTeclado(){
     
     var abcList ="abcdefghijklmnñopqrstuvwxyz";
@@ -19,25 +19,24 @@ function crearTeclado(){
         areaTeclado.appendChild(letraDiv);
 
         /*Crear evento al hacer click en cada letra virtual*/ 
-        
+       
         ["touchstart","click"].forEach(function(e) {
-        var a=[]  
-            
-            letra.addEventListener(e, function(event){
+     
+            letraDiv.addEventListener(e, function(event){
+                if(event.handled === false) return
+                event.stopPropagation();
                 event.preventDefault();
-                
+                event.handled = true;
                 this.classList.remove("letra-tecla");
                 if (!a.includes(letter)){
                     a.push(letter);
                     correcto=compararLetra(letter);
                     if (correcto){
                         check()
-                        correctaSound.play()
                         this.classList.add("fadeOut2");
                         
                     }
                     else{
-                        erradaSound.play()
                         this.classList.add("fadeOutBad");
                         check()
                         
