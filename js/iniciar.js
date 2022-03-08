@@ -17,7 +17,6 @@ var perdidoSound = document.getElementById("perdido-sound");
 var musicaSound = document.getElementById("musica-sound");
 
 
-musicaSound.play();
 
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
@@ -41,10 +40,13 @@ function reiniciarParametros(){
     pantalla.classList.remove("fadeOut")
     fireworks.classList.add("fadeOut");
     perdiste.classList.add("fadeOut");
+    aplausos.classList.add("fadeOut");
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
     
     letrasFallidas=[];   /* Arreglo con letras ingresadas válidas que no pertenecen a la palabra secreta*/
+
+    palabraFormada=[]; /*arreglo con las letras verificadas que si pertenecen a la palabra*/
 
     aciertos=0;          /* Contador de aciertos para verificar si el jugador ganó*/
     i=0;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
@@ -69,7 +71,10 @@ function iniciar(){
     letter=crearTeclado();
     aceptarTeclas(); 
     reiniciarParametros();
+    console.log(palabraEscogida.toUpperCase())
+    x=[...palabraEscogida.toUpperCase()].sort();
     entradaSound.play();
+   
     
 }
 
@@ -92,7 +97,7 @@ home.onclick=mostrarBienvenida;
 ["touchstart","click"].forEach(function(e) {
     reload.addEventListener(e, function(){
         iniciar()
-        entradaSound.play();;  
+        entradaSound.play();  
     });
 
     botonAyuda.addEventListener(e, function(){

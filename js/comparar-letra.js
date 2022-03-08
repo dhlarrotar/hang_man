@@ -1,40 +1,46 @@
 var letrasFallidas=[];   /* Arreglo con letras ingresadas que no pertenecen a la palabra secreta*/
-var aciertos=0;          /* Contador de aciertos para verificar si el jugador ganó*/
-var i=0;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
+var aciertos          /* Contador de aciertos para verificar si el jugador ganó*/
+var i;                 /* Contador de errores para seleccionar las partes del cuerpo a dibujar*/
 
 var fireworks = document.getElementById("fireworks");
 var perdiste = document.getElementById("perdiste");
+var palabraFormada=[];
+var x;
+var resultDict;
+
 
 
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
     var correcto;
-    if(i==5){
+    if(i==6){
         var times=0
         /*i=5 indica que el jugador a perdido e inicia las animaciones respectivas*/
+        check()
         perdiste.classList.remove("fadeOut");
         perdidoSound.play();
         var idVar= setInterval(function(){
             hasPerdido();
+
             times++;
             if (times==100){clearInterval(idVar)}},5);      
     }
     else{  
-        if(palabraEscogida.length-1==aciertos && i<5){
+        if(palabraFormada.sort().toString()==x && i<6){
+            console.log("victoria")
             /* El jugador gana si no ha perdido (i<5) y si el número de aciertos coincide con el largo de la palabra*/
             teclado.innerHTML="";
-            
+            check()
             areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
             pantalla.classList.add("fadeOut")
-            fireworks.classList.remove("fadeOut");
             aplausos.classList.remove("fadeOut");
             victoriaSound.play();
-            fireworksSound.play();
 
             ayuda.textContent= "";
-
+            
         }
+      
         else{
             if (letraPalabra.length==0){
                 /* Si no se encuentra ninguna letra en la palabra escogida que coincida con la letra ingresada, se cuenta como error*/
@@ -51,18 +57,69 @@ function compararLetra(letra){
                 }
             }
             else {
+                if(x.includes(letra)){
                 /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
                     for(let letter of letraPalabra){
-                        letter.textContent=letra
+                        letter.textContent=letra;
                         correcto=true
                         correctaSound.play();
-                        aciertos++        
+                        aciertos++
+                        palabraFormada.push(letter.textContent)        
                     }
-                    
+                }
             }    
-        }  
+        }
+        
+
+
+
+
+        
+        
+        console.log("letrasFallidas"+ letrasFallidas);
+        console.log("aciertos "+aciertos);
+        console.log("i "+ i)
+        console.log("prueba "+palabraFormada);
+        console.log("x "+x)
         return correcto
+        
     }
     
 }
 
+
+
+
+function check(){
+    /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
+
+   if(i==6){
+       var times=0
+       /*i=5 indica que el jugador a perdido e inicia las animaciones respectivas*/
+
+       perdiste.classList.remove("fadeOut");
+       perdidoSound.play();
+       var idVar= setInterval(function(){
+           hasPerdido();
+
+           times++;
+           if (times==100){clearInterval(idVar)}},5);      
+   }
+   else{  
+       if(palabraFormada.sort().toString()==x && i<6){
+           console.log("victoria")
+           /* El jugador gana si no ha perdido (i<5) y si el número de aciertos coincide con el largo de la palabra*/
+           teclado.innerHTML="";
+           
+           areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
+           pantalla.classList.add("fadeOut")
+           aplausos.classList.remove("fadeOut");
+           victoriaSound.play();
+
+           ayuda.textContent= "";
+           
+       }
+    
+    }
+   
+}

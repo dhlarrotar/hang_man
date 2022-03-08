@@ -67,7 +67,7 @@ html {
 		border-radius: 24px;
 		border: 3px solid #0700b8;
 		margin-top: 10px;
-		border: 0;
+		border: 1px solid #0700b8;
 		background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -85,7 +85,7 @@ html {
 		border: 3px solid #0700b8;
 		margin-top: 10px;
 		margin-bottom: 10%;
-		border: 0;
+		border: 1px solid #0700b8;
 		background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -178,11 +178,12 @@ html {
 .area-tecla{
 	display: inline-flex;
 	vertical-align: middle;
+	width: 20px;
 	padding: 7px;
 }
 
 .letra-tecla{
-	font-size: 24px;
+	font-size: 100%;
 	padding: 7px;
 	justify-content: center;
 	text-align: center;
@@ -233,6 +234,9 @@ html {
 	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	border: 1px solid #0700b8;
+	border-radius: 24px;
+	margin-bottom: 5px;
 	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
 	font-size: 13px;
 
@@ -262,14 +266,9 @@ border: 0;
 	background-color: #00f83e;
 	display: inline-block;
 	transition: 0.9s;
-	min-width: 24px;
-	min-height: 24px;
-	max-width: 80px;
+	width: 20px;	
 	border: 0; 
-	font-size: 24px !important;
-	padding: 7px;
-	
-	color:#0700b8;
+	color:#00f83e;
 	border-radius: 20px;
 	opacity:0;
 }
@@ -278,15 +277,11 @@ border: 0;
 .fadeOutBad{
 	display: inline-block;
 	transition: 0.9s;
-	min-width: 24px;
-	min-height: 24px;
-	max-width: 80px;
+	width: 20px;
 	border: 0; 
-	font-size: 24px !important;
-	padding: 7px;
 	background-color: #ff0000;
 	border-radius: 20px;
-	color:#0700b8;
+	color:#ff0000;
 	opacity:0;
 }
 
@@ -300,9 +295,10 @@ border: 0;
 }
 
 #aplausos{
+	margin-top: 18%;
 	margin:8%;
 	width: 21%;
-	min-width: 70px;
+	min-width: 170px;
 }
 
 

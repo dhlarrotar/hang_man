@@ -10,7 +10,7 @@ function verificarTeclaOprimida(evt){
     var patronAceptados = /[a-zA-Z]/gi;
     var aceptados1=new Set(letraOprimida.match(patronAceptados));
     var aceptados=[...aceptados1]
-      
+    
     if(!aceptadosArr.includes(aceptados.toString())){
         aceptadosArr.push(letraOprimida);
         if (aceptados.length==1){
@@ -18,14 +18,15 @@ function verificarTeclaOprimida(evt){
             correcto=compararLetra(aceptados.toString().toUpperCase());
             if (letraTeclado){
                 letraTeclado.classList.remove("letra-tecla");
-                letraTeclado.textContent="-";
                 if (correcto){
-                    letraTeclado.classList.add("fadeOut2");
                     correctaSound.play();
+                    letraTeclado.classList.add("fadeOut2");
+                    
                 }
                 else{
+                    erradaSound.play();
                     letraTeclado.classList.add("fadeOutBad")
-                    erradaSound.play();;
+                    
                 }
             };   
 
@@ -39,6 +40,7 @@ function verificarTeclaOprimida(evt){
 function aceptarTeclas(){
     document.onkeydown= function(evt){
         evt = evt || window.event;
-        verificarTeclaOprimida(evt);
+        letra=verificarTeclaOprimida(evt);
+        check();
     }
 }
