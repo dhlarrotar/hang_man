@@ -15,6 +15,10 @@ letrasPalabraFormadaFilter;
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
+    count=0
+    for (let a of palabra){if (a==letra){count++;}
+    if (count>=2){bonuSound.play();}
+    }
     var correcto;
             if (letraPalabra.length==0){
                 /* Si no se encuentra ninguna letra en la palabra escogida que coincida con la letra ingresada, se cuenta como error*/

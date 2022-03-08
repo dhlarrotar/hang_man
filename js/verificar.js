@@ -20,6 +20,7 @@ function verificarTeclaOprimida(evt){
                 letraTeclado.classList.remove("letra-tecla");
                 if (correcto){          
                     letraTeclado.classList.add("fadeOut2");
+                    correctaSound.play();
                     
                 }
                 else{

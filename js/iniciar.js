@@ -14,7 +14,7 @@ var correctaSound = document.getElementById("correcta-sound");
 var erradaSound = document.getElementById("errada-sound");
 var fireworksSound = document.getElementById("fireworks-sound");
 var perdidoSound = document.getElementById("perdido-sound");
-var musicaSound = document.getElementById("musica-sound");
+var bonuSound = document.getElementById("musica-sound");
 
 
 

@@ -6,7 +6,7 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);;
-	margin-top: 7%
+	margin-top: 10%
 
 }
 
@@ -189,13 +189,16 @@ html {
 	border:1px solid #0700b8;
 	border-radius: 15 px;
 	margin:4px;
-	width:25px;
-	height: 27px;
+	width:32px;
+	height: 35px;
+	text-align: center;
+	align-items: center;
+	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
 }
 
 .letra-tecla{
-	font-size: 16px;
-	padding: 7px;
+	margin-left: 22%;
+	font-size: 21px;
 	justify-content: center;
 	text-align: center;
 	color: #0700b8;
@@ -299,7 +302,7 @@ border: 0;
 	background-color: #00f83e;
 	display: inline-block;
 	transition: 0.9s;
-	width: 27px;	
+	width: 33.3px;	
 	border: 0; 
 	color:#00f83e;
 	border-radius: 2px;
@@ -310,7 +313,7 @@ border: 0;
 .fadeOutBad{
 	display: inline-block;
 	transition: 0.9s;
-	width: 27px;
+	width: 33.3px;
 	border: 0; 
 	background-color: #ff0000;
 	border-radius: 2px;
@@ -350,6 +353,9 @@ border: 0;
 }
 
 footer{
+	position: absolute;
+	left:8px;
+	bottom: 8px;
 	width: 90%;
 	font-size: 16px;
 	margin-top: 32px;
