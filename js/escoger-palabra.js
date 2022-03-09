@@ -1,12 +1,9 @@
-var palabrasUsadas
-
-if(palabrasUsadas.length==palabrasDict.length){palabrasUsadas=[]}
-
+palabrasUsadas=[]
 
 var palabrasDict = {
-    "elefante": "Soy un animal con trompa, orejas grandes y colmillos",
-    "jirafa": " Soy un animal con cuello largo",
-    "murcielago": "Soy un animal nocturno y me gustan las cuevas",
+    "elefante": "Tengo trompa, orejas grandes y colmillos",
+    "jirafa": " Tengo cuello largo",
+    "murcielago": "Me me gustan las cuevas y la oscuridad",
     "abeja": "Me encantan las flores y produzco miel",
     "perro":"Soy el mejor amigo del hombre",
     "pulpo": "Tengo tentáculos",
@@ -20,14 +17,15 @@ function escogerPalabra(){
     listaPalabras=Object.keys(palabrasDict);
     listaValores=Object.values(palabrasDict);
     indice=Math.round(Math.random()*(listaPalabras.length-1)); 
-    for(index==0;index==listaPalabras.length;index++)
+    var lista2=listaPalabras;
     if (!palabrasUsadas.includes(indice)){
         palabrasUsadas.push(indice);
+        index= indice
     }
     else{
-        indice=Math.round(Math.random()*(listaPalabras.length-1)); 
+        index=Math.round(Math.random()*(listaPalabras.length-1)); 
     }        
-    palabraEscogida=listaPalabras[indice];
+    palabraEscogida=listaPalabras[index];
     ayudaPalabra=listaValores[indice];
     ayuda.textContent= ayudaPalabra;
     return palabraEscogida
