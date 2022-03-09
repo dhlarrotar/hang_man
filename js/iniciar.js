@@ -32,7 +32,6 @@ function mostrarBienvenida(){
 }
 
 
-
 /* Función para reiniciar los parámetros de verificación del juego y posiciones de animación*/
 
 function reiniciarParametros(){
@@ -51,7 +50,7 @@ function reiniciarParametros(){
     letrasFallidas=[];   /* Arreglo con letras ingresadas válidas que no pertenecen a la palabra secreta*/
 
     palabraFormada=[]; /*arreglo con las letras verificadas que si pertenecen a la palabra*/
-    palabra=[]
+    palabra=[];
 
     letrasPalabraFilter="";
     letrasPalabraFormadaFilter=" ";

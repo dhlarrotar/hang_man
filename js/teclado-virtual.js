@@ -23,6 +23,7 @@ function crearTeclado(){
         ["touchstart","click"].forEach(function(e) {
 
             letraDiv.addEventListener(e, function(event){              
+                if (palabra.length==0) return
                 event.preventDefault();
                 this.classList.remove("letra-tecla");
                 correcto=compararLetra(letter);

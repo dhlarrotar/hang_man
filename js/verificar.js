@@ -12,6 +12,7 @@ function verificarTeclaOprimida(evt){
     var aceptados=[...aceptados1]
     
     if(!aceptadosArr.includes(aceptados.toString())){
+        if (palabra.length==0) return
         aceptadosArr.push(letraOprimida);
         if (aceptados.length==1){
             var letraTeclado = document.getElementById("tecla-"+aceptados.toString().toUpperCase());

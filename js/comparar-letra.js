@@ -61,6 +61,7 @@ function compararLetra(letra){
 
 function check(){
     /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
+    if (palabra.length==0) return
     p=palabra.toString().replaceAll(",","")
     pf=palabraFormada.sort().toString().replaceAll(",","")
     letrasPalabraFilter=p.replace(/(.)(?=.*\1)/g, ""); // "abc"
@@ -75,6 +76,7 @@ function check(){
         aplausos.classList.remove("fadeOut");
         victoriaSound.play();
         ayuda.textContent= "";
+        palabra=[];
            
     }
 
@@ -85,6 +87,7 @@ function check(){
         teclado.innerHTML="";
         areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();
         ayuda.textContent= "";
+        palabra=[];
         
         var idVar= setInterval(hasPerdido,35);
     } 
