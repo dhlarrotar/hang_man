@@ -17,7 +17,6 @@ function escogerPalabra(){
     listaPalabras=Object.keys(palabrasDict);
     listaValores=Object.values(palabrasDict);
     indice=Math.round(Math.random()*(listaPalabras.length-1)); 
-    var lista2=listaPalabras;
     if (!palabrasUsadas.includes(indice)){
         palabrasUsadas.push(indice);
         index= indice
@@ -26,7 +25,7 @@ function escogerPalabra(){
         index=Math.round(Math.random()*(listaPalabras.length-1)); 
     }        
     palabraEscogida=listaPalabras[index];
-    ayudaPalabra=listaValores[indice];
+    ayudaPalabra=listaValores[index];
     ayuda.textContent= ayudaPalabra;
     return palabraEscogida
     

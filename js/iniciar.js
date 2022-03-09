@@ -43,7 +43,8 @@ function reiniciarParametros(){
     fireworks.classList.add("fadeOut");
     perdiste.classList.add("fadeOut");
     aplausos.classList.add("fadeOut");
-  
+    
+    ayuda.textContent= ""
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
 
