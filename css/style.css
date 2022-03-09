@@ -1,6 +1,7 @@
 
 html{
 	height: 100%;
+	min-height:700px;
 	background:	-webkit-linear-gradient(90deg, #6963b628 0%, #2bb67517 100%);
   }
 
@@ -90,7 +91,7 @@ html{
 		margin-top: 10px;
 		margin-bottom: 10%;
 		border: 1px solid #0700b8;
-		background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
+		background:	-webkit-linear-gradient(72deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
@@ -337,8 +338,7 @@ border: 0;
 #aplausos{
 	position: relative;
 	left:5%;
-	top:6%;
-	margin-top: 300px;
+	top:10%;
 	margin:30px;
 	width: 21%;
 	min-width: 170px;

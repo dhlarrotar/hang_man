@@ -1,3 +1,8 @@
+var palabrasUsadas
+
+if(palabrasUsadas.length==palabrasDict.length){palabrasUsadas=[]}
+
+
 var palabrasDict = {
     "elefante": "Soy un animal con trompa, orejas grandes y colmillos",
     "jirafa": " Soy un animal con cuello largo",
@@ -15,10 +20,19 @@ function escogerPalabra(){
     listaPalabras=Object.keys(palabrasDict);
     listaValores=Object.values(palabrasDict);
     indice=Math.round(Math.random()*(listaPalabras.length-1)); 
+    for(index==0;index==listaPalabras.length;index++)
+    if (!palabrasUsadas.includes(indice)){
+        palabrasUsadas.push(indice);
+    }
+    else{
+        indice=Math.round(Math.random()*(listaPalabras.length-1)); 
+    }        
     palabraEscogida=listaPalabras[indice];
     ayudaPalabra=listaValores[indice];
     ayuda.textContent= ayudaPalabra;
     return palabraEscogida
+    
+    
 }
 
 
