@@ -116,20 +116,21 @@ html{
 	width: 96%;
 	height: 94%;
 	display: block;
+	
 
 }
 
 #sarea{
 	display: inline-block;
-	width: 70%;
-	min-width: 700px;
+	width: 90%;
 	margin-top: 12px;
+	text-align: center;
 }
 
 .dibujo{
 	margin-left: 5%;
-	width: fit-content;
-	height: 40%;
+	width: auto;
+	height: 45%;
 	display: inline-block;
 	image-rendering: optimizeQuality;
 	overflow: visible;
@@ -256,21 +257,19 @@ html{
 	margin: 4px auto;
 	margin-bottom: 3px;
 	display: block;
-	width: 32px;
+	width: 42px;
 	text-align: center;
 }
 
 
 .boton-nav{
 	border: 0;
-	width: 86px;
+	width: 76px;
 	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	border: 1px solid #0700b8;
 	border-radius: 12px;
 	margin-bottom: 1px;
-	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
 	font-size: 18px;
 	text-align: center;
 
