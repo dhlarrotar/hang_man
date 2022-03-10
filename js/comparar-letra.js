@@ -7,8 +7,8 @@ var perdiste = document.getElementById("perdiste");
 
 var palabra;
 var palabraFormada=[];
-letrasPalabraFilter;
-letrasPalabraFormadaFilter;
+var letrasPalabraFilter;
+var letrasPalabraFormadaFilter;
 
 
 
@@ -91,11 +91,6 @@ function check(){
         
         var idVar= setInterval(hasPerdido,35);
     } 
-    
-    
-    console.log(letrasPalabraFilter)
-    console.log(letrasPalabraFormadaFilter)
-    console.log(i)
 }
 
 

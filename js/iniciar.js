@@ -78,8 +78,6 @@ function iniciar(){
     palabraEscogida=mostrarLineas();
     letter=crearTeclado();
     aceptarTeclas(); 
-    
-    console.log(palabraEscogida.toUpperCase())
     palabra=[...palabraEscogida.toUpperCase()].sort();
     entradaSound.play();
    
