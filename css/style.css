@@ -68,8 +68,8 @@ html{
 		margin-left: 10px;
 		background: none;
 		align-items: center;
-		padding: 4%;
-		font-size: 25px;
+		padding: 6%;
+		font-size: 28px;
 		/* Dark blue/dark-blue-300 */
 		border-radius: 12px;
 		border: 3px solid #0700b8;
@@ -89,8 +89,8 @@ html{
 		margin-left: 10px;
 		background: none;
 		align-items: center;
-		padding: 4%;
-		font-size: 22px;
+		padding: 7%;
+		font-size: 28px;
 		/* Dark blue/dark-blue-300 */
 		border-radius: 12px;
 		border: 3px solid #0700b8;
@@ -107,22 +107,28 @@ html{
 #area-juego{
 	width: 98%;
 	height: 90%;
-	margin: 0 auto;
-	justify-content: center;
+	margin: 0;
 }
 
 
 .area-dibujo{
 	margin-top: 1%;
-	width: 90%;
-	height: 96%;
+	width: 96%;
+	height: 94%;
 	display: block;
 
 }
 
+#sarea{
+	display: inline-block;
+	width: 70%;
+	min-width: 700px;
+	margin-top: 12px;
+}
+
 .dibujo{
 	margin-left: 5%;
-	width: auto;
+	width: fit-content;
 	height: 40%;
 	display: inline-block;
 	image-rendering: optimizeQuality;
@@ -133,7 +139,6 @@ html{
 
 .area-palabra{
 	margin-left: 2%;
-	margin-top: 10%;
 	margin-bottom: 7%;
 	height: 10%;
 	min-width: 250px;

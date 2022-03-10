@@ -3,7 +3,7 @@ var pincel = pantalla.getContext("2d");
 var iniciarJuego = document.querySelector("#iniciar");		
 
 function limpiarPantalla(){
-    pincel.clearRect(0,0,400,250);
+    pincel.clearRect(0,0,200,250);
 }
 
 /* Gradiente de color para dibujar*/
