@@ -155,7 +155,7 @@ html{
 
 
 .letra-div{
-	z-index: 2;
+	z-index: 30;
 	display: inline-block;
 	width: 20px;
 	height: auto;
