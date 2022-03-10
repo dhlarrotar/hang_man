@@ -37,7 +37,7 @@ function mostrarLineas(){
     palabraEscogida=escogerPalabra();
     var areaPalabra=document.querySelector(".area-palabra")
     for (let letter of palabraEscogida){
-        var letraDivDiv = document.createElement("p");
+        var letraDivDiv = document.createElement("h1");
         var letraDiv = document.createElement("div");
         var linea = document.createElement("div");  
         var letra= document.createElement("p");

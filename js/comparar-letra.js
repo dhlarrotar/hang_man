@@ -39,7 +39,7 @@ function compararLetra(letra){
                 if(palabra.includes(letra)){
                 /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
                     for(let letter of letraPalabra){
-                        letter.innerHTML=letra;
+                        letter=letra;
                         correcto=true
                         letter.classList.add("fadeOut2");
                         setTimeout(function(){letter.classList.remove("fadeOut2")},200);
