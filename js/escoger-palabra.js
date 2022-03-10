@@ -51,7 +51,6 @@ function mostrarLineas(){
         letraDivDiv.appendChild(letraDiv)
         letraDivDiv.appendChild(linea)
         areaPalabra.appendChild(letraDivDiv);
-
     }  
     return palabraEscogida
 }

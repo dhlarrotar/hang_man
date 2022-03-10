@@ -14,7 +14,7 @@ var letrasPalabraFormadaFilter;
 
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
-    var letraPalabra = document.querySelectorAll("#letra-"+letra);
+    var letraPalabra = document.querySelectorAll("#letraDivDiv-"+letra);
     count=0
     for (let a of palabra){if (a==letra){count++;}
     if (count>=2){bonuSound.play();}
@@ -39,7 +39,7 @@ function compararLetra(letra){
                 if(palabra.includes(letra)){
                 /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
                     for(let letter of letraPalabra){
-                        letter.textContent=letra;
+                        letter.innerHTML=letra;
                         correcto=true
                         letter.classList.add("fadeOut2");
                         setTimeout(function(){letter.classList.remove("fadeOut2")},200);
