@@ -249,7 +249,7 @@ html{
 
 .logo2{
 	margin: 4px auto;
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 	display: block;
 	width: 32px;
 	text-align: center;
@@ -264,19 +264,12 @@ html{
 	-webkit-text-fill-color: transparent;
 	border: 1px solid #0700b8;
 	border-radius: 12px;
-	margin-bottom: 10px;
+	margin-bottom: 1px;
 	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
-	font-size: 14px;
+	font-size: 18px;
+	text-align: center;
 
 }
-
-
-
-#cerrar-ayuda{
-background: none;
-border: 0;
-}
-
 
 #ayuda{
 	position:absolute;
