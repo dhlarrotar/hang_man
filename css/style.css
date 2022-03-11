@@ -56,11 +56,6 @@ html{
 }
 
 
-.text1{
- z-index: 4;
-}
-
-
 #iniciar{
 		/* Auto layout */
 		z-index: 1;
@@ -142,7 +137,7 @@ html{
 	margin-top: 4%;
 	margin-bottom: 14%;
 	height: 10%;
-	min-width: 250px;
+	min-width: 300px;
 	max-width: 600px;
 	min-height: 25px;
 	display: inline-block;
@@ -154,7 +149,8 @@ html{
 }
 
 .letra{
-	z-index: 5;
+	z-index: 10;
+	display:  inline-flex;
 	font-size: 20px;
 	text-align: center;
 	color:#0700b8;
@@ -165,7 +161,7 @@ html{
 .letra-div{
 	z-index: 1;
 	display: inline-block;
-	width: 20px;
+	width: 17px;
 	height: auto;
 	margin-left: 10px;
 	text-align: center;
@@ -176,7 +172,7 @@ html{
 .area-letra{
 	z-index: 3;
 	display: inline-block;
-	width: 20x;
+	width: 17x;
 	height: 22px;
 	margin-top: 3%;
 	
@@ -188,7 +184,7 @@ html{
 .linea{
 	
 	height: 3.5px;
-	width: 22px;
+	width: 19px;
 
 	background:	-webkit-linear-gradient(left, #0700b8 0%, #496cad 64%, #00ff88 100%);
 	margin-top: 3%;
@@ -198,7 +194,7 @@ html{
 
 
 #area-teclado{
-	margin-left: 5%;
+	margin: 2%;
 	display: inline-block;
 	width: 100%;
 }
@@ -267,7 +263,7 @@ html{
 .boton-nav{
 	border: 0;
 	width: 66px;
-	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
+	background:	-webkit-linear-gradient(72deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	
@@ -315,7 +311,7 @@ html{
 	background-color: #00f83e;
 	display: inline-block;
 	transition: 0.9s;
-	width: 33.3px;	
+	width: 26px;	
 	border: 0; 
 	color:#00f83e;
 	border-radius: 2px;
@@ -326,7 +322,7 @@ html{
 .fadeOutBad{
 	display: inline-block;
 	transition: 0.9s;
-	width: 33.3px;
+	width: 26px;
 	border: 0; 
 	background-color: #ff0000;
 	border-radius: 2px;
@@ -347,7 +343,7 @@ html{
 	position: relative;
 	left:5%;
 	top:10%;
-	margin:30px;
+	margin:20px;
 	margin-bottom: 80px;
 	width: 24%;
 	min-width: 170px;
