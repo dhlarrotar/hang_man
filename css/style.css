@@ -14,7 +14,7 @@ html{
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		text-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);;
-	margin-top: 10%
+	margin-top: 12%
 
 }
 
@@ -153,6 +153,14 @@ html{
 	font-size: 22px;
 }
 
+.letra{
+	z-index: 5;
+	font-size: 20px;
+	text-align: center;
+	color:#0700b8;
+}
+
+
 
 .letra-div{
 	z-index: 1;
@@ -173,13 +181,6 @@ html{
 	margin-top: 3%;
 	
 
-}
-
-.letra{
-	z-index: 4;
-	font-size: 20px;
-	text-align: center;
-	color:#0700b8;
 }
 
 

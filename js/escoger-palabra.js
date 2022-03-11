@@ -28,8 +28,6 @@ function escogerPalabra(){
     ayudaPalabra=listaValores[index];
     ayuda.textContent= ayudaPalabra;
     return palabraEscogida
-    
-    
 }
 
 
@@ -37,10 +35,10 @@ function mostrarLineas(){
     palabraEscogida=escogerPalabra();
     var areaPalabra=document.querySelector(".area-palabra")
     for (let letter of palabraEscogida){
+        var letra= document.createElement("p");
         var letraDivDiv = document.createElement("div");
         var letraDiv = document.createElement("div");
         var linea = document.createElement("div");  
-        var letra= document.createElement("p");
         letra.setAttribute("id", "letra-"+letter.toUpperCase()); 
         letraDiv.classList.add("area-letra");
         letraDivDiv.classList.add("letra-div");
