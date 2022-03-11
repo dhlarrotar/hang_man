@@ -17,18 +17,20 @@ function compararLetra(letra){
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
     count=0
     for (let a of palabra){if (a==letra){count++;}
-    if (count>=2){bonuSound.play();}
+    if (count>=2){
+        correctaSound.pause();
+        bonuSound.play();}
     }
     var correcto;
             if (letraPalabra.length==0){
                 /* Si no se encuentra ninguna letra en la palabra escogida que coincida con la letra ingresada, se cuenta como error*/
                 if(!letrasFallidas.includes(letra)){
                     /* Aumentar contador de errores y dibujar parte respectiva*/
+                    erradaSound.play();
                     i++
                     letrasFallidas.push(letra)
                     dibujarPartes(i-1,155,70,10,"white");
                     correcto=false;
-                    erradaSound.play();
                     check()
                 }
                 else{
@@ -39,11 +41,11 @@ function compararLetra(letra){
                 if(palabra.includes(letra)){
                 /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
                     for(let letter of letraPalabra){
+                        correctaSound.play();
                         letter.innerHTML=letra;
                         correcto=true
                         letter.classList.add("fadeOut2");
                         setTimeout(function(){letter.classList.remove("fadeOut2")},200);
-                        correctaSound.play();
                         aciertos++
                         palabraFormada.push(letter.textContent) ;
                         check() 
@@ -68,13 +70,14 @@ function check(){
     letrasPalabraFormadaFilter=pf.replace(/(.)(?=.*\1)/g, ""); // "abc"
     if(i==0 && palabraFormada.length==0)return
     if(letrasPalabraFilter==letrasPalabraFormadaFilter && i<6){
+        correctaSound.pause();
+        victoriaSound.play();
         console.log("victoria")
         /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
         teclado.innerHTML="";
         areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
         pantalla.classList.add("fadeOut")
         aplausos.classList.remove("fadeOut");
-        victoriaSound.play();
         ayuda.textContent= "";
         palabra=[];
            
@@ -82,8 +85,9 @@ function check(){
 
     if(i==6){
         /*i=6 indica que el jugador a perdido e inicia las animaciones respectivas*/
-        perdiste.classList.remove("fadeOut");
+        erradaSound.play();
         perdidoSound.play();
+        perdiste.classList.remove("fadeOut");
         teclado.innerHTML="";
         areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();
         ayuda.textContent= "";

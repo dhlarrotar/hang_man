@@ -150,6 +150,7 @@ html{
 
 .letra{
 	z-index: 10;
+	transform: translate3d(0,0,200);
 	display:  inline-flex;
 	font-size: 20px;
 	text-align: center;
