@@ -3,7 +3,7 @@ palabrasUsadas=[]
 var palabrasDict = {
     "elefante": "Tengo trompa, orejas grandes y colmillos",
     "jirafa": " Tengo cuello largo",
-    "murcielago": "Me me gustan las cuevas y la oscuridad",
+    "murcielago": "Me gustan las cuevas y la oscuridad",
     "abeja": "Me encantan las flores y produzco miel",
     "perro":"Soy el mejor amigo del hombre",
     "pulpo": "Tengo tentáculos",

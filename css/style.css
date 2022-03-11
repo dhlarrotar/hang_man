@@ -311,7 +311,7 @@ html{
 	background-color: #00f83e;
 	display: inline-block;
 	transition: 0.9s;
-	width: 26px;	
+	width: 33.3px;	
 	border: 0; 
 	color:#00f83e;
 	border-radius: 2px;
@@ -322,7 +322,7 @@ html{
 .fadeOutBad{
 	display: inline-block;
 	transition: 0.9s;
-	width: 26px;
+	width: 33.3px;
 	border: 0; 
 	background-color: #ff0000;
 	border-radius: 2px;
