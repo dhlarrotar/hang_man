@@ -8,6 +8,8 @@ var ayuda=document.getElementById("texto-ayuda")
 var areaNuevaPalabra=document.getElementById("nueva-palabra");
 var inputPalabra=document.getElementById("input-palabra")
 
+var letraxDiv=document.getElementById("letrax")
+
 var entradaSound = document.getElementById("entrada-sound");
 var victoriaSound = document.getElementById("victoria-sound");
 var correctaSound = document.getElementById("correcta-sound");
@@ -37,14 +39,18 @@ function mostrarBienvenida(){
 function reiniciarParametros(){
     teclado.innerHTML="";
     areaPalabra.innerHTML="";
+    letraxDiv.innerHTML="";
     limpiarPantalla();
     areaAyuda.classList.add("fadeOut");
     pantalla.classList.remove("fadeOut")
     fireworks.classList.add("fadeOut");
     perdiste.classList.add("fadeOut");
     aplausos.classList.add("fadeOut");
-    
+    m=[];
+    x=[];
     ayuda.textContent= ""
+
+
     
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
 
@@ -52,6 +58,7 @@ function reiniciarParametros(){
 
     palabraFormada=[]; /*arreglo con las letras verificadas que si pertenecen a la palabra*/
     palabra=[];
+    lineasPalabras=[];
 
     letrasPalabraFilter="";
     letrasPalabraFormadaFilter=" ";

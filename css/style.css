@@ -105,6 +105,9 @@ html{
 	margin: 0;
 }
 
+#letrax{
+	display: none;
+}
 
 .area-dibujo{
 	margin-top: 1%;
@@ -116,9 +119,11 @@ html{
 }
 
 #sarea{
+	margin-top: 5%;
 	display: inline-block;
 	width: 85%;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .dibujo{
@@ -133,69 +138,20 @@ html{
 
 
 .area-palabra{
-	margin-left: 2%;
-	margin-top: 4%;
-	margin-bottom: 14%;
-	height: 10%;
-	min-width: 300px;
-	max-width: 600px;
-	min-height: 25px;
 	display: inline-block;
 	vertical-align: middle;
+	height: fit-content;
+	min-height: 70px;
 	background:	-webkit-linear-gradient(280deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-	font-size: 22px;
+	font-size: 32px;
 }
 
-.letra{
-	z-index: 10;
-	transform: translate3d(0,0,200px);
-	display:  block;
-	font-size: 20px;
-	text-align: center;
-	color:#0700b8;
-}
-
-
-
-.letra-div{
-	z-index: 1;
-	display: inline-block;
-	width: 17px;
-	height: auto;
-	margin-left: 10px;
-	text-align: center;
-	align-items: center;
-	font-size: 23px;
-	
-}
-.area-letra{
-	z-index: 3;
-	display: inline-block;
-	width: 17x;
-	height: 22px;
-	margin-top: 3%;
-	
-
-}
-
-
-
-.linea{
-	
-	height: 3.5px;
-	width: 19px;
-
-	background:	-webkit-linear-gradient(left, #0700b8 0%, #496cad 64%, #00ff88 100%);
-	margin-top: 3%;
-	border-radius: 4px;
-}
 
 
 
 #area-teclado{
-	margin: 2%;
 	display: inline-block;
 	width: 100%;
 }
@@ -277,6 +233,7 @@ html{
 #ayuda{
 	position:absolute;
 	text-align: center;
+	vertical-align: middle;
 	left: 0;
 	top:0;
 	width: 100%;
@@ -289,7 +246,10 @@ html{
 	text-align: center;
 	font-size: 30px;
 	font-style: italic;
-	margin: 170px auto;
+	margin: 150px auto ;
+	margin-left: 40px;
+	margin-right: 40px;
+	vertical-align: middle;
 	color: #496cad;
 }
 
@@ -307,6 +267,23 @@ html{
 	transition: 2.7s;
 	display: none;
 }
+
+
+.fadeOutLetra{
+	background-color: #00f83e;
+	display: inline-block;
+	transition: 0.9s;
+	width: 20px;	
+	border: 0; 
+	color:#00f83e;
+	border-radius: 2px;
+	opacity:0.4;
+	text-align: center;
+	color: #0700b8;
+
+}
+
+
 
 .fadeOut2{
 	background-color: #00f83e;

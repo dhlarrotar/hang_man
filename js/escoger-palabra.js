@@ -1,5 +1,5 @@
 palabrasUsadas=[]
-
+lineasPalabra=[]
 var palabrasDict = {
     "elefante": "Tengo trompa, orejas grandes y colmillos",
     "jirafa": " Tengo cuello largo",
@@ -29,26 +29,39 @@ function escogerPalabra(){
     ayuda.textContent= ayudaPalabra;
     return palabraEscogida
 }
-
+var lineasPalabras;
+var x;
 
 function mostrarLineas(){
     palabraEscogida=escogerPalabra();
     var areaPalabra=document.querySelector(".area-palabra")
+    var letraxDiv=document.getElementById("letrax")
+    var areaInicio=document.querySelector("#area-inicio")
+    for (let letra of palabraEscogida){
+        lineasPalabras.push("_")
+    }
+
     for (let letter of palabraEscogida){
         var letra= document.createElement("p");
-        var letraDivDiv = document.createElement("div");
-        var letraDiv = document.createElement("div");
-        var linea = document.createElement("div");  
-        letra.setAttribute("id", "letra-"+letter.toUpperCase()); 
-        letraDiv.classList.add("area-letra");
-        letraDivDiv.classList.add("letra-div");
-        letraDivDiv.setAttribute("id", "letraDivDiv-"+letter.toUpperCase()); 
-        linea.classList.add("linea")
-        letra.classList.add("letra")
-        letraDiv.appendChild(letra)
-        letraDivDiv.appendChild(letraDiv)
-        letraDivDiv.appendChild(linea)
-        areaPalabra.appendChild(letraDivDiv);
-    }  
+        letra.setAttribute("id", "letra-"+letter.toUpperCase());
+        letra.textContent="_" 
+        letra.classList.add("letrax")
+        letraxDiv.appendChild(letra);
+    }
+
+    var letrax=document.querySelectorAll(".letrax")
+    for (let element of letrax){
+        x.push(element.textContent);
+    }
+    
+    areaPalabra.innerHTML=x.toString().replaceAll(",", " ");
+    console.log(lineasPalabra)
     return palabraEscogida
 }
+
+
+
+/*
+for (let letter of palabraEscogida){
+
+    }  */ 

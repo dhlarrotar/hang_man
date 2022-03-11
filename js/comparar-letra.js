@@ -12,6 +12,7 @@ var letrasPalabraFormadaFilter;
 
 
 
+
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
@@ -40,14 +41,20 @@ function compararLetra(letra){
             else {
                 if(palabra.includes(letra)){
                 /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
-                    for(let letter of letraPalabra){
+                    for(let letter of letraPalabra){ 
+                        m=[];
                         correctaSound.play();
-                        letter.innerHTML=letra;
+                        letter.textContent=letra;
                         correcto=true
-                        letter.classList.add("fadeOut2");
-                        setTimeout(function(){letter.classList.remove("fadeOut2")},200);
+                        letter.classList.add("fadeOutLetra");
+                        setTimeout(function(){letter.classList.remove("fadeOutLetra")},200);
                         aciertos++
-                        palabraFormada.push(letter.textContent) ;
+                        palabraFormada.push(letter.textContent);
+                        var letrax=document.querySelectorAll(".letrax")
+                        for (let element of letrax){
+                            m.push(element.textContent);
+                        }
+                        areaPalabra.innerHTML=m.toString().replaceAll(",", " ");
                         check() 
 
                     }
@@ -80,6 +87,8 @@ function check(){
         aplausos.classList.remove("fadeOut");
         ayuda.textContent= "";
         palabra=[];
+        m=[];
+        x=[];
            
     }
 
@@ -92,6 +101,8 @@ function check(){
         areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();
         ayuda.textContent= "";
         palabra=[];
+        m=[];
+        x=[];
         
         var idVar= setInterval(hasPerdido,35);
     } 
