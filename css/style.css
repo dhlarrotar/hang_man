@@ -63,7 +63,7 @@ html{
 		margin-left: 10px;
 		background: none;
 		align-items: center;
-		padding: 6%;
+		padding: 5%;
 		font-size: 28px;
 		/* Dark blue/dark-blue-300 */
 		border-radius: 12px;
@@ -84,7 +84,7 @@ html{
 		margin-left: 10px;
 		background: none;
 		align-items: center;
-		padding: 7%;
+		padding: 5%;
 		font-size: 28px;
 		/* Dark blue/dark-blue-300 */
 		border-radius: 12px;
@@ -150,8 +150,8 @@ html{
 
 .letra{
 	z-index: 10;
-	transform: translate3d(0,0,200);
-	display:  inline-flex;
+	transform: translate3d(0,0,200px);
+	display:  block;
 	font-size: 20px;
 	text-align: center;
 	color:#0700b8;
@@ -365,7 +365,7 @@ html{
 footer{
 	width: 90%;
 	font-size: 16px;
-	margin-top: 22px;
+	margin-top: 15px;
 	margin-left: 15px;
 	display: block;
 	background:	-webkit-linear-gradient(330deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
