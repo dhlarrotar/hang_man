@@ -129,7 +129,8 @@ html{
 .dibujo{
 	margin-left: 5%;
 	width: auto;
-	height: 45%;
+	height: 85%;
+	min-height: 200px;
 	display: inline-block;
 	image-rendering: optimizeQuality;
 	overflow: visible;
@@ -154,6 +155,10 @@ html{
 #area-teclado{
 	display: inline-block;
 	width: 100%;
+	text-align: center;
+	align-items: center;
+	margin: 4px auto;
+	margin-left: 6px;
 }
 
 
@@ -294,6 +299,11 @@ html{
 	color:#00f83e;
 	border-radius: 2px;
 	opacity:0;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	padding-top: 6px;
+	padding-right: 6px;
 }
 
 
@@ -306,6 +316,10 @@ html{
 	border-radius: 2px;
 	color:#ff0000;
 	opacity:0;
+	align-items: center;
+	vertical-align: middle;
+	padding-top: 6px;
+	padding-right: 6px;
 }
 
 
