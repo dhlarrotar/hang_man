@@ -164,8 +164,11 @@ html{
 	width: 100%;
 	text-align: center;
 	align-items: center;
-	margin: 4px auto;
+	vertical-align: bottom;
+	margin: 4px;
+	margin-top: 10%;
 	margin-left: 6px;
+	margin-bottom: 6px;
 }
 
 
@@ -362,7 +365,7 @@ html{
 
 footer{
 	position: absolute;
-	top: 98%;
+	bottom: 3px;
 	width: 90%;
 	font-size: 16px;
 	margin-top: 15px;
