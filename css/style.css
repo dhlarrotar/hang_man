@@ -294,10 +294,10 @@ html{
 	margin-top: 1px;
 	min-height: 20px;
 	font-size: 32px;
-	background-color: #00f83e;
-	transition: 0.005s;	
-	color: #496cad;
-	opacity:0.1;
+	
+	transition: 0.01s;	
+	color: #18ca44;
+
 	border-radius: 25px;
 	text-align: center;
 
@@ -341,15 +341,13 @@ html{
 
 #fireworks{
 	margin:4%;
-	vertical-align: middle;
-	width: 22%;
-	min-width: 220px;
+	width: 2%;
+	min-width: 100px;
+	text-align: center;
+	align-items: center;
 }
 
 #aplausos{
-	position: relative;
-	left:5%;
-	top:10%;
 	margin:20px;
 	margin-bottom: 80px;
 	width: 24%;

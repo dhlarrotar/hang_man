@@ -55,12 +55,14 @@ function compararLetra(letra){
                         areaPalabra.innerHTML=m.toString().replaceAll(",", " ");
                         check()
                         if(letrasPalabraFilter!=letrasPalabraFormadaFilter){
-                            areaPalabra.classList.remove("area-palabra");
                             areaPalabra.classList.add("fadeOutLetra");
+                            areaPalabra.classList.remove("area-palabra");
+                           
                             setTimeout(function(){
-                                areaPalabra.classList.remove("fadeOutLetra");
                                 areaPalabra.classList.add("area-palabra");
-                            },200);
+                                areaPalabra.classList.remove("fadeOutLetra");
+                                
+                            },350);
                         } 
                         else{
                             areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
@@ -92,6 +94,7 @@ function check(){
         teclado.innerHTML="";
         areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
         pantalla.classList.add("fadeOut")
+        fireworks.classList.remove("fadeOut");
         aplausos.classList.remove("fadeOut");
         ayuda.textContent= "";
         palabra=[];
