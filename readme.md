@@ -7,6 +7,8 @@
 <img src="img/captura1.png" height="400px" display="inline-block">
 <img src="img/captura2.png" height="400px" display="inline-block">
 <br><br>
+<img src="img/captura3.png" height="220px" display="inline-block">
+<br><br>
 
 ## Construido con 🛠️
 
