@@ -62,7 +62,6 @@ html{
 		/* Auto layout */
 		z-index: 1;
 		display: inline-block;
-		margin-left: 10px;
 		background: none;
 		align-items: center;
 		padding: 5%;
@@ -83,7 +82,6 @@ html{
 		/* Auto layout */
 		z-index: 1;
 		display: inline-block;
-		margin-left: 10px;
 		background: none;
 		align-items: center;
 		padding: 5%;
@@ -135,6 +133,7 @@ html{
 	width: 82%;
 	height: auto;
 	max-width: 350px;
+	min-width: 200px;
 	
 	display: inline-block;
 	image-rendering: optimizeQuality;
@@ -147,6 +146,7 @@ html{
 	display: inline-block;
 	vertical-align: middle;
 	height: fit-content;
+	margin-top: 30px;
 	min-height: 70px;
 	background:	-webkit-linear-gradient(280deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
@@ -158,13 +158,12 @@ html{
 
 
 #area-teclado{
-	position: relative;
-	bottom: 4%;
-	display: inline-block;
-	width: 100%;
+	position: absolute;
+	bottom: 28px;
+	display: block;
+	width: 90%;
 	text-align: center;
 	align-items: center;
-	vertical-align: bottom;
 	margin: 4px;
 	margin-top: 10%;
 	margin-left: 6px;
@@ -365,7 +364,7 @@ html{
 
 footer{
 	position: absolute;
-	bottom: 3px;
+	bottom: 8px;
 	width: 90%;
 	font-size: 16px;
 	margin-top: 15px;
