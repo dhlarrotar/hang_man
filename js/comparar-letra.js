@@ -46,8 +46,6 @@ function compararLetra(letra){
                         correctaSound.play();
                         letter.textContent=letra;
                         correcto=true
-                        letter.classList.add("fadeOutLetra");
-                        setTimeout(function(){letter.classList.remove("fadeOutLetra")},200);
                         aciertos++
                         palabraFormada.push(letter.textContent);
                         var letrax=document.querySelectorAll(".letrax")
@@ -55,8 +53,18 @@ function compararLetra(letra){
                             m.push(element.textContent);
                         }
                         areaPalabra.innerHTML=m.toString().replaceAll(",", " ");
-                        check() 
-
+                        check()
+                        if(letrasPalabraFilter!=letrasPalabraFormadaFilter){
+                            areaPalabra.classList.remove("area-palabra");
+                            areaPalabra.classList.add("fadeOutLetra");
+                            setTimeout(function(){
+                                areaPalabra.classList.remove("fadeOutLetra");
+                                areaPalabra.classList.add("area-palabra");
+                            },200);
+                        } 
+                        else{
+                            areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
+                        }
                     }
                 }
         return correcto

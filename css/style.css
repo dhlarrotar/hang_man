@@ -132,10 +132,10 @@ html{
 
 .dibujo{
 	margin-left: 5%;
-	width: 82%;
-	height: auto;
-	max-width: 350px;
-	min-width: 200px;
+	width: auto;
+	height:40%; 
+	min-width: 250px;
+	max-height: 950px;
 	
 	display: inline-block;
 	image-rendering: optimizeQuality;
@@ -148,7 +148,7 @@ html{
 	display: inline-block;
 	vertical-align: middle;
 	height: fit-content;
-	margin-top: 0.5%;
+	margin-top: 1px;
 	min-height: 70px;
 	background:	-webkit-linear-gradient(280deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
@@ -288,16 +288,18 @@ html{
 
 
 .fadeOutLetra{
-	background-color: #00f83e;
 	display: inline-block;
-	transition: 0.9s;
-	width: 20px;	
-	border: 0; 
-	color:#00f83e;
-	border-radius: 2px;
-	opacity:0.4;
+	vertical-align: middle;
+	height: fit-content;
+	margin-top: 1px;
+	min-height: 20px;
+	font-size: 32px;
+	background-color: #00f83e;
+	transition: 0.005s;	
+	color: #496cad;
+	opacity:0.1;
+	border-radius: 25px;
 	text-align: center;
-	color: #0700b8;
 
 }
 
@@ -368,7 +370,7 @@ html{
 
 footer{
 	position: absolute;
-	bottom: 8px;
+	top:600px;
 	width: 90%;
 	font-size: 16px;
 	margin-top: 15px;
