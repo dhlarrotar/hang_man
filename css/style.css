@@ -148,7 +148,7 @@ html{
 	display: inline-block;
 	vertical-align: middle;
 	height: fit-content;
-	margin-top: 30px;
+	margin-top: 0.5%;
 	min-height: 70px;
 	background:	-webkit-linear-gradient(280deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
 		-webkit-background-clip: text;
@@ -161,7 +161,7 @@ html{
 
 #area-teclado{
 	position: absolute;
-	bottom: 28px;
+	bottom: 68px;
 	display: block;
 	width: 90%;
 	text-align: center;
