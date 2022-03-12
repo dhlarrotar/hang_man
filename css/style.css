@@ -346,9 +346,16 @@ html{
 	min-width: 100px;
 }
 
-#aplausos{
+.trofeo{
 	margin:20px;
 	margin-bottom: 80px;
+	width: 100%;
+	text-align: center;
+	align-items: center;	
+}
+
+
+#aplausos{
 	width: 24%;
 	min-width: 170px;
 }
