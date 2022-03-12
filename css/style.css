@@ -24,8 +24,9 @@ html{
 #area-inicio{
 	width: 80%;
 	height: 60%;
-	max-width: 500px;
+	max-width: 700px;
 	margin: 5% auto;
+	text-align: center;
 	justify-content: center;
 	vertical-align: middle;
 
@@ -33,9 +34,10 @@ html{
 
 .img-inicio{
 	display: inline-block;
-	width: 170px;
-	height: auto;
-	margin: auto 12%;
+	width: auto;
+	height: 40%;
+	max-height: 300px;
+	
 }
 
 
@@ -101,7 +103,8 @@ html{
 
 #area-juego{
 	width: 98%;
-	height: 90%;
+	height: 100%;
+	min-height: ;
 	margin: 0;
 }
 
@@ -129,9 +132,10 @@ html{
 
 .dibujo{
 	margin-left: 5%;
-	width: auto;
-	height: 85%;
-	min-height: 200px;
+	width: 82%;
+	height: auto;
+	max-width: 350px;
+	
 	display: inline-block;
 	image-rendering: optimizeQuality;
 	overflow: visible;
@@ -154,6 +158,8 @@ html{
 
 
 #area-teclado{
+	position: relative;
+	bottom: 4%;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
@@ -355,6 +361,8 @@ html{
 }
 
 footer{
+	position: absolute;
+	top: 98%;
 	width: 90%;
 	font-size: 16px;
 	margin-top: 15px;
