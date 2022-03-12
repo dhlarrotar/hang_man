@@ -160,6 +160,7 @@ html{
 
 
 #area-teclado{
+	z-index: 2;
 	position: absolute;
 	bottom: 68px;
 	display: block;
@@ -247,6 +248,7 @@ html{
 }
 
 #ayuda{
+	z-index: 5;
 	position:absolute;
 	text-align: center;
 	vertical-align: middle;
