@@ -94,7 +94,6 @@ function check(){
         teclado.innerHTML="";
         areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
         pantalla.classList.add("fadeOut")
-        fireworks.classList.remove("fadeOut");
         aplausos.classList.remove("fadeOut");
         ayuda.textContent= "";
         palabra=[];

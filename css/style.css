@@ -340,11 +340,10 @@ html{
 
 
 #fireworks{
-	margin:4%;
+	position: absolute;
+	top: 5%;
 	width: 2%;
 	min-width: 100px;
-	text-align: center;
-	align-items: center;
 }
 
 #aplausos{
