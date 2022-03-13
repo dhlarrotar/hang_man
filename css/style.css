@@ -358,7 +358,9 @@ html{
 
 #perdiste{
 	position: fixed;
-	bottom:25%;
+	bottom:13%;
+	left:40%;
+	right:35%;
 	width: 12%;
 	min-width: 120px;
 }
