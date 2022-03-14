@@ -144,7 +144,7 @@ html{
 
 .area-palabra{
 	position: fixed;
-	bottom:42%;
+	bottom:40%;
 	left: 2%;
 	right: 6%;
 	height: fit-content;
@@ -287,7 +287,7 @@ html{
 
 .fadeOutLetra{
 	position: fixed;
-	bottom:36%;
+	bottom:40%;
 	left: 2%;
 	right: 6%;
 	height: fit-content;
