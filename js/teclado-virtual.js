@@ -23,18 +23,14 @@ function crearTeclado(){
         ["touchstart","click"].forEach(function(e) {
 
             letraDiv.addEventListener(e, function(event){              
-                if (palabra.length==0) return
+                if(palabra.length==0) return
                 event.preventDefault();
-                this.classList.remove("letra-tecla");
                 correcto=compararLetra(letter);
-                if (correcto){
-                   
+                if(correcto){
                     this.classList.add("fadeOut2");
-                    
                  }
                 else{
                     this.classList.add("fadeOutBad");
-                              
                 }
                
 

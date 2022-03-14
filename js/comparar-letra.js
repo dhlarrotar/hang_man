@@ -16,63 +16,64 @@ var letrasPalabraFormadaFilter;
 function compararLetra(letra){
      /*Seleccionar todas las letras de la palabra secreta que coincidan con la letra ingresada*/
     var letraPalabra = document.querySelectorAll("#letra-"+letra);
+    var correcto;
     count=0
-    for (let a of palabra){if (a==letra){count++;}
+    for (let a of palabra){if (a==letra){count++;};
     if (count>=2){
+        correcto=true;
         correctaSound.pause();
         bonuSound.play();}
     }
-    var correcto;
-            if (letraPalabra.length==0){
-                /* Si no se encuentra ninguna letra en la palabra escogida que coincida con la letra ingresada, se cuenta como error*/
-                if(!letrasFallidas.includes(letra)){
-                    /* Aumentar contador de errores y dibujar parte respectiva*/
-                    erradaSound.play();
-                    i++
-                    letrasFallidas.push(letra)
-                    dibujarPartes(i-1,155,70,10,"white");
-                    correcto=false;
-                    check()
+    
+    if (letraPalabra.length==0){
+        /* Si no se encuentra ninguna letra en la palabra escogida que coincida con la letra ingresada, se cuenta como error*/
+        if(!letrasFallidas.includes(letra)){
+            /* Aumentar contador de errores y dibujar parte respectiva*/
+            erradaSound.play();
+            i++
+            letrasFallidas.push(letra)
+            dibujarPartes(i-1,155,70,10,"white");
+            correcto=false;
+            check()
+        }
+        else{
+            console.log("letra repetida")
+        }
+    }
+    else{
+        correcto=true;
+        if(palabra.includes(letra)){
+        /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
+           
+            for(let letter of letraPalabra){ 
+                m=[];
+                correctaSound.play();
+                letter.textContent=letra;
+                aciertos++;
+                palabraFormada.push(letter.textContent);
+                var letrax=document.querySelectorAll(".letrax")
+                for (let element of letrax){
+                    m.push(element.textContent);
                 }
+                areaPalabra.innerHTML=m.toString().replaceAll(",", " ");
+                check()
+                
+                if(letrasPalabraFilter!=letrasPalabraFormadaFilter){
+                    areaPalabra.classList.add("fadeOutLetra");
+                    areaPalabra.classList.remove("area-palabra");   
+                    setTimeout(function(){
+                        areaPalabra.classList.add("area-palabra");
+                        areaPalabra.classList.remove("fadeOutLetra");
+                        
+                    },350);
+                } 
                 else{
-                    console.log("letra repetida")
+                    areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
                 }
             }
-            else {
-                if(palabra.includes(letra)){
-                /* Si se encuentran letras en la palabra escogida, mostrar letras y contar como acierto*/
-                    for(let letter of letraPalabra){ 
-                        m=[];
-                        correctaSound.play();
-                        letter.textContent=letra;
-                        correcto=true
-                        aciertos++
-                        palabraFormada.push(letter.textContent);
-                        var letrax=document.querySelectorAll(".letrax")
-                        for (let element of letrax){
-                            m.push(element.textContent);
-                        }
-                        areaPalabra.innerHTML=m.toString().replaceAll(",", " ");
-                        check()
-                        if(letrasPalabraFilter!=letrasPalabraFormadaFilter){
-                            areaPalabra.classList.add("fadeOutLetra");
-                            areaPalabra.classList.remove("area-palabra");
-                           
-                            setTimeout(function(){
-                                areaPalabra.classList.add("area-palabra");
-                                areaPalabra.classList.remove("fadeOutLetra");
-                                
-                            },350);
-                        } 
-                        else{
-                            areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
-                        }
-                    }
-                }
-        return correcto
-        
+        }
     }
-    
+    return correcto    
 }
 
 
