@@ -144,7 +144,7 @@ html{
 
 .area-palabra{
 	position: fixed;
-	bottom:36%;
+	bottom:42%;
 	left: 2%;
 	right: 6%;
 	height: fit-content;
@@ -348,7 +348,7 @@ html{
 #aplausos{
 	position: fixed;
 	top: 11%;
-	left:30%;
+	left:20%;
 	right:30%;
 	width:24%;
 	min-width: 170px;
