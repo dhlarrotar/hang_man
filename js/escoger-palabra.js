@@ -1,17 +1,29 @@
 palabrasUsadas=[]
 lineasPalabra=[]
-var palabrasDict = {
+
+var palabrasDictMinerales = {
+    "Cuarzo": "Soy resistente y abundante",
+    "Calcita": "Soy un Carbonato de Calcio muy estable",
+    "Diamante": "Puedo ser de carbono pero soy muy valioso",
+    "Olivino": "Nací en lo profundo y me altero fácilmente",
+}
+
+var palabrasDictAnimales = {
     "elefante": "Tengo trompa, orejas grandes y colmillos",
     "jirafa": " Tengo cuello largo",
     "murcielago": "Me gustan las cuevas y la oscuridad",
     "abeja": "Me encantan las flores y produzco miel",
     "perro":"Soy el mejor amigo del hombre",
     "pulpo": "Tengo tentáculos",
+}
+
+var palabrasDictOtros = {
     "luna":"Giro alrededor de la tierra y salgo de noche",
     "sol": "Soy la estrella mas cercana a la tierra",
     "nieve":"Caigo en invierno"
-
 }
+
+
 
 function escogerPalabra(){
     listaPalabras=Object.keys(palabrasDict);

@@ -2,8 +2,15 @@ var bienvenida = document.querySelector("#area-inicio");
 var areaJuego=document.querySelector("#area-juego");
 var iniciarJuego = document.querySelector("#iniciar");
 
+var areaModo=document.getElementById("modo");
+var minerales=document.getElementById("minerales");
+var animales=document.getElementById("animales");
+var aleatorio=document.getElementById("aleatorio");
+
+
 var areaAyuda=document.getElementById("ayuda");
 var ayuda=document.getElementById("texto-ayuda")
+var cuentaAyuda=document.getElementById("cuenta-ayudas");
 
 var areaNuevaPalabra=document.getElementById("nueva-palabra");
 var inputPalabra=document.getElementById("input-palabra")
@@ -17,7 +24,6 @@ var erradaSound = document.getElementById("errada-sound");
 var fireworksSound = document.getElementById("fireworks-sound");
 var perdidoSound = document.getElementById("perdido-sound");
 var bonuSound = document.getElementById("musica-sound");
-
 
 
 
@@ -78,7 +84,7 @@ function reiniciarParametros(){
 
 function iniciar(){
     
-   
+    entradaSound.play();
     reiniciarParametros();
     borrarBienvenida();
     dibujarTablero();
@@ -86,7 +92,7 @@ function iniciar(){
     letter=crearTeclado();
     aceptarTeclas(); 
     palabra=[...palabraEscogida.toUpperCase()].sort();
-    entradaSound.play();
+    
    
     
 }
@@ -101,7 +107,6 @@ var botonAyuda=document.getElementById("pista")
 var botonPalabra=document.getElementById("agregar-palabra");
 var agregar=document.getElementById("agregar")
 
-iniciarJuego.onclick=iniciar;
 
 home.onclick=mostrarBienvenida;
 
@@ -110,9 +115,35 @@ home.onclick=mostrarBienvenida;
 ["touchstart","click"].forEach(function(e) {
     reload.addEventListener(e, function(){
         iniciar()
+    });
+
+
+    iniciarJuego.addEventListener(e, function(){
+        areaModo.classList.remove("fadeOut");
+
+    });
+
+    minerales.addEventListener(e, function(){
+        areaModo.classList.add("fadeOut");
+        palabrasDict=palabrasDictMinerales;
+        iniciar();
         entradaSound.play();  
     });
 
+    animales.addEventListener(e, function(){
+        palabrasDict=palabrasDictAnimales;
+        areaModo.classList.add("fadeOut");
+        iniciar();
+        entradaSound.play();  
+    });
+
+
+    aleatorio.addEventListener(e, function(){
+        palabrasDict=Object.assign({},palabrasDictAnimales,palabrasDictMinerales,palabrasDictOtros);
+        areaModo.classList.add("fadeOut");
+        iniciar();  
+        entradaSound.play();
+    });
     
     botonPalabra.addEventListener(e, function(){
         areaNuevaPalabra.classList.remove("fadeOut");
