@@ -152,7 +152,7 @@ home.onclick=mostrarBienvenida;
     agregar.addEventListener(e, function(){
         areaNuevaPalabra.classList.add("fadeOut");
         palabraNueva=inputPalabra.value;
-        palabrasDict[palabraNueva]="";
+        palabrasDictOtros[palabraNueva]="";
         inputPalabra.value=""
     });
 
