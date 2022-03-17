@@ -7,6 +7,7 @@ var minerales=document.getElementById("minerales");
 var animales=document.getElementById("animales");
 var aleatorio=document.getElementById("aleatorio");
 
+var mensajeError = document.querySelector("#error");
 
 var areaAyuda=document.getElementById("ayuda");
 var ayuda=document.getElementById("texto-ayuda")
@@ -148,16 +149,33 @@ home.onclick=mostrarBienvenida;
     botonPalabra.addEventListener(e, function(){
         areaNuevaPalabra.classList.remove("fadeOut");
     });
+
+    inputPalabra.addEventListener(e, function(){
+        areaNuevaPalabra.classList.remove("fadeOut");
+    });
+
     
     agregar.addEventListener(e, function(){
         areaNuevaPalabra.classList.add("fadeOut");
-        palabraNueva=inputPalabra.value;
-        palabrasDictOtros[palabraNueva]="";
-        inputPalabra.value=""
+        palabrasDictOtros[palabraVerificada]="";
+        inputPalabra.value="";
+        mensajeError.textContent="";
     });
 
  
 })
+
+
+inputPalabra.addEventListener("input", function() {
+    var texto=inputPalabra.value;
+    if (texto.length!=0){
+        palabraVerificada=verificarValores(texto);
+    }
+    else{
+        mensajeError.textContent="";
+    }
+});
+
 
 
 function mostrarAyuda(){

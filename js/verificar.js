@@ -5,6 +5,37 @@ var aceptadosArr=[]; /* Arreglo con letras ingresadas válidas*/
 
 /* Función para verificar que la letra ingresada por el teclado sea una letra válida sin repetir*/
 
+
+
+
+function verificarValores(texto){
+    var patronAceptados = /[a-zA-Z\s]/gi;
+    var patronRechazados = /[^a-zA-Z\s]/gi;
+    var aceptados=texto.match(patronAceptados);
+    var rechazados1=new Set(texto.match(patronRechazados));
+    var rechazados=[...rechazados1]
+    if (rechazados.length!=0){
+        mensajeError.textContent="⚠   Los siguientes caracteres son inválidos y serán ignorados: "+rechazados;
+    }
+    else{
+        mensajeError.textContent=""
+    }
+    if (aceptados){
+        return aceptados.toString().replaceAll(",","");
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
 function verificarTeclaOprimida(evt){
     letraOprimida=evt.key;
     var patronAceptados = /[a-zA-Z]/gi;

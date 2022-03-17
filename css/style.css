@@ -380,7 +380,12 @@ html{
 	min-width: 100px;
 }
 
-
+.area-error{
+	margin: 12px;
+	background-color: #ca0505;
+	opacity: 0.6;
+	color: #ffffff;
+}
 
 #aplausos{
 	position: fixed;
