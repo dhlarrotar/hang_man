@@ -26,6 +26,12 @@ var fireworksSound = document.getElementById("fireworks-sound");
 var perdidoSound = document.getElementById("perdido-sound");
 var bonuSound = document.getElementById("musica-sound");
 
+var ayudasDisponibles=3;
+var ayudasDisponiblesText = document.getElementById("ayudasDisponibles");
+var tpista = document.getElementById("tpista");
+ayudasDisponiblesText.textContent=ayudasDisponibles;
+
+
 
 
 /* Funciones para borrar imágenes de inicio y mostrar área de resultado*/
@@ -93,6 +99,19 @@ function iniciar(){
     letter=crearTeclado();
     aceptarTeclas(); 
     palabra=[...palabraEscogida.toUpperCase()].sort();
+
+    if(ayudasDisponibles==0){
+        botonAyuda.src= "img/hint2.png";
+        tpista.innerHTML="";
+    }
+    
+    botonAyuda.addEventListener('click', () => {
+        if(ayudasDisponibles==0) return
+
+        ayudasDisponibles--;
+        ayudasDisponiblesText.textContent=ayudasDisponibles;
+      }, { once: true });
+
     
    
     
@@ -103,7 +122,7 @@ function iniciar(){
 
 var reload=document.getElementById("reload");
 var home=document.getElementById("home");
-var botonAyuda=document.getElementById("pista")
+var botonAyuda=document.getElementById("iconoAyuda")
 
 var botonPalabra=document.getElementById("agregar-palabra");
 var agregar=document.getElementById("agregar")
@@ -179,6 +198,7 @@ inputPalabra.addEventListener("input", function() {
 
 
 function mostrarAyuda(){
+    if(ayudasDisponibles==0) return
     areaAyuda.classList.remove("fadeOut");
 }
 
@@ -187,4 +207,4 @@ function borrarAyuda(){
 }
 
 botonAyuda.onclick=mostrarAyuda;
-areaAyuda.onclick=borrarAyuda
+areaAyuda.onclick=borrarAyuda;
