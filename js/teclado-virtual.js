@@ -1,7 +1,7 @@
 
 function crearTeclado(){
     
-    var abcList ="abcdefghijklmnñopqrstuvwxyz";
+    var abcList ="abcdefghijklmnopqrstuvwxyz";
     var abc= abcList.toUpperCase();
     var areaTeclado=document.querySelector("#area-teclado")
    

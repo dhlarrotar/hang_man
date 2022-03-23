@@ -43,24 +43,28 @@
 	<body>
 		<div class="fadeOut" id="modo">
 			
-			<p class="texto-div">Escoge un modo de juego</p>
-			<p class="boton-modo" id="minerales">Minerales</p>
-			<p class="boton-modo" id="animales">Animales</p>
-			<p class="boton-modo" id="aleatorio">Aleatorio</p>
+			<p class="texto-div" id="modotext"></p>
+			<p class="boton-modo" id="minerals"></p>
+			<p class="boton-modo" id="animals"></p>
+			<p class="boton-modo" id="random"></p>
 		</div>
 
 		<div id="area-inicio">
-			<header class="titulo">	&iexcl;Ahorcado&#33;</header>
+			<select class="lang-list">
+				<option value=en class="language" id="en">English</option>
+				<option value=es class="language" id="es">Español</option>
+				</select>
+			<header class="titulo" id="titulo"></header>
 			<img src="img/imginicio.png" class="img-inicio">
 
 			<div id="area-botones-inicio">
-				<p class="boton-inicio" id="iniciar">Iniciar Juego</p>
-				<p class="boton-inicio" id="agregar-palabra">Agregar Palabra</p>
+				<p class="boton-inicio" id="iniciar"></p>
+				<p class="boton-inicio" id="agregar-palabra"></p>
 			</div>
 
 			<div class="fadeOut" id="nueva-palabra">
-				<input id="input-palabra" placeholder="Escribe aquí tu palabra">
-				<button id="agregar"><p>Agregar</p></button>
+				<input id="input-palabra">
+				<button id="agregar"><p></p></button>
 
 				<div class="area-error">
 					<span id="error"></span>
@@ -74,15 +78,15 @@
 			<div class="area-dibujo">	
 				<nav class="botones-juego">
 					<img src="img/home.png" class="logo2" id="home">
-					<p class="boton-nav">Menú</p>
+					<p class="boton-nav"id="hometext"></p>
 					<br>
 					<img src="img/reload.png" class="logo2" id="reload">
-					<p class="boton-nav">Reiniciar</p>
+					<p class="boton-nav" id="reloadtext"></p>
 					<br>
 					<p class="boton-nav" id="cuenta-ayudas"></p>
 					<p class="boton-nav" id="ayudasDisponibles"></p>	
 					<img src="img/hint.png" class="logo2" id="iconoAyuda">
-					<p class="boton-nav" id="tpista">Pedir una pista</p>			
+					<p class="boton-nav" id="tpista"></p>			
 				</nav>
 
 				<p id="letrax"></p>
@@ -99,7 +103,7 @@
 				
 				<div class="fadeOut" id="ayuda">
 					<p id="texto-ayuda"></p>
-					<p class="texto-div" id="cerrar-ayuda">Has click para cerrar</p>
+					<p class="texto-div" id="cerrar-ayuda"></p>
 				</div>
 
 				<div  id="area-teclado">
@@ -119,6 +123,7 @@
 		<audio src="audio/perdido.wav" id="perdido-sound"></audio>
 		<audio src="audio/bonus.wav" id="musica-sound"></audio>
 
+		<script src="js/palabras-dict.js"></script>
 		<script src="js/dibujar-tablero.js"></script>
 		<script src="js/comparar-letra.js"></script>
 		<script src="js/dibujar-partes.js"></script>
@@ -127,6 +132,7 @@
 		<script src="js/verificar.js"></script>
 		<script src="js/teclado-virtual.js"></script>
 		<script src="js/escoger-palabra.js"></script>
+		<script src="js/set-language.js"></script>
 		<script src="add-to-homescreen/src/addtohomescreen.js"></script>
 		<script>
 		addToHomescreen();

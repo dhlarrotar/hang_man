@@ -3,9 +3,9 @@ var areaJuego=document.querySelector("#area-juego");
 var iniciarJuego = document.querySelector("#iniciar");
 
 var areaModo=document.getElementById("modo");
-var minerales=document.getElementById("minerales");
-var animales=document.getElementById("animales");
-var aleatorio=document.getElementById("aleatorio");
+var minerales=document.getElementById("minerals");
+var animales=document.getElementById("animals");
+var aleatorio=document.getElementById("random");
 
 var mensajeError = document.querySelector("#error");
 

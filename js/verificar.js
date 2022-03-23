@@ -15,7 +15,7 @@ function verificarValores(texto){
     var rechazados1=new Set(texto.match(patronRechazados));
     var rechazados=[...rechazados1]
     if (rechazados.length!=0){
-        mensajeError.textContent="⚠   Los siguientes caracteres son inválidos y serán ignorados: "+rechazados;
+        mensajeError.textContent=errorText+rechazados;
     }
     else{
         mensajeError.textContent=""

@@ -68,7 +68,7 @@ function compararLetra(letra){
                     },350);
                 } 
                 else{
-                    areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
+                    areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
                 }
             }
         }
@@ -93,7 +93,7 @@ function check(){
         console.log("victoria")
         /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
         teclado.innerHTML="";
-        areaPalabra.innerHTML="¡Ganaste! La palabra secreta es "+palabraEscogida.toUpperCase();
+        areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
         pantalla.classList.add("fadeOut")
         aplausos.classList.remove("fadeOut");
         ayuda.textContent= "";
@@ -109,7 +109,7 @@ function check(){
         perdidoSound.play();
         perdiste.classList.remove("fadeOut");
         teclado.innerHTML="";
-        areaPalabra.innerHTML="¡Has perdido! La palabra secreta era "+palabraEscogida.toUpperCase();
+        areaPalabra.innerHTML=perdisteText+palabraEscogida.toUpperCase();
         ayuda.textContent= "";
         palabra=[];
         m=[];
