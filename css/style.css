@@ -58,8 +58,7 @@ html{
 	display: inline-block;
 	width: auto;
 	height: 40%;
-	max-height: 300px;
-	
+	max-height: 300px;	
 }
 
 
@@ -189,8 +188,8 @@ html{
 	width: 90%;
 	text-align: center;
 	align-items: center;
-	left: 6px;
-	right: 6px;
+	left: 16px;
+	right: 10px;
 }
 
 
@@ -430,4 +429,28 @@ footer{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
+}
+
+
+@media screen and (max-width:480px){
+	#iniciar{
+		position: absolute;
+        bottom: 130px;
+		left: 20%;
+		right:20%;
+	}
+   
+	#agregar-palabra{
+		position: absolute;
+        bottom: 30px;
+		left: 20%;
+		right:20%;
+	}
+
+	#modotext{
+		margin-top: 60%;
+	}
+	#texto-ayuda{
+		margin-top: 90%;
+	}
 }
