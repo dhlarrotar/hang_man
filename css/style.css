@@ -280,7 +280,6 @@ html{
 	z-index: 5;
 	position:absolute;
 	text-align: center;
-	vertical-align: middle;
 	left: 0;
 	top:0;
 	width: 100%;
@@ -445,13 +444,13 @@ footer{
 @media screen and (max-width:480px){
 	.lang-list{
 		position: fixed;
-		top:20px;
+		top:66px;
 		left:20%;
 		right:20%;
 	}
 	.titulo{
 		position: fixed;
-		top: 70px;
+		top: 100px;
 		left:7%;
 		right:7%;
 	}
@@ -460,9 +459,10 @@ footer{
 	.img-inicio{
 		position: fixed;
 		margin-left: 0;
-		top:15%;
+		top:20%;
 		left: 26%;
 		right:20%;
+		height: 36%;
 	}
 	
 	#iniciar{
@@ -532,14 +532,15 @@ footer{
 
 	#perdiste{
 		transform: scale(0.6);
-		bottom:20px;
+		bottom:6px;
 	}
 
 	
 	#aplausos{
 		transform: scale(0.5);
-		top:10px;
-		left:35%;
+		position: absolute;
+		top:0px;
+		left:35px;
 	}
 
 
@@ -558,17 +559,36 @@ footer{
 	}
 
 
+	.boton-modo{	
+		font-size: 20px;
+		/* Dark blue/dark-blue-300 */
+		border-radius: 12px;
+		border: 1px solid #0700b8;
+		margin-top: 3%;
+		margin-left: 3%;
+		margin-right: 3%;
+
+	}
+	
+
 	#ayuda{
-		
 		position:absolute;
 		text-align: center;
 		vertical-align: middle;
+		margin-left: 0px !important;
 		left: 0;
 		top:0;
 		width: 100%;
 		height: 400px;
 		background-color: #ffffff;
 		opacity: 0.96;
+	}
+
+
+	#texto-ayuda{
+
+		margin: 12% auto ;
+	
 	}
 	
 	

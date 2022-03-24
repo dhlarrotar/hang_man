@@ -35,6 +35,15 @@ var perdisteText;
 var errorText;
 
 
+setLanguage()
+
+if(window.location.hash){
+    langList.value=window.location.hash.replace("#","");
+    setLanguage();
+}
+
+
+
 
 function mostrarTexto(langDict){
     langDictKeys=Object.keys(langDict);
@@ -49,12 +58,14 @@ function mostrarTexto(langDict){
 
 function setLanguage(){
     lang=langList.value; 
-    document.getElementsByTagName('html')[0].setAttribute('lang',lang)
+    document.getElementsByTagName('html')[0].setAttribute('lang',lang);
+    datadefault=dataen;
     langDict=eval("data"+lang);
+    window.location.hash="#"+lang;
     mostrarTexto(langDict);
     if(langDict==dataes){
         ganasteText="¡Ganaste!<br>La palabra secreta es ";
-        perdisteText="<br><br>¡Has perdido!<br>La palabra secreta era ";
+        perdisteText="<br>¡Has perdido!<br>La palabra secreta era ";
         errorText="⚠   Los siguientes caracteres son inválidos y serán ignorados: "
         palabrasDictMinerales=palabrasDictMineralesEs;
         palabrasDictAnimales=palabrasDictAnimalesEs; 
@@ -63,7 +74,7 @@ function setLanguage(){
 
     if(langDict==dataen){
         ganasteText="Congrats!<br> The secret word is ";
-        perdisteText="<br><br>Game Over! <br> The secret word was ";
+        perdisteText="<br>Game Over! <br> The secret word was ";
         errorText="⚠   These characters are invalid and will be ignored: "
         palabrasDictMinerales=palabrasDictMinerals;
         palabrasDictAnimales=palabrasDictAnimals; 
@@ -73,8 +84,6 @@ function setLanguage(){
     console.log(langDict);
 }
 
-
-setLanguage();
 langList.onchange=setLanguage;
 
 

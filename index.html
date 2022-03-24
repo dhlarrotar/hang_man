@@ -42,6 +42,7 @@
 	</head>
 
 	<body>
+		<img src="img/trofeo.png" class="fadeOut" id="aplausos">
 		<div class="fadeOut" id="modo">
 			
 			<p class="texto-div" id="modotext"></p>
@@ -51,7 +52,10 @@
 		</div>
 
 		<div id="area-inicio">
+			<p>Escoge un idioma / Select a language</p>
+			<br>
 			<select class="lang-list">
+				<option value=default class="language" id="none">Idioma / Language</option>
 				<option value=en class="language" id="en">English</option>
 				<option value=es class="language" id="es">Español</option>
 				</select>
@@ -77,6 +81,7 @@
 		<div class="fadeOut" id="area-juego">
 			
 			<div class="area-dibujo">	
+			
 				<nav class="botones-juego">
 					<img src="img/home.png" class="logo2" id="home">
 					<p class="boton-nav"id="hometext"></p>
@@ -96,7 +101,7 @@
 				<canvas class="dibujo" id="dibujo" height="250"></canvas>	
 
 				<img src="img/fireworks.gif" class="fadeOut" id="fireworks">
-				<img src="img/trofeo.png" class="fadeOut" id="aplausos">
+			
 				
 				<div id="sarea">
 					<img src="img/perdiste.png" class="fadeOut" id="perdiste">
