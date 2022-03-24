@@ -494,5 +494,11 @@ footer{
 		width: 12%;
 		min-width: 120px;
 	}
+}
 
+@media screen and (max-height:300px){
+	.img-inicio{
+		display: none;
+		
+	}
 }
