@@ -54,7 +54,7 @@ function setLanguage(){
     mostrarTexto(langDict);
     if(langDict==dataes){
         ganasteText="¡Ganaste!<br>La palabra secreta es ";
-        perdisteText="<br>¡Has perdido!<br>La palabra secreta era ";
+        perdisteText="<br><br>¡Has perdido!<br>La palabra secreta era ";
         errorText="⚠   Los siguientes caracteres son inválidos y serán ignorados: "
         palabrasDictMinerales=palabrasDictMineralesEs;
         palabrasDictAnimales=palabrasDictAnimalesEs; 
@@ -63,7 +63,7 @@ function setLanguage(){
 
     if(langDict==dataen){
         ganasteText="Congrats!<br> The secret word is ";
-        perdisteText="<br>Game Over! <br> The secret word was ";
+        perdisteText="<br><br>Game Over! <br> The secret word was ";
         errorText="⚠   These characters are invalid and will be ignored: "
         palabrasDictMinerales=palabrasDictMinerals;
         palabrasDictAnimales=palabrasDictAnimals; 
