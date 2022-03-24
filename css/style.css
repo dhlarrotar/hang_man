@@ -24,8 +24,8 @@ html{
 	display: block;
   }
   
-  .langlist:hover{
-	background-color: #3e8e41;
+  .lang-list:hover{
+	transform: scale(1.1);
   }
 
 .titulo{
@@ -55,6 +55,10 @@ html{
 	vertical-align: middle;
 
 }
+
+.boton-inicio:hover{
+	transform: scale(1.1);
+  }
 
 .img-inicio{
 	display: block;
@@ -225,6 +229,10 @@ html{
 }
 
 
+.area-tecla:hover{
+	transform: scale(1.1);
+  }
+
 
 .boton{
 	display: inline-block;
@@ -243,6 +251,10 @@ html{
 	height:16px;
 }
 
+.logo:hover{
+	transform: scale(1.1);
+  }
+
 
 .botones-juego{
 	position: absolute;
@@ -253,6 +265,7 @@ html{
 }
 
 
+
 .logo2{
 	margin: 4px auto;
 	margin-bottom: 3px;
@@ -261,6 +274,9 @@ html{
 	text-align: center;
 }
 
+.logo2:hover{
+	transform: scale(1.1);
+  }
 
 .boton-nav{
 	border: 0;
@@ -274,6 +290,8 @@ html{
 	text-align: center;
 
 }
+
+
 
 #ayuda{
 	z-index: 5;
@@ -358,6 +376,9 @@ html{
 	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
 }
 
+.boton-modo:hover{
+	transform: scale(1.1);
+  }
 
 .fadeOut{
 	transition: 2.7s;
@@ -459,8 +480,8 @@ footer{
 		position: fixed;
 		margin-left: 0;
 		top:25%;
-		left: 26%;
-		right:20%;
+		left: 30%;
+		right:30%;
 		height: 30%;
 	}
 	
