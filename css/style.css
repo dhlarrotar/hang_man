@@ -450,7 +450,7 @@ footer{
 	}
 	.titulo{
 		position: fixed;
-		top: 100px;
+		top: 125px;
 		left:7%;
 		right:7%;
 	}
@@ -459,10 +459,10 @@ footer{
 	.img-inicio{
 		position: fixed;
 		margin-left: 0;
-		top:20%;
+		top:24%;
 		left: 26%;
 		right:20%;
-		height: 36%;
+		height: 32%;
 	}
 	
 	#iniciar{
