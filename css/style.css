@@ -434,21 +434,21 @@ footer{
 
 @media screen and (max-width:480px){
 	#iniciar{
-		position: absolute;
+		position: fixed;
         bottom: 130px;
 		left: 20%;
 		right:20%;
 	}
    
 	#agregar-palabra{
-		position: absolute;
+		position: fixed;
         bottom: 40px;
 		left: 20%;
 		right:20%;
 	}
 
 	#nueva-palabra{
-		position: absolute;
+		position: fixed;
 		bottom: 25px;
 		left: 5%;
 		right:5%;
@@ -458,7 +458,16 @@ footer{
 		margin-top: 40%;
 	}
 	#texto-ayuda{
-		margin-top: 40%;
+		margin-top: 70%;
+	}
+
+	#perdiste{
+		position: fixed;
+		bottom:13%;
+		left:30%;
+		right:40%;
+		width: 12%;
+		min-width: 120px;
 	}
 
 }
