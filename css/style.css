@@ -442,15 +442,23 @@ footer{
    
 	#agregar-palabra{
 		position: absolute;
-        bottom: 30px;
+        bottom: 40px;
+		left: 20%;
+		right:20%;
+	}
+
+	#nueva-palabra{
+		position: absolute;
+		bottom: 25px;
 		left: 20%;
 		right:20%;
 	}
 
 	#modotext{
-		margin-top: 60%;
+		margin-top: 40%;
 	}
 	#texto-ayuda{
-		margin-top: 90%;
+		margin-top: 40%;
 	}
+
 }
