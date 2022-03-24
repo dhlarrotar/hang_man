@@ -606,9 +606,7 @@ footer{
 
 
 	#texto-ayuda{
-
 		margin: 12% auto ;
-	
 	}
 	
 	
@@ -621,8 +619,56 @@ footer{
 	}
 }
 
-@media screen and (min-height: 780px){
-	.img-inicio{
-		height: 35%;
+@media screen and (max-height: 365px){
+	
+	
+	.lang-list{
+		position: fixed;
+		top:46px;
+		height:25px;
+		padding: 0;
+		left:20%;
+		right:20%;
+	}
+	.titulo{
+		position: fixed;
+		top: 67px;
+		left:7%;
+		font-size: 22px;
+		right:7%;
+	}
+	
+	#nueva-palabra{
+		position: fixed;
+		bottom: 100px;
+		left: 5%;
+		right:5%;
+	}
+	
+	#iniciar{
+		position: fixed;
+        bottom: 40px;
+		left:10%;
+	}
+   
+	#agregar-palabra{
+		position: fixed;
+        bottom: 40px;
+		right:10%;
+	}
+
+	.area-error{
+		position: fixed;
+		bottom: 115px;
+		left: 5%;
+		right:5%;
 	}
 }
+
+
+}
+
+
+
+
+
