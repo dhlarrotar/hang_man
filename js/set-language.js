@@ -19,7 +19,7 @@ var dataes = {
     "minerals":"Minerales",
     "animals":"Animales",
     "random":"Aleatorio",
-    "iniciar":"Iniciar Juego",
+    "iniciar":"Iniciar juego",
     "agregar-palabra":"Agregar palabra",
     "agregar":"Agregar",
     "hometext":"Menú",
