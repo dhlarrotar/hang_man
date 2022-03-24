@@ -648,13 +648,13 @@ footer{
 	#iniciar{
 		position: fixed;
         bottom: 40px;
-		left:10%;
+		left:18%;
 	}
    
 	#agregar-palabra{
 		position: fixed;
         bottom: 40px;
-		right:10%;
+		left:56%;
 	}
 
 	.area-error{
@@ -665,8 +665,46 @@ footer{
 	}
 }
 
+@media screen and (max-height: 240px){
+	
+	
+	.lang-list{
+		display: none;
+	}
+	.titulo{
+		display: none;
+	}
+	
+	#nueva-palabra{
+		position: fixed;
+		bottom: 60%;
+		left: 5%;
+		right:5%;
+	}
+	
+	#iniciar{
+		display: none;
+	}
+   
+	#agregar-palabra{
+		display: none;
+	}
 
+	.area-error{
+		position: fixed;
+		bottom: 27%;
+		left: 5%;
+		right:5%;
+	}
+	#area-inicio p{
+		display: none;
+	}
+
+	footer{
+		display: none;
+	}
 }
+
 
 
 
