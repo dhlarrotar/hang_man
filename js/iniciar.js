@@ -175,8 +175,7 @@ home.onclick=mostrarBienvenida;
         areaNuevaPalabra.classList.remove("fadeOut");
     });
 
-    inputPalabra.addEventListener(e, function(evt){
-        evt.preventDefault();
+    inputPalabra.addEventListener(e, function(){
         areaNuevaPalabra.classList.remove("fadeOut");
     });
 
@@ -193,8 +192,7 @@ home.onclick=mostrarBienvenida;
 })
 
 
-inputPalabra.addEventListener("input", function(evt) {
-    evt.preventDefault();
+inputPalabra.addEventListener("input", function() {
     var texto=inputPalabra.value;
     if (texto.length!=0){
         palabraVerificada=verificarValores(texto);

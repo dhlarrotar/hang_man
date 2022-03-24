@@ -303,13 +303,22 @@ html{
 
 
 .texto-div{
-	
 	font-size: 20px;
-	margin-top: 5%;
-	margin-bottom: 5%;
 	font-style: italic;
 	color: #496cad;
 }
+
+#cerrar-ayuda{
+	z-index: 10;
+	font-size: 20px;
+	position: fixed;
+	bottom:60px;
+	left:15%;
+	right: 15%;
+	font-style: italic;
+	color: #496cad;
+}
+
 
 
 #modo{
@@ -390,13 +399,6 @@ html{
 
 
 
-#fireworks{
-	position: absolute;
-	top: 5%;
-	width: 2%;
-	min-width: 100px;
-}
-
 .area-error{
 	margin: 12px;
 	background-color: #ca0505;
@@ -466,15 +468,15 @@ footer{
 	#iniciar{
 		position: fixed;
         bottom: 140px;
-		left: 30%;
-		right:30%;
+		left: 20%;
+		right:20%;
 	}
    
 	#agregar-palabra{
 		position: fixed;
         bottom: 78px;
-		left: 30%;
-		right:30%;
+		left: 20%;
+		right:20%;
 	}
 
 	#nueva-palabra{
@@ -527,6 +529,48 @@ footer{
 		right: 0px;
 		top: 0px;
 	}
+
+	#perdiste{
+		transform: scale(0.6);
+		bottom:20px;
+	}
+
+	
+	#aplausos{
+		transform: scale(0.5);
+		top:10px;
+		left:35%;
+	}
+
+
+
+	#modo{
+		z-index: 9;
+		position:absolute;
+		text-align: center;
+		vertical-align: middle;
+		left: 0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		opacity: 0.98;
+	}
+
+
+	#ayuda{
+		
+		position:absolute;
+		text-align: center;
+		vertical-align: middle;
+		left: 0;
+		top:0;
+		width: 100%;
+		height: 400px;
+		background-color: #ffffff;
+		opacity: 0.96;
+	}
+	
 	
 	
 }
