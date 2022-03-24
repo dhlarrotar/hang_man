@@ -133,24 +133,28 @@ home.onclick=mostrarBienvenida;
 
 
 ["touchstart","click"].forEach(function(e) {
-    reload.addEventListener(e, function(){
+    reload.addEventListener(e, function(evt){
+        evt.preventDefault();
         iniciar()
     });
 
 
-    iniciarJuego.addEventListener(e, function(){
+    iniciarJuego.addEventListener(e, function(evt){
+        evt.preventDefault();
         areaModo.classList.remove("fadeOut");
 
     });
 
-    minerales.addEventListener(e, function(){
+    minerales.addEventListener(e, function(evt){
+        evt.preventDefault();
         areaModo.classList.add("fadeOut");
         palabrasDict=palabrasDictMinerales;
         iniciar();
         entradaSound.play();  
     });
 
-    animales.addEventListener(e, function(){
+    animales.addEventListener(e, function(evt){
+        evt.preventDefault();
         palabrasDict=palabrasDictAnimales;
         areaModo.classList.add("fadeOut");
         iniciar();
@@ -158,23 +162,27 @@ home.onclick=mostrarBienvenida;
     });
 
 
-    aleatorio.addEventListener(e, function(){
+    aleatorio.addEventListener(e, function(evt){
+        evt.preventDefault();
         palabrasDict=Object.assign({},palabrasDictAnimales,palabrasDictMinerales,palabrasDictOtros);
         areaModo.classList.add("fadeOut");
         iniciar();  
         entradaSound.play();
     });
     
-    botonPalabra.addEventListener(e, function(){
+    botonPalabra.addEventListener(e, function(evt){
+        evt.preventDefault();
         areaNuevaPalabra.classList.remove("fadeOut");
     });
 
-    inputPalabra.addEventListener(e, function(){
+    inputPalabra.addEventListener(e, function(evt){
+        evt.preventDefault();
         areaNuevaPalabra.classList.remove("fadeOut");
     });
 
     
-    agregar.addEventListener(e, function(){
+    agregar.addEventListener(e, function(evt){
+        evt.preventDefault();
         areaNuevaPalabra.classList.add("fadeOut");
         palabrasDictOtros[palabraVerificada]="";
         inputPalabra.value="";
@@ -185,7 +193,8 @@ home.onclick=mostrarBienvenida;
 })
 
 
-inputPalabra.addEventListener("input", function() {
+inputPalabra.addEventListener("input", function(evt) {
+    evt.preventDefault();
     var texto=inputPalabra.value;
     if (texto.length!=0){
         palabraVerificada=verificarValores(texto);
