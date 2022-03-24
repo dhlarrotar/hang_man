@@ -495,10 +495,14 @@ footer{
 		min-width: 120px;
 	}
 }
-
-@media screen and (max-height:300px){
+@media screen and (max-height: 560px){
 	.img-inicio{
-		display: none;
-		
+		height: 0;
+	}
+}
+
+@media screen and (min-height: 780px){
+	.img-inicio{
+		height: 35%;
 	}
 }
