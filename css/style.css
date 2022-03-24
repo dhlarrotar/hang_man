@@ -8,8 +8,9 @@ html{
   .lang-list {
 	background-color: #ffffff;
 	color: rgb(50, 36, 173);
-	padding: 12px;
-	font-size: 12px;
+	min-width: 40%;
+	padding: 14px;
+	font-size: 14px;
 	border: none;
 	cursor: pointer;
 	margin-bottom: 18px;
@@ -30,7 +31,7 @@ html{
 .titulo{
 	font-size: 38px;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #00ff88 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -55,7 +56,10 @@ html{
 }
 
 .img-inicio{
-	display: inline-block;
+	display: block;
+	text-align: center;
+	margin-left: 35%;
+	margin-top: 35px;
 	width: auto;
 	height: 40%;
 	max-height: 300px;	
@@ -368,14 +372,14 @@ html{
 
 
 .fadeOut2{
-	background-color: #0be6429c;
+	background-color: #0be6423a;
 	transition: 0.7s;
 
 }
 
 
 .fadeOutBad{ 
-	background-color: #ff000070;
+	background-color: #ff000025;
 	transition: 0.7s;
 
 }
@@ -433,6 +437,26 @@ footer{
 
 
 @media screen and (max-width:480px){
+	.lang-list{
+		position: fixed;
+		bottom: 85%;
+		left: 20%;
+		right:20%;
+	}
+	.titulo{
+		position: fixed;
+		bottom: 74%;
+		left: 20%;
+		right:20%;
+	}
+	.img-inicio{
+		position: fixed;
+		margin-left: 0;
+		bottom: 30%;
+		left: 26%;
+		right:20%;
+	}
+	
 	#iniciar{
 		position: fixed;
         bottom: 130px;
