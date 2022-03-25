@@ -537,7 +537,12 @@ footer{
 
 
 	#ayuda{
+		z-index:25;
+		position: fixed;
+		left:0px;
+		top: 0px;;
 		min-height: 800px;
+	
 	}
 
 	#modotext{
@@ -560,6 +565,11 @@ footer{
 		bottom: 190px;
 		left: 5%;
 		right:5%;
+	}
+
+
+	footer{
+		z-index:1;
 	}
 }
 
@@ -750,7 +760,7 @@ footer{
 
 	.dibujo{
 		position:fixed;
-		height: 150px;
+		height: 120px;
 		margin: 0;
 		top:5px;
 	}
