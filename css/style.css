@@ -60,6 +60,12 @@ html{
 	transform: scale(1.1);
   }
 
+
+.boton-inicio:active{
+	transform: scale(1.1);
+	transition: 1.6s;
+  }
+
 .img-inicio{
 	display: block;
 	text-align: center;
@@ -233,6 +239,10 @@ html{
 	transform: scale(1.1);
   }
 
+.area-tecla:active{
+	transform: scale(1.1);
+	transition: 1.6s;
+  }
 
 .boton{
 	display: inline-block;
@@ -255,6 +265,11 @@ html{
 	transform: scale(1.1);
   }
 
+  .logo:active{
+	transform: scale(1.1);
+  }
+
+
 
 .botones-juego{
 	position: absolute;
@@ -276,6 +291,12 @@ html{
 
 .logo2:hover{
 	transform: scale(1.1);
+	
+  }
+
+  .logo2:active{
+	transform: scale(1.1);
+	transition: 1.6s;
   }
 
 .boton-nav{
@@ -380,8 +401,13 @@ html{
 	transform: scale(1.1);
   }
 
+  .boton-modo:active{
+	transform: scale(1.1);
+	transition: 1.6s;
+  }
+
 .fadeOut{
-	transition: 2.7s;
+	transition: 3.7s;
 	display: none;
 	background-color: #ffffff;
 }
