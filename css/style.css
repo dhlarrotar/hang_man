@@ -557,10 +557,36 @@ footer{
 		right:5%;
 	}
 }
+
+
 @media screen and (max-height: 650px) and (max-width: 480px){
+	 
 	.img-inicio{
-		display: none;
+		height: 30%;
+		margin: 0;
+		position: fixed;
+		top:140px;
+		left:35%;
+		right: 35%;
 	}
+	
+	.lang-list{
+		position: fixed;
+		top:66px;
+		padding: 4px;
+		font-size: 18px;
+		left:10%;
+		right:10%;
+	}
+	.titulo{
+		position: fixed;
+		top: 85px;
+		left:7%;
+		right:7%;
+		font-size: 28px;
+	}
+
+
 	
 	.area-dibujo{
 		margin: 0;
@@ -641,14 +667,12 @@ footer{
 	
 	
 }
+
 @media screen and (max-height: 650px) and (min-width: 480px) {
 	.img-inicio{
 		height: 0;
 	}
 }
-
-
-
 
 
 @media screen and (max-height: 380px) and (min-width: 480px) {
@@ -666,7 +690,7 @@ footer{
 	}
 	.titulo{
 		position: fixed;
-		top: 50px;
+		top: 65px;
 		left:7%;
 		right:7%;
 		font-size: 28px;
@@ -675,7 +699,7 @@ footer{
 
 	#iniciar{
 		position: fixed;
-        top: 120px;
+        bottom: 95px;
 		width: 20%;
 		left: 22%;
 		
@@ -683,14 +707,14 @@ footer{
    
 	#agregar-palabra{
 		position: fixed;
-        top: 120px;
+        bottom: 95px;
 		width: 20%;
 		left: 50%;
 	}
 
 	#nueva-palabra{
 		position: fixed;
-		bottom:90px;
+		bottom:50px;
 		left:20%;
 		right: 20%;
 	}
@@ -698,7 +722,7 @@ footer{
 
 	.area-error{
 		position: fixed;
-		bottom:40px;
+		bottom:18px;
 		left:20%;
 		right: 20%;
 
@@ -714,14 +738,6 @@ footer{
 
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -770,7 +786,7 @@ footer{
 }
 
 
-@media screen and (max-height: 240px){
+@media screen and (max-height: 260px){
 	
 	
 	.lang-list{
@@ -811,7 +827,11 @@ footer{
 }
 
 
-
+@media screen and (max-height: 548px) and (max-width: 480px){
+	.img-inicio{
+		display: none;
+	}
+}
 
 
 
