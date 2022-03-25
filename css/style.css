@@ -383,6 +383,7 @@ html{
 .fadeOut{
 	transition: 2.7s;
 	display: none;
+	background-color: #ffffff;
 }
 
 
@@ -420,9 +421,9 @@ html{
 
 .area-error{
 	margin: 12px;
-	background-color: #ca0505;
 	opacity: 0.6;
-	color: #ffffff;
+	color: #ac0505;
+	font-weight: bold;
 }
 
 #aplausos{
@@ -488,15 +489,16 @@ footer{
 	#iniciar{
 		position: fixed;
         bottom: 140px;
-		left: 20%;
-		right:20%;
+		width: 60%;
+		left: 15%;
+		
 	}
    
 	#agregar-palabra{
 		position: fixed;
         bottom: 78px;
-		left: 20%;
-		right:20%;
+		width: 60%;
+		left: 15%;
 	}
 
 	#nueva-palabra{
@@ -619,17 +621,11 @@ footer{
 	}
 }
 
-@media screen and (max-height: 365px){
-	
-	
+@media screen and (max-height: 431px){
 	.lang-list{
-		position: fixed;
-		top:46px;
-		height:25px;
-		padding: 0;
-		left:20%;
-		right:20%;
+		display: none;
 	}
+	
 	.titulo{
 		position: fixed;
 		top: 67px;
@@ -640,30 +636,35 @@ footer{
 	
 	#nueva-palabra{
 		position: fixed;
-		bottom: 100px;
+		bottom: 50%;
 		left: 5%;
 		right:5%;
 	}
 	
 	#iniciar{
-		position: fixed;
-        bottom: 40px;
-		left:18%;
+		display: none;
 	}
    
 	#agregar-palabra{
-		position: fixed;
-        bottom: 40px;
-		left:56%;
+		display: none;
 	}
 
 	.area-error{
 		position: fixed;
-		bottom: 115px;
+		bottom: 20%;
 		left: 5%;
 		right:5%;
 	}
+
+	#area-inicio p{
+		display: none;
+	}
+
+	footer{
+		display: none;
+	}
 }
+
 
 @media screen and (max-height: 240px){
 	

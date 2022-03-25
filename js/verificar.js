@@ -13,12 +13,16 @@ function verificarValores(texto){
     var patronRechazados = /[^a-zA-Z\s]/gi;
     var aceptados=texto.match(patronAceptados);
     var rechazados1=new Set(texto.match(patronRechazados));
-    var rechazados=[...rechazados1]
+    var rechazados=[...rechazados1];
     if (rechazados.length!=0){
-        mensajeError.textContent=errorText+rechazados;
+        mensajeError.classList.remove("fadeOut");
+        mensajeError.classList.add("area-error");
+        mensajeError.textContent=errorText+rechazados.toString().replaceAll(","," ");
     }
     else{
         mensajeError.textContent=""
+        mensajeError.classList.remove("area-error");
+        mensajeError.classList.add("fadeOut");
     }
     if (aceptados){
         return aceptados.toString().replaceAll(",","");
