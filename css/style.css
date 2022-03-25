@@ -535,6 +535,11 @@ footer{
 		right:5%;
 	}
 
+
+	#ayuda{
+		min-height: 800px;
+	}
+
 	#modotext{
 		margin-top: 30%;
 	}
@@ -559,28 +564,32 @@ footer{
 }
 
 
+
+
+
+
 @media screen and (max-height: 650px) and (max-width: 480px){
 	 
 	.img-inicio{
 		height: 30%;
 		margin: 0;
 		position: fixed;
-		top:140px;
+		top:146px;
 		left:35%;
 		right: 35%;
 	}
 	
 	.lang-list{
 		position: fixed;
-		top:66px;
-		padding: 4px;
+		top:62px;
+		padding: 6px;
 		font-size: 18px;
 		left:10%;
 		right:10%;
 	}
 	.titulo{
 		position: fixed;
-		top: 85px;
+		top: 95px;
 		left:7%;
 		right:7%;
 		font-size: 28px;
@@ -598,12 +607,32 @@ footer{
 
 	}
 
+	
+
+
+
+
+
+@media screen and (max-height: 650px) and (min-width: 480px) {
+	.img-inicio{
+		height: 0;
+	}
+
 	.botones-juego{
 		transform: scale(0.8);
 		position: absolute;
-		right: 10px;
-		top: 0px;
+		right:1%;
+		top:1%;
+		text-align: right;
+		background: none;
 	}
+
+	#dibujo{
+		transform: scale(0.2);
+	
+	}
+
+
 
 	#perdiste{
 		transform: scale(0.6);
@@ -636,7 +665,7 @@ footer{
 
 	.boton-modo{	
 		font-size: 20px;
-		/* Dark blue/dark-blue-300 */
+		/* Dark blue/dark-blue-300 */;
 		border-radius: 12px;
 		border: 1px solid #0700b8;
 		margin-top: 3%;
@@ -645,6 +674,8 @@ footer{
 
 	}
 	
+
+
 
 	#ayuda{
 		position:absolute;
@@ -668,17 +699,37 @@ footer{
 	
 }
 
-@media screen and (max-height: 650px) and (min-width: 480px) {
-	.img-inicio{
-		height: 0;
-	}
 }
 
 
-@media screen and (max-height: 380px) and (min-width: 480px) {
+
+@media screen and (max-height: 650px) and (min-width: 480px){
+
+	.img-inicio{
+		height: 120px;
+		margin-top: 15px;
+		margin-left: 41%;
+	}
+
+}
+
+
+
+
+@media screen and (max-height: 450px) and (min-width: 480px) {
 	.img-inicio{
 		height: 0;
 	}
+
+	.botones-juego{
+		transform: scale(0.85);
+		position: absolute;
+		right:1%;
+		top:1%;
+		text-align: right;
+		background: none;
+	}
+
 
 	.lang-list{
 		position: fixed;
@@ -694,6 +745,14 @@ footer{
 		left:7%;
 		right:7%;
 		font-size: 28px;
+	}
+
+
+	.dibujo{
+		position:fixed;
+		height: 150px;
+		margin: 0;
+		top:5px;
 	}
 
 
@@ -729,6 +788,24 @@ footer{
 	}
 
 
+	.boton-modo{
+		margin:6px;
+		transform: scale(0.8);
+	}
+
+	
+	#perdiste{
+		transform: scale(0.6);
+		bottom:6px;
+	}
+
+	
+	#aplausos{
+		transform: scale(0.5);
+		position: absolute;
+		top:0px;
+		left:35px;
+	}
 
 
 
@@ -738,6 +815,9 @@ footer{
 
 
 }
+
+
+
 
 
 
@@ -786,6 +866,10 @@ footer{
 }
 
 
+
+
+
+
 @media screen and (max-height: 260px){
 	
 	
@@ -827,6 +911,9 @@ footer{
 }
 
 
+
+
+
 @media screen and (max-height: 548px) and (max-width: 480px){
 	.img-inicio{
 		display: none;
@@ -835,3 +922,85 @@ footer{
 
 
 
+@media screen and (min-height: 808px) and (min-width: 480px){
+	
+	.lang-list{
+		transform: scale(1.5);
+		margin-top: 25px;	
+	}
+	.titulo{
+		transform: scale(1.5);
+		margin-top: 80px;
+	}
+
+	#nueva-palabra{
+		transform: scale(1.5);
+		position: absolute;
+		bottom: 5%;	
+		left: 30%;
+	}
+
+	.botones-juego{
+		transform: scale(2);
+		position: absolute;
+		top: 20%;
+	}
+	
+
+	.area-tecla{
+		transform: scale(1.8);
+		margin: 3%;
+	}
+
+
+	.area-palabra{
+		transform: scale(2.2);
+	}
+
+	.fadeOutLetra{
+		transform: scale(2.2);	
+	}
+
+
+	.area-error{
+		width: 100%;
+	}
+
+
+	.img-inicio{
+		transform: scale(2.1);
+		margin-top:220px;
+	}
+
+	#iniciar{
+		transform: scale(1.5);
+		position: fixed;
+		bottom: 15%;
+		left:30%;
+	}
+
+
+	#agregar-palabra{
+		transform: scale(1.5);
+		position: fixed;
+		bottom: 15%;
+		right:30%;
+	}
+
+
+
+	.dibujo{
+		height: 450px;
+		position:fixed;
+		top:5%;
+		left:5%
+	}
+
+
+	footer{
+		transform: scale(1.1);
+		position: fixed;
+		bottom: 5px;
+		left:50px;
+	}
+}
