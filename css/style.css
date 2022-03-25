@@ -557,9 +557,9 @@ footer{
 		right:5%;
 	}
 }
-@media screen and (max-height: 560px){
+@media screen and (max-height: 650px) and (max-width: 480px){
 	.img-inicio{
-		height: 0;
+		display: none;
 	}
 	
 	.area-dibujo{
@@ -641,12 +641,89 @@ footer{
 	
 	
 }
-
-@media screen and (min-height: 780px){
+@media screen and (max-height: 650px) and (min-width: 480px) {
 	.img-inicio{
-		height: 35%;
+		height: 0;
 	}
 }
+
+
+
+
+
+@media screen and (max-height: 380px) and (min-width: 480px) {
+	.img-inicio{
+		height: 0;
+	}
+
+	.lang-list{
+		position: fixed;
+		top:46px;
+		padding: 0;
+		font-size: 15px;
+		left:20%;
+		right:20%;
+	}
+	.titulo{
+		position: fixed;
+		top: 50px;
+		left:7%;
+		right:7%;
+		font-size: 28px;
+	}
+
+
+	#iniciar{
+		position: fixed;
+        top: 120px;
+		width: 20%;
+		left: 22%;
+		
+	}
+   
+	#agregar-palabra{
+		position: fixed;
+        top: 120px;
+		width: 20%;
+		left: 50%;
+	}
+
+	#nueva-palabra{
+		position: fixed;
+		bottom:90px;
+		left:20%;
+		right: 20%;
+	}
+
+
+	.area-error{
+		position: fixed;
+		bottom:40px;
+		left:20%;
+		right: 20%;
+
+	}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-height: 431px) and (max-width: 501px){
 	.lang-list{
