@@ -932,7 +932,7 @@ footer{
 
 
 
-@media screen and (min-height: 808px) and (min-width: 480px){
+@media screen and (min-height: 808px) and (min-width: 1283px){
 	
 	.lang-list{
 		transform: scale(1.5);
@@ -959,17 +959,34 @@ footer{
 
 	.area-tecla{
 		transform: scale(1.8);
-		margin: 3%;
+		margin: 2%;
 	}
 
 
 	.area-palabra{
-		transform: scale(2.2);
+		transform: scale(1.5);
+		width: 84%;
+		margin: 28px;
 	}
 
 	.fadeOutLetra{
-		transform: scale(2.2);	
+		transform: scale(1.5);
+		width: 84%;	
+		margin: 28px;
 	}
+
+
+	#modotext{
+		margin-top:30%;
+	}
+
+
+
+	#texto-ayuda{
+		margin-top:30%;
+	}
+
+
 
 
 	.area-error{
@@ -1013,4 +1030,134 @@ footer{
 		bottom: 5px;
 		left:50px;
 	}
+}
+
+
+
+
+
+@media screen and (min-height: 808px) and (min-width: 480px) and (max-width: 1283px){
+	
+
+
+	.lang-list{
+		transform: scale(1.5);
+		margin-top: 25px;	
+	}
+	.titulo{
+		transform: scale(1.5);
+		margin-top: 80px;
+	}
+
+	#nueva-palabra{
+		transform: scale(1.5);
+		position: absolute;
+		bottom: 10%;	
+		left: 30%;
+	}
+
+	.botones-juego{
+		transform: scale(2);
+		position: absolute;
+		top: 18%;
+	}
+	
+
+	.area-tecla{
+		transform: scale(1.8);
+		margin: 3%;
+	}
+
+
+	.area-palabra{
+		transform: scale(1.6);
+	}
+
+	.fadeOutLetra{
+		transform: scale(1.6);	
+	}
+
+
+	.area-error{
+		width: 250px;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		bottom: 8%px;
+		left:10px;
+	}
+
+
+	.img-inicio{
+		transform: scale(1.9);
+		margin-top:170px;
+	}
+
+	#iniciar{
+		transform: scale(1.5);
+		position: fixed;
+		bottom: 22%;
+		left:30%;
+		width: 40%;
+	}
+
+
+	#agregar-palabra{
+		transform: scale(1.5);
+		position: fixed;
+		bottom: 14%;
+		left:30%;
+		width: 40%;
+	}
+
+	#modotext{
+		margin-top:50%;
+	}
+
+
+
+	#texto-ayuda{
+		margin-top:50%;
+	}
+
+	.dibujo{
+		height: 450px;
+		position:fixed;
+		top:5%;
+		left:5%
+	}
+
+
+	footer{
+		transform: scale(1.1);
+		position: fixed;
+		bottom: 5px;
+		left:50px;
+	}
+}
+
+
+
+@media screen and (min-height: 808px) and (max-height: 1160px) and (min-width: 480px) and (max-width: 1283px){
+	.img-inicio{
+		height: 120px;
+	}
+
+
+	#modotext{
+		margin-top:20%;
+	}
+
+	.dibujo{
+		transform: scale(0.8);
+		position: absolute;
+		top: 15px;
+		left:15px
+	}
+
+	#texto-ayuda{
+		margin-top:20%;
+	}
+
+
 }
