@@ -446,6 +446,7 @@ html{
 
 
 .area-error{
+	display: block;
 	margin: 12px;
 	opacity: 0.6;
 	color: #ac0505;
@@ -647,7 +648,7 @@ footer{
 	}
 }
 
-@media screen and (max-height: 431px){
+@media screen and (max-height: 431px) and (max-width: 501px){
 	.lang-list{
 		display: none;
 	}
