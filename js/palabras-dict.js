@@ -8,7 +8,7 @@ var palabrasDictMineralesEs = {
     "Cuarzo": "Soy resistente y abundante",
     "Calcita": "Soy un Carbonato de Calcio muy estable",
     "Diamante": "Puedo ser de carbono pero soy muy valioso",
-    "Olivino": "Nací en lo profundo y me altero fácilmente",
+    "Olivino": "Soy un silicato y me altero fácilmente",
 }
 
 var palabrasDictAnimalesEs = {
@@ -30,16 +30,18 @@ var palabrasDictOtrosEs = {
 
 var palabrasDictMinerals = {
     "Quartz": "I'm hardy and abundant", 
-    "Calcite": "Very stable Calcium Carbonate", 
+    "Calcite": "Polymorph of Calcium Carbonate", 
     "Diamond": "Made of Carbon but highly valuable", 
-    "Olivine": "Green silicate altered with ease"
+    "Olivine": "Easy-altered green silicate"
+    
+
 }
 
 var palabrasDictAnimals = {
-    "elephant": "I have a trunk, big ears and fangs", 
+    "elephant": "I have a trunk", 
     "giraffe": "I have a long neck", 
-    "bat": "I like caves and darkness", 
-    "bee": "I love flowers and produce honey", 
+    "bat": "I like caves", 
+    "bee": "I love pollen", 
     "dog":"I'm human's best friend", 
     "octopus": "I have tentacles",
 }
@@ -47,5 +49,5 @@ var palabrasDictAnimals = {
 var palabrasDictOther = {
     "moon":" Earth's natural satellite", 
     "sun": "I'm Earth's closest star", 
-    "snow":"I fall in winter"
+    "snow":"Crystaline form of water"
 }
