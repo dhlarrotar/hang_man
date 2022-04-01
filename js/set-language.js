@@ -59,7 +59,7 @@ function mostrarTexto(langDict){
 function setLanguage(){
     lang=langList.value; 
     document.getElementsByTagName('html')[0].setAttribute('lang',lang);
-    datadefault=dataen;
+    datadefault=dataes;
     langDict=eval("data"+lang);
     window.location.hash="#"+lang;
     mostrarTexto(langDict);
