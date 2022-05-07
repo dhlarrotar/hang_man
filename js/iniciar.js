@@ -140,7 +140,6 @@ home.onclick=mostrarBienvenida;
 
 
     iniciarJuego.addEventListener(e, function(evt){
-        evt.preventDefault();
         areaModo.classList.remove("fadeOut");
 
     });

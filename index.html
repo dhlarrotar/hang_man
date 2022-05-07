@@ -9,6 +9,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="add-to-homescreen/style/addtohomescreen.css">
 
+		<script src="https://kit.fontawesome.com/9fb909ccd9.js" crossorigin="anonymous"></script>
+
+
 		<meta property="og:title" content="Hangman!" />
         <meta property="og:description" content="Guess the secret word before you get hung up!" />
         <meta property="og:image" content="https://i.postimg.cc/QMkNj7w0/hangman.png">
@@ -51,9 +54,10 @@
 		<div class="fadeOut" id="modo">
 			
 			<p class="texto-div" id="modotext"></p>
-			<p class="boton-modo" id="minerals"></p>
-			<p class="boton-modo" id="animals"></p>
-			<p class="boton-modo" id="random"></p>
+			<a class="boton-modo"><i class="fa-solid fa-gem"></i><p id="minerals"></p></p> </a>
+			<a class="boton-modo"><i class="fa-solid fa-horse"></i><p id="animals"></p></p> </a>
+			<a class="boton-modo"><i class="fa-solid fa-shuffle"></i><p id="random"></p></p> </a>
+	
 		</div>
 
 		<div id="area-inicio">
@@ -70,6 +74,7 @@
 			<div id="area-botones-inicio">
 				<p class="boton-inicio" id="iniciar"></p>
 				<p class="boton-inicio" id="agregar-palabra"></p>
+		
 			</div>
 
 			<div class="fadeOut" id="nueva-palabra">

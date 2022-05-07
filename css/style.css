@@ -9,7 +9,9 @@ body{
 	margin-top: 3em;
 }
 
-
+i{
+	margin:8px ;
+}
   .lang-list {
 	background-color: #ffffff;
 	color: rgb(28, 21, 97);
@@ -61,8 +63,11 @@ body{
 
 }
 
+
+
+
 .boton-inicio:hover{
-	transform: scale(1.1);
+	transform: scale(1.1) !important;
   }
 
 
@@ -74,10 +79,11 @@ body{
 .img-inicio{
 	display: block;
 	text-align: center;
-	margin-left: 35%;
+	margin-left: 40%;
 	margin-top: 35px;
+	margin-bottom: 55px;
 	width: auto;
-	height:300px;
+	height:200px;
 }
 
 
@@ -100,10 +106,12 @@ body{
 }
 
 
-#iniciar{
+.boton-inicio{
 		/* Auto layout */
-		z-index: 1;
+
 		display: inline-block;
+		cursor: pointer;
+		user-select: none;
 		background: none;
 		align-items: center;
 		width: 170px;
@@ -120,25 +128,11 @@ body{
 		box-shadow:  1px 1px 1px -1px  rgb(0, 22, 71);
 }
 
-
-#agregar-palabra{
-		/* Auto layout */
-		z-index: 1;
-		display: inline-block;
-		background: none;
-		align-items: center;
-		width: 170px;
-		padding: 12px;
-		font-size: 20px;
-		/* Dark blue/dark-blue-300 */
-		border-radius: 12px;
-		border: 3px solid #0700b8;
-		border: 1px solid #0700b8;
-		background:	-webkit-linear-gradient(72deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		box-shadow:  1px 1px 1px -1px  rgb(0, 22, 71);
+#iniciar:hover{
+	transform: scale(1.1);
 }
+
+
 
 
 #nueva-palabra{
@@ -377,7 +371,8 @@ body{
 }
 
 #modotext{
-	margin-top: 50px;
+	margin-top: 10%;
+	margin-bottom: 5%;
 }
 
 
@@ -392,7 +387,7 @@ body{
 	/* Dark blue/dark-blue-300 */
 	border-radius: 12px;
 	border: 3px solid #0700b8;
-	margin-top: 5%;
+	margin-top: 4%;
 	margin-left: 5%;
 	margin-right: 5%;
 	border: 1px solid #0700b8;
