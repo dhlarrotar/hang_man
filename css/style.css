@@ -14,7 +14,7 @@ i{
 }
 
 nav i{
-color: #7676a0;
+color: #afadad;
 font-size: 24px;
 }
 
@@ -157,7 +157,7 @@ font-size: 24px;
 
 .area-dibujo{
 	margin-top: 1%;
-	height: 20%;
+	height: 10%;
 	display: block;
 
 }
@@ -573,8 +573,10 @@ footer{
 	}
 
 
-
-
+	#sarea{
+		position: relative;
+		top:-110px;
+	}
 	#modotext{
 		margin-top: 30%;
 	}
@@ -597,7 +599,14 @@ footer{
 
 
 	footer{
-		z-index:1;
+		display: none;;
+	}
+
+	#area-teclado{
+		transform: scale(0.8);
+		position: relative;
+		bottom:-110px;
+
 	}
 }
 
@@ -650,11 +659,6 @@ footer{
 
 	
 
-
-
-
-
-@media screen and (max-height: 650px) and (min-width: 480px) {
 	.img-inicio{
 		height: 0;
 	}
@@ -668,10 +672,6 @@ footer{
 		background: none;
 	}
 
-	#dibujo{
-		transform: scale(0.2);
-	
-	}
 
 
 
@@ -723,7 +723,7 @@ footer{
 	
 }
 
-}
+
 
 
 
@@ -946,6 +946,7 @@ footer{
 	.img-inicio{
 		display: none;
 	}
+
 }
 
 
