@@ -12,6 +12,13 @@ body{
 i{
 	margin:8px ;
 }
+
+nav i{
+color: #7676a0;
+font-size: 24px;
+}
+
+
   .lang-list {
 	background-color: #ffffff;
 	color: rgb(28, 21, 97);
@@ -32,7 +39,7 @@ i{
   }
   
   .lang-list:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
   }
 
 .titulo{
@@ -66,13 +73,9 @@ i{
 
 
 
-.boton-inicio:hover{
-	transform: scale(1.1) !important;
-  }
-
 
 .boton-inicio:active{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 1.6s;
   }
 
@@ -112,24 +115,27 @@ i{
 		display: inline-block;
 		cursor: pointer;
 		user-select: none;
-		background: none;
+		background: #ffffff;
 		align-items: center;
 		width: 170px;
 		padding: 12px;
 		font-size: 20px;
 		/* Dark blue/dark-blue-300 */
 		border-radius: 12px;
-		border: 3px solid #0700b8;
+	
 		margin-right: 2%;
-		border: 1px solid #0700b8;
-		background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		box-shadow:  1px 1px 1px -1px  rgb(0, 22, 71);
+	
+		box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
+		-webkit-box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
+		-moz-box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
+	
 }
 
-#iniciar:hover{
-	transform: scale(1.1);
+.boton-inicio:hover{
+	transform: scale(1.05);
+	background:		-webkit-linear-gradient(12deg, #084594b0 0%, #12b295b7 100%);
+	color: #ffffff;
+	font-weight: 700;
 }
 
 
@@ -187,9 +193,7 @@ i{
 	height: fit-content;
 	margin-top: 1px;
 	min-height: 70px;
-	background:	-webkit-linear-gradient(280deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	color: #71708d;
 	font-size: 32px;
 }
 
@@ -213,33 +217,40 @@ i{
 .area-tecla{
 	display: inline-flex;
 	vertical-align: middle;
-	border:1px solid #0700b8;
-	border-radius: 15 px;
+	background-color: white;
+	border-radius: 8px;
+	cursor: pointer;
 	margin:6px;
+	padding: 2px;
 	width:32px;
 	height: 35px;
 	text-align: center;
 	align-items: center;
-	box-shadow:  0.6px 0.2px 0.5px rgb(6, 5, 90);
+	box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
+		-webkit-box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
+		-moz-box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
+	
+	
 }
 
 .letra-tecla{
-	margin-left: 22%;
+	cursor: pointer;
+	margin-left: 18%;
 	font-size: 21px;
 	justify-content: center;
 	text-align: center;
-	color: #0700b8;
+	color: #00117c;
 	text-shadow: 1.7px 1px #ffffff;
 
 }
 
 
 .area-tecla:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
   }
 
 .area-tecla:active{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 1.6s;
   }
 
@@ -261,11 +272,11 @@ i{
 }
 
 .logo:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
   }
 
   .logo:active{
-	transform: scale(1.1);
+	transform: scale(1.05);
   }
 
 
@@ -281,6 +292,7 @@ i{
 
 
 .logo2{
+	cursor: pointer;
 	margin: 4px auto;
 	margin-bottom: 3px;
 	display: block;
@@ -289,71 +301,94 @@ i{
 }
 
 .logo2:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	
   }
 
   .logo2:active{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 1.6s;
   }
 
 .boton-nav{
 	border: 0;
-	width: 66px;
-	background:	-webkit-linear-gradient(72deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	
-	margin-bottom: 1px;
+	background-color: #ffffff;
+	padding: 7px;
+	width: 70px;
+	border-radius: 15px;
+	margin-bottom: 15px;
+	color: #484a58;
+	cursor: pointer;
 	font-size: 14px;
 	text-align: center;
+	box-shadow: 0px 4px 4px -5px rgba(98, 98, 98, 0.75);
+		-webkit-box-shadow: 0px 4px 4px -5px rgba(98, 98, 98, 0.75);
+		-moz-box-shadow: 0px 4px 4px -5px rgba(98, 98, 98, 0.75);
+	
 
 }
 
 
 
+.boton-nav:hover{
+	transform: scale(1.04);
+	background:		-webkit-linear-gradient(12deg, #005ad0b0 0%, #04cda8b7 100%);
+	color: white;
+}
+
+.boton-nav:hover i{
+	color: white !important;
+}
+
 #ayuda{
-	z-index: 5;
-	position:absolute;
+	z-index: 5000;
+	width: 80%;
+	margin-top: 20%;
+	border-radius: 25px;
+	margin-left:10%;
+	padding-bottom: 20px;
 	text-align: center;
-	left: 0;
-	top:0;
-	width: 100%;
-	height: 130%;
+	vertical-align: middle;
+
 	background-color: #ffffff;
 	opacity: 0.96;
 }
 
 
 #texto-ayuda{
+	width: 80%;
+	margin-left:10%;
+
 	text-align: center;
 	font-size: 30px;
 	font-style: italic;
-	margin: 150px auto ;
-	margin-left: 40px;
-	margin-right: 40px;
+	text-align: center;
 	vertical-align: middle;
-	color: #496cad;
+	color: #868686;
 }
 
 
 .texto-div{
+	width: 80%;
+	margin-left: 10%;
 	font-size: 20px;
+	text-align: center;
 	font-style: italic;
-	color: #496cad;
+	color: #888888;
 }
 
 #cerrar-ayuda{
-	z-index: 10;
-	font-size: 20px;
-	position: fixed;
-	bottom:60px;
-	left:15%;
-	right: 15%;
-	font-style: italic;
-	color: #496cad;
+	position: relative;
+	left:44%;
+	color: #d9d9d9;
+	font-size: 30px;
 }
+
+#cerrar-ayuda:hover{
+color: #d41313;
+}
+
+
 
 
 
@@ -366,43 +401,46 @@ i{
 	top:0;
 	width: 100%;
 	height: 130%;
-	background-color: #ffffff;
-	opacity: 0.98;
+	background:-webkit-linear-gradient(90deg, #eeedfb 0%, #ebfcf5 100%);
 }
 
 #modotext{
 	margin-top: 10%;
-	margin-bottom: 5%;
+	margin-bottom: 40px;
+	color: #989898;
 }
 
 
 
 .boton-modo{
+	cursor: pointer;
 	display: inline-block;
 	background: none;
 	align-items: center;
 	vertical-align: middle;
-	padding: 5%;
+	padding: 20px;
 	font-size: 28px;
+	color: #989898;
 	/* Dark blue/dark-blue-300 */
 	border-radius: 12px;
-	border: 3px solid #0700b8;
-	margin-top: 4%;
-	margin-left: 5%;
-	margin-right: 5%;
-	border: 1px solid #0700b8;
-	background:	-webkit-linear-gradient(12deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	box-shadow:  12px 14px 12px -8px rgba(0, 185, 62, 0.08);
+	margin-bottom: 27px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background:	#ffffff;
+	box-shadow: 0px 6px 11px -5px rgba(98, 98, 98, 0.75);
+	-webkit-box-shadow: 0px 6px 11px -5px rgba(98, 98, 98, 0.75);
+	-moz-box-shadow: 0px 6px 11px -5px rgba(98, 98, 98, 0.75);
 }
 
 .boton-modo:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
+	background:		-webkit-linear-gradient(12deg, #0a57bcb0 0%, #17d5b2b7 100%);
+	color: #ffffff;
+	font-weight: 700;
   }
 
   .boton-modo:active{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: 1.6s;
   }
 
@@ -421,9 +459,7 @@ i{
 	height: fit-content;
 	margin-top: 1px;
 	min-height: 70px;
-	background:	-webkit-linear-gradient(280deg, #62df9a 0%, #496cad 24%, #0d10c7 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	color: #61607f;
 	font-size: 36px;
 }
 
@@ -454,10 +490,9 @@ i{
 }
 
 #aplausos{
-	position: fixed;
+	position: absolute;
 	top: 11%;
-	left:20%;
-	right:30%;
+	left:42%;
 	width:24%;
 	min-width: 170px;
 	max-width: 220px;
@@ -466,12 +501,11 @@ i{
 
 
 #perdiste{
-	position: fixed;
-	bottom:13%;
-	left:40%;
-	right:35%;
-	width: 12%;
-	min-width: 120px;
+	position: absolute;
+	top: 30%;
+	left:43%;
+	width: 7%;
+	min-width: 80px;
 }
 
 footer{
@@ -482,9 +516,7 @@ footer{
 	margin-top: 15px;
 	margin-left: 15px;
 	display: block;
-	background:	-webkit-linear-gradient(330deg, #0700b8 0%, #496cad 84%, #00ff88 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #484a58;
 
 }
 
@@ -541,21 +573,12 @@ footer{
 	}
 
 
-	#ayuda{
-		z-index:25;
-		position: fixed;
-		left:0px;
-		top: 0px;;
-		min-height: 800px;
-	
-	}
+
 
 	#modotext{
 		margin-top: 30%;
 	}
-	#texto-ayuda{
-		margin-top: 70%;
-	}
+
 
 	#perdiste{
 		position: fixed;
@@ -695,23 +718,6 @@ footer{
 
 
 
-	#ayuda{
-		position:absolute;
-		text-align: center;
-		vertical-align: middle;
-		margin-left: 0px !important;
-		left: 0;
-		top:0;
-		width: 100%;
-		height: 400px;
-		background-color: #ffffff;
-		opacity: 0.96;
-	}
-
-
-	#texto-ayuda{
-		margin: 12% auto ;
-	}
 	
 	
 	
@@ -808,10 +814,7 @@ footer{
 
 	}
 
-        #texto-ayuda{
-           margin-top:35px;
-
-       }
+   
 
 	.boton-modo{
 		margin:6px;
@@ -997,9 +1000,7 @@ footer{
 
 
 
-	#texto-ayuda{
-		margin-top:30%;
-	}
+
 
 
 
@@ -1045,7 +1046,7 @@ footer{
 
 
 	footer{
-		transform: scale(1.1);
+		transform: scale(1.05);
 		position: fixed;
 		bottom: 5px;
 		left:50px;
@@ -1136,9 +1137,6 @@ footer{
 
 
 
-	#texto-ayuda{
-		margin-top:50%;
-	}
 
 	.dibujo{
 		height: 450px;
@@ -1149,7 +1147,7 @@ footer{
 
 
 	footer{
-		transform: scale(1.1);
+		transform: scale(1.05);
 		position: fixed;
 		bottom: 5px;
 		left:50px;
@@ -1175,9 +1173,6 @@ footer{
 		left:15px
 	}
 
-	#texto-ayuda{
-		margin-top:20%;
-	}
 
 
 }

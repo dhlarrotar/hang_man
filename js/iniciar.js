@@ -64,7 +64,7 @@ function reiniciarParametros(){
     ayuda.textContent= ""
 
 
-    
+    botonAyuda.classList.remove("fadeOut");
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
 
     letrasFallidas=[];   /* Arreglo con letras ingresadas válidas que no pertenecen a la palabra secreta*/
@@ -206,10 +206,12 @@ inputPalabra.addEventListener("input", function() {
 function mostrarAyuda(){
     if(ayudasDisponibles==0) return
     areaAyuda.classList.remove("fadeOut");
+    areaJuego.classList.add("fadeOut");
 }
 
 function borrarAyuda(){
     areaAyuda.classList.add("fadeOut");
+    areaJuego.classList.remove("fadeOut");
 }
 
 botonAyuda.onclick=mostrarAyuda;

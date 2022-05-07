@@ -51,6 +51,7 @@
 
 	<body>
 		
+
 		<div class="fadeOut" id="modo">
 			
 			<p class="texto-div" id="modotext"></p>
@@ -92,17 +93,21 @@
 			<div class="area-dibujo">	
 				<img src="img/trofeo.png" class="fadeOut" id="aplausos">
 				<nav class="botones-juego">
-					<img src="img/home.png" class="logo2" id="home">
-					<p class="boton-nav"id="hometext"></p>
-					<br>
-					<img src="img/reload.png" class="logo2" id="reload">
-					<p class="boton-nav" id="reloadtext"></p>
-					<br>
-					<p class="boton-nav" id="cuenta-ayudas"></p>
-						
-					<img src="img/hint.png" class="logo2" id="iconoAyuda">
-					<p class="boton-nav" id="tpista"></p>
-					<p class="boton-nav" id="ayudasDisponibles"></p>			
+					<div class="boton-nav" id="home">
+					<i class="fa-solid fa-house"></i> 
+					<p id="hometext"></p>
+					</div>
+					<div class="boton-nav" id="reload" >
+					<i class="fa-solid fa-arrows-rotate" ></i>
+					<p id="reloadtext"></p>
+					</div>
+					<div class="boton-nav" id="iconoAyuda">
+					<p  id="cuenta-ayudas"></p>
+					<p id="ayudasDisponibles"></p>
+					<i class="fa-solid fa-lightbulb" ></i>
+					<p  id="tpista"></p>
+				
+					</div>			
 				</nav>
 
 				<p id="letrax"></p>
@@ -117,10 +122,7 @@
 					<div class="area-palabra"></div>
 				</div>
 				
-				<div class="fadeOut" id="ayuda">
-					<p id="texto-ayuda"></p>
-					<p class="texto-div" id="cerrar-ayuda"></p>
-				</div>
+			
 
 				<div  id="area-teclado">
 
@@ -130,6 +132,12 @@
 		</div> 
 
 		<div id="letrax"></div>
+
+		<div class="fadeOut" id="ayuda">
+			<i class="fa-solid fa-xmark"id="cerrar-ayuda"></i>
+			<p id="texto-ayuda"></p>
+			
+		</div>
 
 		<audio src="audio/entrada.wav" id="entrada-sound"></audio>
 		<audio src="audio/victoria.wav" id="victoria-sound"></audio>

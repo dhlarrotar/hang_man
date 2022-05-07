@@ -10,7 +10,6 @@ var dataen = {
     "hometext":"Home",
     "reloadtext":"Start over",
     "tpista":"Hint",
-    "cerrar-ayuda":"Click to close",
 }
 
 var dataes = {
@@ -25,7 +24,6 @@ var dataes = {
     "hometext":"Menú",
     "reloadtext":"Reiniciar",
     "tpista":"Pedir una pista",
-    "cerrar-ayuda":"Has click para cerrar"
 }
 
 var langDict=dataen;

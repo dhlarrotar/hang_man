@@ -96,6 +96,7 @@ function check(){
         areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
         pantalla.classList.add("fadeOut")
         aplausos.classList.remove("fadeOut");
+        botonAyuda.classList.add("fadeOut");
         ayuda.textContent= "";
         palabra=[];
         m=[];
@@ -111,6 +112,7 @@ function check(){
         teclado.innerHTML="";
         areaPalabra.innerHTML=perdisteText+palabraEscogida.toUpperCase();
         ayuda.textContent= "";
+        botonAyuda.classList.add("fadeOut");
         palabra=[];
         m=[];
         x=[];

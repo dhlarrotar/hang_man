@@ -9,8 +9,8 @@ function limpiarPantalla(){
 /* Gradiente de color para dibujar*/
 
 var gradient = pincel.createLinearGradient(0, 0, pantalla.width, 0);
-gradient.addColorStop("0", "#0700b8");
-gradient.addColorStop("0.95", "#00ff88");
+gradient.addColorStop("0", "#62608b");
+gradient.addColorStop("0.95", "#98d7ba");
 
 
 /* Función para dibujo inicial del tablero*/
