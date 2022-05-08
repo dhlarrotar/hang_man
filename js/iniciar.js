@@ -2,6 +2,8 @@ var bienvenida = document.querySelector("#area-inicio");
 var areaJuego=document.querySelector("#area-juego");
 var iniciarJuego = document.querySelector("#iniciar");
 
+var html = document.querySelector("html");
+
 var areaModo=document.getElementById("modo");
 var minerales=document.getElementById("minerals");
 var animales=document.getElementById("animals");
@@ -216,3 +218,4 @@ function borrarAyuda(){
 
 botonAyuda.onclick=mostrarAyuda;
 areaAyuda.onclick=borrarAyuda;
+

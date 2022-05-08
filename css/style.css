@@ -15,14 +15,14 @@ i{
 }
 
 nav i{
-color: #afadad;
-font-size: 24px;
+color:  #181497;
+font-size: 20px;
 }
 
 
   .lang-list {
 	background-color: #ffffff;
-	color: rgb(28, 21, 97);
+	color:  #181497;
 	min-width: 40%;
 	padding: 15px;
 	font-size: 14px;
@@ -121,6 +121,7 @@ font-size: 24px;
 		width: 170px;
 		padding: 12px;
 		font-size: 20px;
+		color:  #181497;
 		/* Dark blue/dark-blue-300 */
 		border-radius: 12px;
 	
@@ -194,7 +195,7 @@ font-size: 24px;
 	height: fit-content;
 	margin-top: 1px;
 	min-height: 70px;
-	color: #71708d;
+	color:  #181497;
 	font-size: 32px;
 }
 
@@ -240,7 +241,7 @@ font-size: 24px;
 	font-size: 21px;
 	justify-content: center;
 	text-align: center;
-	color: #00117c;
+	color:  #181497;
 	text-shadow: 1.7px 1px #ffffff;
 
 }
@@ -263,6 +264,7 @@ font-size: 24px;
 	flex: none;
 	order: 1;
 	font-size: 13px;
+	color:  #181497;
 }
 
 
@@ -318,7 +320,7 @@ font-size: 24px;
 	width: 70px;
 	border-radius: 15px;
 	margin-bottom: 15px;
-	color: #484a58;
+	color:  #181497;
 	cursor: pointer;
 	font-size: 14px;
 	text-align: center;
@@ -365,7 +367,7 @@ font-size: 24px;
 	font-style: italic;
 	text-align: center;
 	vertical-align: middle;
-	color: #868686;
+	color:  #181497;
 }
 
 
@@ -375,7 +377,7 @@ font-size: 24px;
 	font-size: 20px;
 	text-align: center;
 	font-style: italic;
-	color: #888888;
+	color:  #181497;
 }
 
 #cerrar-ayuda{
@@ -408,7 +410,7 @@ color: #d41313;
 #modotext{
 	margin-top: 10%;
 	margin-bottom: 40px;
-	color: #989898;
+	color:  #181497;
 }
 
 
@@ -421,7 +423,7 @@ color: #d41313;
 	vertical-align: middle;
 	padding: 20px;
 	font-size: 28px;
-	color: #989898;
+	color:  #181497;
 	/* Dark blue/dark-blue-300 */
 	border-radius: 12px;
 	margin-bottom: 27px;
@@ -494,10 +496,9 @@ color: #d41313;
 #aplausos{
 	position: absolute;
 	top: 11%;
-	left:42%;
-	width:24%;
-	min-width: 170px;
-	max-width: 220px;
+	left:40%;
+	width:20%;
+	max-width: 200px;
 }
 
 
@@ -520,6 +521,11 @@ footer{
 	display: block;
 	color: #484a58;
 
+}
+
+footer i{
+	margin:2px;
+	color: #484a58;
 }
 
 
@@ -588,10 +594,8 @@ footer{
 
 
 	#perdiste{
-		position: fixed;
-		bottom:13%;
-		left:30%;
-		right:40%;
+		position: absolute;
+		top:50vh!important;
 		width: 12%;
 		min-width: 120px;
 	}
@@ -659,7 +663,7 @@ footer{
 	
 
 	.img-inicio{
-		height: 0;
+		height: 40%;
 	}
 
 	.botones-juego{
@@ -676,7 +680,7 @@ footer{
 
 	#perdiste{
 		transform: scale(0.6);
-		bottom:6px;
+		top:30vh!important;
 	}
 
 	
@@ -940,7 +944,7 @@ footer{
 
 
 
-@media screen and (max-height: 548px) and (max-width: 480px){
+@media screen and (max-height: 518px) and (max-width: 480px){
 	.img-inicio{
 		display: none;
 	}
@@ -1050,6 +1054,9 @@ footer{
 		bottom: 5px;
 		left:50px;
 	}
+
+
+
 }
 
 
