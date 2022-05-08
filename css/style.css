@@ -1,6 +1,7 @@
 
 html{
-	height: 100%;
+	height: 100vh;
+	width: 100wh;
 	font-family: 'Montserrat', sans-serif;
 	background:	-webkit-linear-gradient(90deg, #6963b628 0%, #2bb67517 100%);
   }
@@ -27,7 +28,7 @@ font-size: 24px;
 	font-size: 14px;
 	border: none;
 	cursor: pointer;
-	margin-bottom: 30x;
+	margin-bottom: 30px;
   }
   
   
@@ -187,7 +188,7 @@ font-size: 24px;
 
 .area-palabra{
 	position: fixed;
-	bottom:38%;
+	bottom:42%;
 	left: 2%;
 	right: 6%;
 	height: fit-content;
@@ -524,8 +525,11 @@ footer{
 @media screen and (max-width:480px){
 	body{
 	margin-top: 0;
-}
+	}
 
+	.dibujo{
+		height: 200px;
+	}
 
 	.lang-list{
 		position: fixed;
@@ -602,12 +606,6 @@ footer{
 		display: none;;
 	}
 
-	#area-teclado{
-		transform: scale(0.8);
-		position: relative;
-		bottom:-110px;
-
-	}
 }
 
 
@@ -1187,3 +1185,14 @@ footer{
 		height: 160px;
 		margin-top: 120px !important; 
 	}
+}
+
+
+@media screen and (min-height: 380px) and (max-height: 750px){
+
+	.area-palabra{
+		
+		bottom:48% !important;
+	
+	}
+}
