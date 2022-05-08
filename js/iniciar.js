@@ -147,7 +147,7 @@ home.onclick=mostrarBienvenida;
     });
 
     minerales.addEventListener(e, function(evt){
-        evt.preventDefault();
+      
         areaModo.classList.add("fadeOut");
         palabrasDict=palabrasDictMinerales;
         iniciar();
@@ -155,7 +155,7 @@ home.onclick=mostrarBienvenida;
     });
 
     animales.addEventListener(e, function(evt){
-        evt.preventDefault();
+
         palabrasDict=palabrasDictAnimales;
         areaModo.classList.add("fadeOut");
         iniciar();
@@ -164,7 +164,6 @@ home.onclick=mostrarBienvenida;
 
 
     aleatorio.addEventListener(e, function(evt){
-        evt.preventDefault();
         palabrasDict=Object.assign({},palabrasDictAnimales,palabrasDictMinerales,palabrasDictOtros);
         areaModo.classList.add("fadeOut");
         iniciar();  
