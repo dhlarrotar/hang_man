@@ -453,15 +453,16 @@ color: #d41313;
 
 
 .fadeOutLetra{
+	transform: scale(1.2);
 	position: fixed;
-	bottom:40%;
+	bottom:42%;
 	left: 2%;
 	right: 6%;
 	height: fit-content;
 	margin-top: 1px;
 	min-height: 70px;
-	color: #61607f;
-	font-size: 36px;
+	color: #71708d;
+	font-size: 32px;
 }
 
 
@@ -503,7 +504,7 @@ color: #d41313;
 
 #perdiste{
 	position: absolute;
-	top: 30%;
+	top: 20%;
 	left:43%;
 	width: 7%;
 	min-width: 80px;
@@ -706,7 +707,6 @@ footer{
 		font-size: 20px;
 		/* Dark blue/dark-blue-300 */;
 		border-radius: 12px;
-		border: 1px solid #0700b8;
 		margin-top: 3%;
 		margin-left: 3%;
 		margin-right: 3%;
@@ -1190,7 +1190,7 @@ footer{
 
 @media screen and (min-height: 380px) and (max-height: 750px){
 
-	.area-palabra{
+	.area-palabra, .fadeOutLetra{
 		
 		bottom:48% !important;
 	
