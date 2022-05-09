@@ -576,7 +576,7 @@ footer i{
 		margin-top: 55% !important;
 	}
 	.dibujo{
-		height: 30vh;
+		height: 30%;
 		top:49px;
 	}
 
@@ -640,7 +640,7 @@ footer i{
 	}
 
 
-	#perdiste{
+	#perdiste, #aplausos{
 	display: none;
 	}
 	.area-error{
@@ -659,7 +659,7 @@ footer i{
 		top: 28% !important;
 		left:30%;
 		width:30%;
-		max-width: 200px;
+		max-width: 180px;
 	}
 
 
