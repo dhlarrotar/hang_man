@@ -134,20 +134,21 @@ home.onclick=mostrarBienvenida;
 
 
 
-["touchstart","click"].forEach(function(e) {
+["click"].forEach(function(e) {
     reload.addEventListener(e, function(evt){
-        evt.preventDefault();
+        evt.stopPropagation();
         iniciar()
     });
 
 
     iniciarJuego.addEventListener(e, function(evt){
+        evt.stopPropagation();
         areaModo.classList.remove("fadeOut");
 
     });
 
     minerales.addEventListener(e, function(evt){
-      
+        evt.stopPropagation();
         areaModo.classList.add("fadeOut");
         palabrasDict=palabrasDictMinerales;
         iniciar();
@@ -155,7 +156,7 @@ home.onclick=mostrarBienvenida;
     });
 
     animales.addEventListener(e, function(evt){
-
+        evt.stopPropagation();
         palabrasDict=palabrasDictAnimales;
         areaModo.classList.add("fadeOut");
         iniciar();
@@ -164,6 +165,7 @@ home.onclick=mostrarBienvenida;
 
 
     aleatorio.addEventListener(e, function(evt){
+        evt.stopPropagation();
         palabrasDict=Object.assign({},palabrasDictAnimales,palabrasDictMinerales,palabrasDictOtros);
         areaModo.classList.add("fadeOut");
         iniciar();  
@@ -171,17 +173,18 @@ home.onclick=mostrarBienvenida;
     });
     
     botonPalabra.addEventListener(e, function(evt){
-        evt.preventDefault();
+        evt.stopPropagation();
         areaNuevaPalabra.classList.remove("fadeOut");
     });
 
     inputPalabra.addEventListener(e, function(){
+        evt.stopPropagation();
         areaNuevaPalabra.classList.remove("fadeOut");
     });
 
     
     agregar.addEventListener(e, function(evt){
-        evt.preventDefault();
+        evt.stopPropagation();
         areaNuevaPalabra.classList.add("fadeOut");
         palabrasDictOtros[palabraVerificada]="";
         inputPalabra.value="";
