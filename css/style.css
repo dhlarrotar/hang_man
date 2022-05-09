@@ -106,11 +106,6 @@ font-size: 20px;
 
 
 
-.boton-inicio:active{
-	transform: scale(1.05);
-	transition: 1.6s;
-  }
-
 .img-inicio{
 	display: block;
 	text-align: center;
@@ -146,7 +141,7 @@ font-size: 20px;
 
 		display: inline-block;
 		cursor: pointer;
-		user-select: none;
+		user-select: none !important;
 		background: #ffffff;
 		align-items: center;
 		width: 170px;
@@ -163,6 +158,15 @@ font-size: 20px;
 		-moz-box-shadow: 0px 6px 7px -5px rgba(98, 98, 98, 0.75);
 	
 }
+
+
+
+
+.boton-inicio:active{
+	transform: scale(1.05);
+	transition: 1.6s;
+  }
+
 
 .boton-inicio:hover{
 	transform: scale(1.05);
@@ -652,7 +656,7 @@ footer i{
 
 	#aplausos{
 		position: absolute;
-		top: 30%;
+		top: 28% !important;
 		left:30%;
 		width:30%;
 		max-width: 200px;
