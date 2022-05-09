@@ -572,7 +572,7 @@ footer i{
 		margin-top: 55% !important;
 	}
 	.dibujo{
-		height: 180px;
+		height: 30vh;
 		top:49px;
 	}
 
@@ -637,11 +637,7 @@ footer i{
 
 
 	#perdiste{
-		position: absolute;
-		top:73vh!important;
-		left:22%;
-		width: 7%;
-		min-width: 120px;
+	display: none;
 	}
 	.area-error{
 		position: fixed;
@@ -700,7 +696,7 @@ footer i{
 		position: fixed;
 		top:7px;
 		left:10px;
-		height: 40%;
+		height: 40% !important;
 		width: 100%;
 
 	}
