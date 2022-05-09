@@ -9,6 +9,12 @@ var minerales=document.getElementById("minerals");
 var animales=document.getElementById("animals");
 var aleatorio=document.getElementById("random");
 
+var mineralMenu=document.getElementById("mineralMenu");
+var animalMenu=document.getElementById("animalMenu");
+var aleatorioMenu=document.getElementById("aleatorioMenu");
+
+
+
 var mensajeError = document.querySelector("#error");
 
 var areaAyuda=document.getElementById("ayuda");
@@ -151,14 +157,45 @@ home.onclick=mostrarBienvenida;
         evt.stopPropagation();
         areaModo.classList.add("fadeOut");
         palabrasDict=palabrasDictMinerales;
+        aleatorioMenu.classList.remove("active");
+        animalMenu.classList.remove("active");
+        mineralMenu.classList.add("active");
         iniciar();
-        entradaSound.play();  
+        entradaSound.play();
+        aleatorioMenu  
+    });
+
+
+    mineralMenu.addEventListener(e, function(evt){
+        evt.stopPropagation();
+        areaModo.classList.add("fadeOut");
+        palabrasDict=palabrasDictMinerales;
+        aleatorioMenu.classList.remove("active");
+        animalMenu.classList.remove("active");
+        mineralMenu.classList.add("active");
+        iniciar();
+        entradaSound.play();
+        aleatorioMenu  
     });
 
     animales.addEventListener(e, function(evt){
         evt.stopPropagation();
         palabrasDict=palabrasDictAnimales;
         areaModo.classList.add("fadeOut");
+        aleatorioMenu.classList.remove("active");
+        animalMenu.classList.add("active");
+        mineralMenu.classList.remove("active");
+        iniciar();
+        entradaSound.play();  
+    });
+
+    animalMenu.addEventListener(e, function(evt){
+        evt.stopPropagation();
+        palabrasDict=palabrasDictAnimales;
+        areaModo.classList.add("fadeOut");
+        aleatorioMenu.classList.remove("active");
+        animalMenu.classList.add("active");
+        mineralMenu.classList.remove("active");
         iniciar();
         entradaSound.play();  
     });
@@ -168,9 +205,25 @@ home.onclick=mostrarBienvenida;
         evt.stopPropagation();
         palabrasDict=Object.assign({},palabrasDictAnimales,palabrasDictMinerales,palabrasDictOtros);
         areaModo.classList.add("fadeOut");
+        aleatorioMenu.classList.add("active");
+        animalMenu.classList.remove("active");
+        mineralMenu.classList.remove("active");
         iniciar();  
         entradaSound.play();
     });
+
+
+    aleatorioMenu.addEventListener(e, function(evt){
+        evt.stopPropagation();
+        palabrasDict=Object.assign({},palabrasDictAnimales,palabrasDictMinerales,palabrasDictOtros);
+        areaModo.classList.add("fadeOut");
+        aleatorioMenu.classList.add("active");
+        animalMenu.classList.remove("active");
+        mineralMenu.classList.remove("active");
+        iniciar();  
+        entradaSound.play();
+    });
+
     
     botonPalabra.addEventListener(e, function(evt){
         evt.stopPropagation();

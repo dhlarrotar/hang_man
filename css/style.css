@@ -21,6 +21,35 @@ color: #484a58;
 font-size: 20px;
 }
 
+#modoDisplay{
+	position: absolute;
+	top: 8px;
+	left:44%;
+	background-color: #ffffff;
+	border-radius: 15px;
+	color: #484a58;
+	padding: 2px;
+}
+
+
+
+#modoDisplay:hover{
+	transform: scale(1.1);
+}
+
+#modoDisplay a{
+	width: auto;
+	height: auto;
+}
+
+#modoDisplay a:hover i, #modoDisplay .active{
+	transform: scale(1.1);
+	font-weight: 900;
+	background:	-webkit-linear-gradient(12deg, #5e6bbd 0%, #37c884 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+
 
   .lang-list {
 	background-color: #ffffff;
@@ -178,7 +207,7 @@ font-size: 20px;
 .dibujo{
 	position: fixed;
 	left:2%;
-	top:4%;
+	top:6%;
 	width: auto; 
 	height: 280px;
 	
@@ -458,7 +487,7 @@ color: #d41313;
 
 
 .fadeOutLetra{
-	transform: scale(1.2);
+	transform: scale(1.12);
 	position: fixed;
 	bottom:42%;
 	left: 2%;
@@ -500,7 +529,7 @@ color: #d41313;
 	position: absolute;
 	top: 11%;
 	left:40%;
-	width:20%;
+	width:30%;
 	max-width: 200px;
 }
 
@@ -561,6 +590,15 @@ footer i{
 		height: 30%;
 	}
 	
+
+
+	#aplausos{
+		position: absolute;	
+		left:30%;
+
+	}
+
+
 	#iniciar{
 		position: fixed;
         bottom: 140px;
@@ -595,7 +633,7 @@ footer i{
 
 	#perdiste{
 		position: absolute;
-		top:50vh!important;
+		top:75vh!important;
 		left:32%;
 		width: 7%;
 		min-width: 120px;
@@ -826,6 +864,17 @@ footer i{
 }
 
 
+
+
+
+@media screen and (max-width: 586px){
+	#modoDisplay{
+		position: absolute;
+		left:34%;
+		
+	}
+	
+}
 
 
 

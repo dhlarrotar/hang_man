@@ -14,8 +14,9 @@
 Guess the secret word before you get hung up! You can ask for a hint, start over, and even add your own word to the game!
 
 <br>
-<img src="img/captura1.png" height="400px" display="inline-block">
+<img src="img/captura3.png" height="400px" display="inline-block">
 <img src="img/captura2.png" height="400px" display="inline-block">
+<img src="img/captura1.png" height="400px" display="inline-block">
 <br><br>
 
 ## Construido con / built with 🛠️
