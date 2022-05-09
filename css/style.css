@@ -567,9 +567,13 @@ footer i{
 	margin-top: 0;
 	}
 
+
+	#ayuda{
+		margin-top: 55% !important;
+	}
 	.dibujo{
-		height: 200px;
-		top:54px;
+		height: 180px;
+		top:49px;
 	}
 
 	.lang-list{
@@ -634,8 +638,8 @@ footer i{
 
 	#perdiste{
 		position: absolute;
-		top:75vh!important;
-		left:32%;
+		top:73vh!important;
+		left:22%;
 		width: 7%;
 		min-width: 120px;
 	}
@@ -649,6 +653,15 @@ footer i{
 	nav{
 		transform: scale(0.80);
 	}
+
+	#aplausos{
+		position: absolute;
+		top: 30%;
+		left:30%;
+		width:30%;
+		max-width: 200px;
+	}
+
 
 }
 
@@ -714,13 +727,11 @@ footer i{
 
 	#perdiste{
 		transform: scale(0.6);
-		top:30vh!important;
+		top:80vh;
 	}
 
 	
-	#aplausos{
-		left:35%;
-	}
+
 
 
 
@@ -1248,7 +1259,4 @@ footer i{
 	
 	}
 	
-	#ayuda{
-		margin-top: 55% !important;
-	}
 }
