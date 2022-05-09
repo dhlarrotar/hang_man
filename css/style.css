@@ -569,6 +569,7 @@ footer i{
 
 	.dibujo{
 		height: 200px;
+		top:54px;
 	}
 
 	.lang-list{
@@ -645,6 +646,9 @@ footer i{
 		right:5%;
 	}
 
+	nav{
+		transform: scale(0.80);
+	}
 
 }
 
