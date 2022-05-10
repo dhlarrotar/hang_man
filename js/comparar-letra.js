@@ -10,7 +10,7 @@ var palabraFormada=[];
 var letrasPalabraFilter;
 var letrasPalabraFormadaFilter;
 
-
+var fireworksContainer=document.querySelector("#fireworks-container");
 
 
 function compararLetra(letra){
@@ -88,12 +88,15 @@ function check(){
     letrasPalabraFormadaFilter=pf.replace(/(.)(?=.*\1)/g, ""); // "abc"
     if(i==0 && palabraFormada.length==0)return
     if(letrasPalabraFilter==letrasPalabraFormadaFilter && i<6){
+        fireworksContainer.classList.remove("fadeOut");
         correctaSound.pause();
         victoriaSound.play();
+        fireworksSound.play();
         console.log("victoria")
         /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
         teclado.innerHTML="";
         areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
+        
         pantalla.classList.add("fadeOut")
         aplausos.classList.remove("fadeOut");
         botonAyuda.classList.add("fadeOut");

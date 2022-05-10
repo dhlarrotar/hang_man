@@ -13,6 +13,7 @@ var mineralMenu=document.getElementById("mineralMenu");
 var animalMenu=document.getElementById("animalMenu");
 var aleatorioMenu=document.getElementById("aleatorioMenu");
 
+var fireworksContainer=document.querySelector("#fireworks-container");
 
 
 var mensajeError = document.querySelector("#error");
@@ -69,8 +70,10 @@ function reiniciarParametros(){
     aplausos.classList.add("fadeOut");
     m=[];
     x=[];
-    ayuda.textContent= ""
+    ayuda.textContent= "";
 
+
+    fireworksContainer.classList.add("fadeOut");
 
     botonAyuda.classList.remove("fadeOut");
     aceptadosArr=[];     /* Arreglo con letras ingresadas válidas*/
@@ -98,7 +101,7 @@ function reiniciarParametros(){
 
 
 function iniciar(){
-    
+    fireworksSound.pause();
     entradaSound.play();
     reiniciarParametros();
     borrarBienvenida();
@@ -149,8 +152,9 @@ home.onclick=mostrarBienvenida;
 
     iniciarJuego.addEventListener(e, function(evt){
         evt.stopPropagation();
+        setTimeout(function(){
         areaModo.classList.remove("fadeOut");
-
+        },300);
     });
 
     minerales.addEventListener(e, function(evt){
