@@ -684,7 +684,11 @@ footer i, footer a{
 	body{
 	margin-top: 0;
 	}
-
+ 
+	#area-inicio{
+		margin-bottom: 2px;
+		height: auto;
+	}
 
 	#ayuda{
 		margin-top: 55% !important;
@@ -696,7 +700,7 @@ footer i, footer a{
 
 	.lang-list{
 		position: fixed;
-		top:66px;
+		top:52px;
 		left:20%;
 		right:20%;
 	}
@@ -797,7 +801,7 @@ footer i, footer a{
 	.lang-list{
 		position: fixed;
 		transform: scale(0.9);
-		top:62px;
+		top:52px;
 		padding: 6px;
 		font-size: 18px;
 		left:10%;
