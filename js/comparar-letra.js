@@ -96,12 +96,12 @@ function check(){
         /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
         teclado.innerHTML="";
         areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
-        setInterval(function(){
-        pantalla.classList.add("fadeOut")
+        pantalla.classList.add("fadeOut");
+        setTimeout(function(){
         aplausos.classList.remove("fadeOut");
         botonAyuda.classList.add("fadeOut");
         ayuda.textContent= "";
-        },600);
+        },200);
         palabra=[];
         m=[];
         x=[];
