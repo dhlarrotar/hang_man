@@ -165,7 +165,7 @@ font-size: 20px;
 	background-color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 	min-width: 40%;
-	padding: 15px;
+	padding: 8px;
 	font-size: 14px;
 	border: none;
 	cursor: pointer;
@@ -666,16 +666,17 @@ footer{
 	width: 90%;
 	font-size: 17px;
 	margin-top: 15px;
-	left:0;
+	left:4%;
 	display: block;
 	color: #484a58;
 
 }
 
-footer i{
+footer i, footer a{
 	margin:2px;
 	font-size: 17px;
 	color: #484a58;
+	text-decoration: none;
 }
 
 
