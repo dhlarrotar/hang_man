@@ -21,6 +21,9 @@ color: #484a58;
 font-size: 20px;
 }
 
+
+
+
 #modoDisplay{
 	position: absolute;
 	top: 8px;
@@ -213,7 +216,8 @@ font-size: 20px;
 	left:2%;
 	top:6%;
 	width: auto; 
-	height: 280px;
+	height: 28%;
+	max-height: 280px;
 	
 	
 	display: inline-block;
@@ -640,9 +644,8 @@ footer i{
 	}
 
 
-	#perdiste, #aplausos{
-	display: none;
-	}
+
+
 	.area-error{
 		position: fixed;
 		bottom: 190px;
@@ -667,6 +670,15 @@ footer i{
 
 
 
+@media screen and (max-width:1090px){
+	#aplausos{
+		position: absolute;
+		top: 65px !important;
+		left: 40px !important;
+		width: 20% !important;
+		max-width: 150px;
+	}
+}
 
 
 
@@ -727,7 +739,8 @@ footer i{
 
 	#perdiste{
 		transform: scale(0.6);
-		top:80vh;
+		bottom: 10%;
+		left:20%
 	}
 
 	
