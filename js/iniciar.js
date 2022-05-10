@@ -53,6 +53,7 @@ function borrarBienvenida(){
 function mostrarBienvenida(){
     bienvenida.classList.remove("fadeOut");
     areaJuego.classList.add("fadeOut");
+    fireworksSound.pause();
 }
 
 
