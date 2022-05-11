@@ -511,7 +511,8 @@ font-size: 20px;
 	margin-left:10%;
 
 	text-align: center;
-	font-size: 30px;
+	font-size: 22px;
+	line-height: 2.3rem;
 	font-style: italic;
 	text-align: center;
 	vertical-align: middle;
@@ -690,9 +691,7 @@ footer i, footer a{
 		height: auto;
 	}
 
-	#ayuda{
-		margin-top: 55% !important;
-	}
+	
 	.dibujo{
 		height: 30%;
 		top:49px;
@@ -753,6 +752,7 @@ footer i, footer a{
 		position: relative;
 		top:-110px;
 	}
+
 	#modotext{
 		margin-top: 30%;
 	}
@@ -773,6 +773,14 @@ footer i, footer a{
 
 	#aplausos{
 		display: none;
+	}
+
+
+	#texto-ayuda{
+	
+		font-size: 20px;
+		line-height: 2rem;
+	
 	}
 
 
