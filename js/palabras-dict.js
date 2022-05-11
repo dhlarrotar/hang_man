@@ -23,9 +23,6 @@ var palabrasDictAnimalesEs = {
 
 
 var palabrasDictOtrosEs = {
-    "luna":"Giro alrededor de la tierra y salgo de noche",
-    "sol": "Soy la estrella mas cercana a la tierra",
-    "nieve":"Caigo en invierno"
 }
 
 
@@ -50,7 +47,4 @@ var palabrasDictAnimals = {
 }
 
 var palabrasDictOther = {
-    "moon":" Earth's natural satellite", 
-    "sun": "I'm Earth's closest star", 
-    "snow":"Crystaline form of water"
 }
