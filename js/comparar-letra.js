@@ -90,23 +90,22 @@ function check(){
     letrasPalabraFormadaFilter=pf.replace(/(.)(?=.*\1)/g, ""); // "abc"
     if(i==0 && palabraFormada.length==0)return
     if(letrasPalabraFilter==letrasPalabraFormadaFilter && i<6){
-       
         correctaSound.pause();
+        saberMas.classList.remove("fadeOut");
+        botonAyuda.classList.add("fadeOut");
+        saberMas.classList.add("boton-nav");
         victoriaSound.play();
        
         console.log("victoria")
         /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
         teclado.innerHTML="";
         areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
-        saberMas.classList.remove("fadeOut");
-        saberMas.classList.add("boton-nav");
+       
         aplausos.classList.remove("fadeOut");
         pantalla.classList.add("fadeOut");
         setTimeout(function(){
        
         fireworksContainer.classList.remove("fadeOut");
-        botonAyuda.classList.add("fadeOut");
-      
         fireworksSound.play();
         },300);
         palabra=[];
@@ -119,12 +118,13 @@ function check(){
         /*i=6 indica que el jugador a perdido e inicia las animaciones respectivas*/
         erradaSound.play();
         perdidoSound.play();
+        botonAyuda.classList.add("fadeOut");
         perdiste.classList.remove("fadeOut");
         saberMas.classList.remove("fadeOut");
         saberMas.classList.add("boton-nav");
         teclado.innerHTML="";
         areaPalabra.innerHTML=perdisteText+palabraEscogida.toUpperCase();
-        botonAyuda.classList.add("fadeOut");
+        
         palabra=[];
         m=[];
         x=[];
