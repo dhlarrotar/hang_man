@@ -54,6 +54,8 @@ function mostrarBienvenida(){
     bienvenida.classList.remove("fadeOut");
     areaJuego.classList.add("fadeOut");
     fireworksSound.pause();
+    ayuda.textContent= "";
+    saberMas.classList.add("fadeOut");
 }
 
 
@@ -63,6 +65,7 @@ function reiniciarParametros(){
     teclado.innerHTML="";
     areaPalabra.innerHTML="";
     letraxDiv.innerHTML="";
+    saberMas.classList.add("fadeOut");
     limpiarPantalla();
     areaAyuda.classList.add("fadeOut");
     pantalla.classList.remove("fadeOut")
@@ -271,6 +274,15 @@ function mostrarAyuda(){
     areaJuego.classList.add("fadeOut");
 }
 
+
+
+function masInfo(){
+    ayudaWord.textContent=palabraEscogida.toUpperCase();
+    areaAyuda.classList.remove("fadeOut");
+    areaJuego.classList.add("fadeOut");
+}
+
+
 function borrarAyuda(){
     areaAyuda.classList.add("fadeOut");
     areaJuego.classList.remove("fadeOut");
@@ -278,4 +290,4 @@ function borrarAyuda(){
 
 botonAyuda.onclick=mostrarAyuda;
 areaAyuda.onclick=borrarAyuda;
-
+saberMas.onclick=masInfo;

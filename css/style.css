@@ -506,6 +506,11 @@ font-size: 20px;
 }
 
 
+#ayudaWord{
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
 #texto-ayuda{
 	width: 80%;
 	margin-left:10%;

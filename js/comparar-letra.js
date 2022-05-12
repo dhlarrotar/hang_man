@@ -4,6 +4,8 @@ var i;                 /* Contador de errores para seleccionar las partes del cu
 
 var fireworks = document.getElementById("fireworks");
 var perdiste = document.getElementById("perdiste");
+var saberMas = document.querySelector("#saber-mas");
+var ayudaWord= document.querySelector("#ayudaWord")
 
 var palabra;
 var palabraFormada=[];
@@ -96,13 +98,15 @@ function check(){
         /* El jugador gana si no ha perdido (i<6) y si el número de aciertos coincide con el largo de la palabra*/
         teclado.innerHTML="";
         areaPalabra.innerHTML=ganasteText+palabraEscogida.toUpperCase();
+        saberMas.classList.remove("fadeOut");
+        saberMas.classList.add("boton-nav");
         aplausos.classList.remove("fadeOut");
         pantalla.classList.add("fadeOut");
         setTimeout(function(){
        
         fireworksContainer.classList.remove("fadeOut");
         botonAyuda.classList.add("fadeOut");
-        ayuda.textContent= "";
+      
         fireworksSound.play();
         },300);
         palabra=[];
@@ -116,9 +120,10 @@ function check(){
         erradaSound.play();
         perdidoSound.play();
         perdiste.classList.remove("fadeOut");
+        saberMas.classList.remove("fadeOut");
+        saberMas.classList.add("boton-nav");
         teclado.innerHTML="";
         areaPalabra.innerHTML=perdisteText+palabraEscogida.toUpperCase();
-        ayuda.textContent= "";
         botonAyuda.classList.add("fadeOut");
         palabra=[];
         m=[];
