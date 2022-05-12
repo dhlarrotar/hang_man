@@ -55,6 +55,7 @@ function mostrarBienvenida(){
     areaJuego.classList.add("fadeOut");
     fireworksSound.pause();
     ayuda.textContent= "";
+    ayudaWord.innerHTML="";
     saberMas.classList.add("fadeOut");
 }
 
@@ -63,6 +64,7 @@ function mostrarBienvenida(){
 
 function reiniciarParametros(){
     teclado.innerHTML="";
+    ayudaWord.innerHTML="";
     areaPalabra.innerHTML="";
     letraxDiv.innerHTML="";
     saberMas.classList.add("fadeOut");

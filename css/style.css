@@ -458,7 +458,6 @@ font-size: 20px;
 
   .logo2:active{
 	transform: scale(1.05);
-	transition: 1.6s;
   }
 
 .boton-nav{
@@ -603,7 +602,6 @@ color: #d41313;
   }
 
 .fadeOut{
-	transition: 3.7s;
 	display: none;
 	background-color: #ffffff;
 }
