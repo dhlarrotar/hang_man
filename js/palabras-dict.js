@@ -42,7 +42,7 @@ var palabrasDictAnimals = {
     "giraffe": "My height (up to 5.5 meters!) and excellent eyesight help me to keep a lookout for predators from far away. I easily pull down leaves with my long tongue.",
     "bat": "I eat insects and pollinate hundreds of plant species. My eyes attuned to low-light conditions and echolocation help me to see the world.",
     "bee": "We love teamwork! when I find a good flower to collect pollen and nectar, I communicate the location to my mates using special dancing moves!",
-    "dog":"My nose print is unique and my sense of smell legendary, with as many as 300 million receptors (while a human has about 5 million.)",  
+    "dog":"My nose print is unique and my sense of smell legendary, with as many as 300 million receptors (while a human has about 5 million).",  
     "octopus": "I am a highly intelligent cephalopod, an excellent swimmer, and a master of mimics. I have 3 hearts.",
 }
 
