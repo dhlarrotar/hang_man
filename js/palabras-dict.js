@@ -17,7 +17,7 @@ var palabrasDictAnimalesEs = {
     "murcielago": "Como insectos y polinizo cientos de especies de plantas. Mis ojos adaptados a condiciones de poca luz y la ecolocalización me ayudan a ver el mundo.",
     "abeja": "¡Nos encanta el trabajo en equipo! ¡Cuando encuentro una buena flor para recolectar polen y néctar, comunico la ubicación a mis compañeros usando movimientos especiales de baile!",
     "perro":"La huella de mi nariz es única y mi sentido del olfato es legendario, con hasta 300 millones de receptores (mientras que un humano tiene alrededor de 5 millones).",
-    "pulpo": "Soy un cefalópodo altamente inteligente, un excelente nadador y un maestro para la mímica. Tengo 3 corazones.",
+    "pulpo": "Soy un cefalópodo muy inteligente, un excelente nadador y un maestro para la mímica. Tengo 3 corazones.",
 }
 
 
@@ -43,7 +43,7 @@ var palabrasDictAnimals = {
     "bat": "I eat insects and pollinate hundreds of plant species. My eyes attuned to low-light conditions and echolocation help me to see the world.",
     "bee": "We love teamwork! when I find a good flower to collect pollen and nectar, I communicate the location to my mates using special dancing moves!",
     "dog":"My nose print is unique and my sense of smell legendary, with as many as 300 million receptors (while a human has about 5 million).",  
-    "octopus": "I am a highly intelligent cephalopod, an excellent swimmer, and a master of mimics. I have 3 hearts.",
+    "octopus": "I am a smart cephalopod, an excellent swimmer, and a master of mimics. I have 3 hearts.",
 }
 
 var palabrasDictOther = {
