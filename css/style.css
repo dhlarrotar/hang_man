@@ -8,7 +8,9 @@ html{
   }
 
 
-  
+  sup {font-size:x-small; vertical-align:super;}
+  sub {font-size:x-small; vertical-align: sub;}
+
 
 /* Firework animation*/
 
@@ -507,6 +509,11 @@ font-size: 20px;
 
 #ayudaWord{
 	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+#formula-mineral{
+	margin-top: 11px;
 	margin-bottom: 8px;
 }
 

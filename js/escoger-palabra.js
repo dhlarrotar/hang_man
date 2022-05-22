@@ -15,7 +15,7 @@ function escogerPalabra(){
     }        
     palabraEscogida=listaPalabras[index];
     ayudaPalabra=listaValores[index];
-    ayuda.textContent= ayudaPalabra;
+    ayuda.innerHTML= ayudaPalabra;
     return palabraEscogida
 }
 var lineasPalabras;

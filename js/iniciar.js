@@ -20,6 +20,7 @@ var mensajeError = document.querySelector("#error");
 
 var areaAyuda=document.getElementById("ayuda");
 var ayuda=document.getElementById("texto-ayuda")
+var formulaMineral=document.getElementById("formula-mineral")
 var cuentaAyuda=document.getElementById("cuenta-ayudas");
 
 var areaNuevaPalabra=document.getElementById("nueva-palabra");
@@ -54,8 +55,9 @@ function mostrarBienvenida(){
     bienvenida.classList.remove("fadeOut");
     areaJuego.classList.add("fadeOut");
     fireworksSound.pause();
-    ayuda.textContent= "";
+    ayuda.innerHTML= "";
     ayudaWord.innerHTML="";
+    formulaMineral.innerHTML="";
     saberMas.classList.add("fadeOut");
 }
 
@@ -68,6 +70,7 @@ function reiniciarParametros(){
     areaPalabra.innerHTML="";
     letraxDiv.innerHTML="";
     saberMas.classList.add("fadeOut");
+    formulaMineral.innerHTML="";
     limpiarPantalla();
     areaAyuda.classList.add("fadeOut");
     pantalla.classList.remove("fadeOut")
@@ -76,7 +79,7 @@ function reiniciarParametros(){
     aplausos.classList.add("fadeOut");
     m=[];
     x=[];
-    ayuda.textContent= "";
+    ayuda.innerHTML= "";
 
 
     fireworksContainer.classList.add("fadeOut");
@@ -279,9 +282,11 @@ function mostrarAyuda(){
 
 
 function masInfo(){
-    ayudaWord.textContent=palabraEscogida.toUpperCase();
+    ayudaWord.textContent=palabraEscogida.toUpperCase();  
+    formulaMineral.innerHTML=formulaDictMinerales[palabraEscogida];
     areaAyuda.classList.remove("fadeOut");
     areaJuego.classList.add("fadeOut");
+    
 }
 
 
