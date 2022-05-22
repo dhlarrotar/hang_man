@@ -3,19 +3,19 @@ var palabrasDictAnimales;
 var palabrasDictOtros;
 
 formulaDictMinerales = {
-    "Cuarzo": "SiO<sub>2</sub>", 
-    "Calcita": "CaCO<sub>3</sub>",
-    "Diamante": "C", 
-    "Olivino": "(Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
-    "Quartz": "SiO<sub>2</sub>", 
-    "Calcite": "CaCO<sub>3</sub>",
-    "Diamond": "C", 
-    "Olivine": "(Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
+    "Cuarzo": "Tipo: Silicato <strong>|</strong> Fórmula química: SiO<sub>2</sub>", 
+    "Calcita": "Tipo: Carbonato <strong>|</strong> Fórmula química: CaCO<sub>3</sub>",
+    "Diamante": "Tipo: Alótropo del Carbono  <strong>|</strong>  Fórmula química: C", 
+    "Olivino": "Tipo: Silicato <strong>|</strong>  Fórmula química: (Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
+    "Quartz": "Family: Silicate  <strong>|</strong>  Chemical formula: SiO<sub>2</sub>", 
+    "Calcite": "Family: Carbonate  <strong>|</strong>  Chemical formula: CaCO<sub>3</sub>",
+    "Diamond": "Family: Carbon allotrope  <strong>|</strong>  Chemical formula: C", 
+    "Olivine": "Family: Silicate  <strong>|</strong>  Chemical formula: (Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
 }
 
 
 var palabrasDictMineralesEs = {
-    "Cuarzo": "La mayoría de las rocas contienen al menos una pequeña cantidad de este mineral. Sus cristales de variados colores se utilizan como piedras preciosas o como componente de dispositivos electrónicos debido a sus propiedades piezoeléctricas.", 
+    "Cuarzo": "La mayoría de las rocas contienen al menos una pequeña cantidad de este mineral, muy resistente a la meteorización. Sus cristales se utilizan como piedras preciosas o como componente de dispositivos electrónicos debido a sus propiedades piezoeléctricas.", 
     "Calcita": "Es el principal constituyente de la caliza y el mármol con una amplia gama de usos para la construcción, el secuestro de CO<sub>2</sub> el tratamiento del suelo y más.",
     "Diamante": "Es la sustancia más dura conocida con el punto de fusión más alto (4090 °C). A pesar de su densa configuración atómica, es transparente en un gran número de longitudes de onda.", 
     "Olivino": "Los miembros de este grupo son uno de los principales minerales formadores de rocas y el componente principal del manto superior de la Tierra. Se utilizan para aplicaciones metalúrgicas o como piedras preciosas.",
@@ -40,7 +40,7 @@ var palabrasDictOtrosEs = {
 
 
 var palabrasDictMinerals = {
-    "Quartz": "The majority of rocks contain at least a small amount of this mineral. Their crystals are used as gemstones or as a component of electronic devices due to their piezoelectric properties.",
+    "Quartz": "The majority of rocks contain at least a small amount of this mineral, very resistant to weathering. Their crystals are used as gemstones or as a component of electronic devices due to their piezoelectric properties.",
     "Calcite": "It is the principal constituent of limestone and marble with a wide range of uses for construction, CO<sub>2</sub> sequestration, soil treatment, and more.",
     "Diamond": "It is the hardest known substance with the highest melting point(4090° C). Despite its dense atomical configuration, it is transparent over a great number of wavelengths.",  
     "Olivine": "Members of this group are major rock-forming minerals and the primary component of the Earth's upper mantle. They are used for metalworking applications or as gemstones.", 
