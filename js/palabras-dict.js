@@ -3,14 +3,14 @@ var palabrasDictAnimales;
 var palabrasDictOtros;
 
 formulaDictMinerales = {
-    "Cuarzo": "Tipo: Silicato <strong>|</strong> Fórmula química: SiO<sub>2</sub>", 
-    "Calcita": "Tipo: Carbonato <strong>|</strong> Fórmula química: CaCO<sub>3</sub>",
-    "Diamante": "Tipo: Alótropo del Carbono  <strong>|</strong>  Fórmula química: C", 
-    "Olivino": "Tipo: Silicato <strong>|</strong>  Fórmula química: (Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
-    "Quartz": "Family: Silicate  <strong>|</strong>  Chemical formula: SiO<sub>2</sub>", 
-    "Calcite": "Family: Carbonate  <strong>|</strong>  Chemical formula: CaCO<sub>3</sub>",
-    "Diamond": "Family: Carbon allotrope  <strong>|</strong>  Chemical formula: C", 
-    "Olivine": "Family: Silicate  <strong>|</strong>  Chemical formula: (Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
+    "Cuarzo": " Silicato ,  SiO<sub>2</sub>", 
+    "Calcita": " Carbonato ,  CaCO<sub>3</sub>",
+    "Diamante": " Alótropo del carbono  ,   C", 
+    "Olivino": " Silicato ,   (Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
+    "Quartz": " Silicate  ,   SiO<sub>2</sub>", 
+    "Calcite": " Carbonate  ,   CaCO<sub>3</sub>",
+    "Diamond": " Carbon allotrope  ,   C", 
+    "Olivine": " Silicate  ,   (Mg,Fe<sup>2+</sup>)<sub>2</sub>SiO<sub>4</sub>",
 }
 
 
@@ -42,7 +42,7 @@ var palabrasDictOtrosEs = {
 var palabrasDictMinerals = {
     "Quartz": "The majority of rocks contain at least a small amount of this mineral, very resistant to weathering. Their crystals are used as gemstones or as a component of electronic devices due to their piezoelectric properties.",
     "Calcite": "It is the principal constituent of limestone and marble with a wide range of uses for construction, CO<sub>2</sub> sequestration, soil treatment, and more.",
-    "Diamond": "It is the hardest known substance with the highest melting point(4090° C). Despite its dense atomical configuration, it is transparent over a great number of wavelengths.",  
+    "Diamond": "It is the hardest known substance with the highest melting point (4090° C). Despite its dense atomical configuration, it is transparent over a great number of wavelengths.",  
     "Olivine": "Members of this group are major rock-forming minerals and the primary component of the Earth's upper mantle. They are used for metalworking applications or as gemstones.", 
 
     
