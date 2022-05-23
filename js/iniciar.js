@@ -121,7 +121,6 @@ function iniciar(){
     palabra=[...palabraEscogida.toUpperCase()].sort();
 
     if(ayudasDisponibles==0){
-        botonAyuda.src= "img/hint2.png";
         tpista.innerHTML="";
     }
     
