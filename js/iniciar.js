@@ -282,7 +282,9 @@ function mostrarAyuda(){
 
 function masInfo(){
     ayudaWord.textContent=palabraEscogida.toUpperCase();  
+    if(formulaDictMinerales[palabraEscogida]){
     formulaMineral.innerHTML=formulaDictMinerales[palabraEscogida];
+    }
     areaAyuda.classList.remove("fadeOut");
     areaJuego.classList.add("fadeOut");
     
